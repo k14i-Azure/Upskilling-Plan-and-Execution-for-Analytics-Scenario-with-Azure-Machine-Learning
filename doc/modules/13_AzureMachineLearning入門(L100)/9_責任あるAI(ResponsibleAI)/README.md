@@ -1,6 +1,6 @@
 ###### Azure Machine Learning 入門 (L100)
 
-# 7. 責任ある AI (Responsible AI)
+# 9. 責任ある AI (Responsible AI)
 
 ## Microsoft の責任ある AI の基本原則
 
@@ -37,3 +37,4 @@
 * [Microsoft の責任ある AI へのアプローチ](https://www.microsoft.com/ja-jp/ai/our-approach)
 * [AI Business School の人工知能コース](https://www.microsoft.com/ja-jp/ai/ai-business-school)
 * [責任ある AI のリソース – Microsoft AI](https://www.microsoft.com/ja-jp/ai/responsible-ai-resources)
+* [MachineLearningNotebooks/rai-loan-decision.ipynb at master · Azure/MachineLearningNotebooks](https://github.com/Azure/MachineLearningNotebooks/blob/master/how-to-use-azureml/responsible-ai/visualize-upload-loan-decision/rai-loan-decision.ipynb)

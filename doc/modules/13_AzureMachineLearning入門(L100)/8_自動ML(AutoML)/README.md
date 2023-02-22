@@ -1,6 +1,6 @@
 ###### Azure Machine Learning 入門 (L100)
 
-# 6. 自動 ML (AutoML)
+# 8. 自動 ML (AutoML)
 
 ## 1. [自動 ML](https://learn.microsoft.com/ja-JP/azure/machine-learning/concept-automated-ml)
 
