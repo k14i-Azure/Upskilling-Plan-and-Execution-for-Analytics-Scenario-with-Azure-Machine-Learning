@@ -2,6 +2,42 @@
 
 # 7. ノートブック
 
+- [7. ノートブック](#7-ノートブック)
+  - [1. セッション管理](#1-セッション管理)
+  - [2. セキュリティのベストプラクティス](#2-セキュリティのベストプラクティス)
+  - [3. ノートブックの実行](#3-ノートブックの実行)
+  - [4. ターミナルの使用](#4-ターミナルの使用)
+  - [5. データへのアクセス](#5-データへのアクセス)
+    - [5.1. データ資産へのアクセス (Azure Machine Learning SDK for Python を使用)](#51-データ資産へのアクセス-azure-machine-learning-sdk-for-python-を使用)
+      - [5.1.1. 例](#511-例)
+    - [5.2. データ資産へのアクセス (mltable Python ライブラリ を使用)](#52-データ資産へのアクセス-mltable-python-ライブラリ-を使用)
+      - [5.2.1. 前提](#521-前提)
+      - [5.2.2. テーブル資産](#522-テーブル資産)
+      - [5.2.3. ファイル資産](#523-ファイル資産)
+      - [5.2.4. フォルダー資産](#524-フォルダー資産)
+    - [5.3. 外部データへのアクセス (mltable Python ライブラリ を使用)](#53-外部データへのアクセス-mltable-python-ライブラリ-を使用)
+      - [5.3.1. 前提](#531-前提)
+      - [5.3.2. 一般的な形式](#532-一般的な形式)
+      - [5.3.3. 例](#533-例)
+    - [5.4. 外部データへのアクセス (fspec を使用)](#54-外部データへのアクセス-fspec-を使用)
+      - [5.4.1. 前提](#541-前提)
+      - [5.4.2. Studio UI からデータストア URI をコピー する](#542-studio-ui-からデータストア-uri-をコピー-する)
+      - [5.4.3. Python のコードに貼り付ける](#543-python-のコードに貼り付ける)
+      - [5.4.4. データにアクセスする](#544-データにアクセスする)
+      - [5.4.5. 応用例](#545-応用例)
+    - [5.5. 外部データのダウンロード (azcopy ユーティリティ を使用)](#55-外部データのダウンロード-azcopy-ユーティリティ-を使用)
+    - [5.6. ジョブ内におけるデータへのアクセス (Azure Machine Learning Python SDK v2 を使用)](#56-ジョブ内におけるデータへのアクセス-azure-machine-learning-python-sdk-v2-を使用)
+      - [5.6.1. ジョブへのデータ入力](#561-ジョブへのデータ入力)
+      - [5.6.2. ジョブからのデータ出力](#562-ジョブからのデータ出力)
+  - [6. コンピューティング インスタンスをリモート ノートブック サーバーとして構成する](#6-コンピューティング-インスタンスをリモート-ノートブック-サーバーとして構成する)
+  - [7. モデルのトレーニング](#7-モデルのトレーニング)
+  - [8. クイックスタート＆ガイド](#8-クイックスタートガイド)
+  - [9. チュートリアル](#9-チュートリアル)
+  - [10. サンプル](#10-サンプル)
+  - [11. 参考資料](#11-参考資料)
+
+
+---
 
 [スタジオ | Azure Machine Learning とは - Azure Machine Learning | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/machine-learning/overview-what-is-azure-machine-learning#studio)
 
@@ -11,7 +47,7 @@
 ---
 
 
-## セッション管理
+## 1. セッション管理
 
 * [ノートブック セッション | コンピューティング セッションを管理する方法 - Azure Machine Learning | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-manage-compute-sessions#notebook-sessions)
 
@@ -29,7 +65,7 @@
 ---
 
 
-## セキュリティのベストプラクティス
+## 2. セキュリティのベストプラクティス
 
 * [Azure ML Studio ノートブック | 安全なコードのベスト プラクティス - Azure Machine Learning | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/machine-learning/concept-secure-code-best-practice#azure-ml-studio-notebooks)
 
@@ -55,7 +91,7 @@
 ---
 
 
-## ノートブックの実行
+## 3. ノートブックの実行
 
 https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-run-jupyter-notebooks
 
@@ -63,7 +99,7 @@ https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-run-jupyter-note
 ---
 
 
-## ターミナルの使用
+## 4. ターミナルの使用
 
 https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-access-terminal
 
@@ -71,7 +107,7 @@ https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-access-terminal
 ---
 
 
-## データへのアクセス
+## 5. データへのアクセス
 
 ```
 1. データ資産へのアクセス (Azure Machine Learning SDK for Python を使用)
@@ -82,11 +118,11 @@ https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-access-terminal
 6. ジョブ内におけるデータへのアクセス (Azure Machine Learning Python SDK v2 を使用)
 ```
 
-### 1. [データ資産へのアクセス (Azure Machine Learning SDK for Python を使用)](https://learn.microsoft.com/ja-jp/python/api/overview/azure/ml/?view=azure-ml-py#dataset)
+### 5.1. [データ資産へのアクセス (Azure Machine Learning SDK for Python を使用)](https://learn.microsoft.com/ja-jp/python/api/overview/azure/ml/?view=azure-ml-py#dataset)
 
 > Dataset クラスは、Azure Machine Learning 内のデータを探索および管理するための基本リソースです。 概要統計を使用してデータを探索し、データセットを AML ワークスペースに保存して、バージョン管理と再現性の機能を利用できます。 データセットは、トレーニング中にモデルから簡単に使用できます。
 
-#### 例
+#### 5.1.1. 例
 
 ```python
 from azureml.core import Dataset
@@ -96,15 +132,15 @@ dataset.take(3).to_pandas_dataframe()
 ```
 
 
-### 2. [データ資産へのアクセス (mltable Python ライブラリ を使用)](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-access-data-interactive#reading-data-assets)
+### 5.2. [データ資産へのアクセス (mltable Python ライブラリ を使用)](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-access-data-interactive#reading-data-assets)
 
-#### 0. 前提
+#### 5.2.1. 前提
 
 ```bash
 pip install -U mltable
 ```
 
-#### 1. [テーブル資産](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-access-data-interactive#table-asset)
+#### 5.2.2. [テーブル資産](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-access-data-interactive#table-asset)
 
 ```python
 import mltable
@@ -119,7 +155,7 @@ df = tbl.to_pandas_dataframe()
 df.head()
 ```
 
-#### 2. [ファイル資産](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-access-data-interactive#file-asset)
+#### 5.2.3. [ファイル資産](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-access-data-interactive#file-asset)
 
 ```python
 import mltable
@@ -138,7 +174,7 @@ df = tbl.to_pandas_dataframe()
 df.head()
 ```
 
-#### 3. [フォルダー資産](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-access-data-interactive#folder-asset)
+#### 5.2.4. [フォルダー資産](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-access-data-interactive#folder-asset)
 
 ```python
 import mltable
@@ -158,15 +194,15 @@ df.head()
 ```
 
 
-### 3. [外部データへのアクセス (mltable Python ライブラリ を使用)](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-access-data-interactive?tabs=adls#materialize-data-into-pandas-using-mltable-library)
+### 5.3. [外部データへのアクセス (mltable Python ライブラリ を使用)](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-access-data-interactive?tabs=adls#materialize-data-into-pandas-using-mltable-library)
 
-#### 0. 前提
+#### 5.3.1. 前提
 
 ```bash
 pip install -U mltable
 ```
 
-#### 1. 一般的な形式
+#### 5.3.2. 一般的な形式
 
 ```python
 import mltable
@@ -191,7 +227,7 @@ df = tbl.to_pandas_dataframe()
 df.head()
 ```
 
-#### 2. 例
+#### 5.3.3. 例
 
 * [CSV ファイルの読み取り (ADLS gen2)](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-access-data-interactive?tabs=adls#read-a-csv-file)
 * [CSV ファイルの読み取り (Blob Storage)](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-access-data-interactive?tabs=blob#read-a-csv-file)
@@ -203,15 +239,15 @@ df.head()
 * [フォルダー内の Parquet ファイルを読み取る (HTTP サーバー)](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-access-data-interactive?tabs=http#read-parquet-files-in-a-folder)
 
 
-### 4. [外部データへのアクセス (fspec を使用)](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-access-data-interactive?tabs=adls#access-data-from-a-datastore-uri-like-a-filesystem-preview)
+### 5.4. [外部データへのアクセス (fspec を使用)](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-access-data-interactive?tabs=adls#access-data-from-a-datastore-uri-like-a-filesystem-preview)
 
-#### 0. 前提
+#### 5.4.1. 前提
 
 ```bash
 pip install -U azureml-fsspec
 ```
 
-#### 1. Studio UI からデータストア URI をコピー する
+#### 5.4.2. Studio UI からデータストア URI をコピー する
 
 > データストア URI 形式を記憶するのではなく、次の手順に従って、Studio UI からデータストア URI をコピーして貼り付けることができます:
 > 
@@ -220,13 +256,13 @@ pip install -U azureml-fsspec
 > 3. Pandas に読み込むファイル/フォルダーを見つけ、その横にある省略符号 (...) を選択します。 メニューから [URI のコピー] を選択します。 ノートブック/スクリプトにコピーするデータストア URI を選択できます。
 > [![Datastore URI Copy](./assets/images/datastore_uri_copy.png)](./assets/images/datastore_uri_copy.png)
 
-#### 2. Python のコードに貼り付ける
+#### 5.4.3. Python のコードに貼り付ける
 
 ```python
 uri = 'azureml://subscriptions/{subscription}/resourcegroups/{resource_group}/workspaces/{workspace}/datastores/{datastore_name}/paths/{path_on_datastore}'
 ```
 
-#### 3. データにアクセスする
+#### 5.4.4. データにアクセスする
 
 ```python
 import pandas as pd
@@ -235,7 +271,7 @@ df = pd.read_csv("/".join(uri, "<filename>.csv"))
 df.head()
 ```
 
-#### 4. 応用例
+#### 5.4.5. 応用例
 
 * [CSV ファイルのフォルダーを Pandas に読み取る](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-access-data-interactive?tabs=adls#read-a-folder-of-csv-files-into-pandas)
 * [Dask への CSV ファイルの読み取り](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-access-data-interactive?tabs=adls#reading-csv-files-into-dask)
@@ -251,7 +287,7 @@ df.head()
 * [fspec - All modules for which code is available](https://filesystem-spec.readthedocs.io/en/stable/_modules/index.html)
 
 
-### 5. [外部データのダウンロード (azcopy ユーティリティ を使用)](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-access-data-interactive#downloading-data-using-the-azcopy-utility)
+### 5.5. [外部データのダウンロード (azcopy ユーティリティ を使用)](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-access-data-interactive#downloading-data-using-the-azcopy-utility)
 
 ```bash
 mkdir /home/azureuser/data
@@ -268,9 +304,9 @@ azcopy cp $SOURCE $DEST
 ```
 
 
-### 6. [ジョブ内におけるデータへのアクセス (Azure Machine Learning Python SDK v2 を使用)](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-read-write-data-v2?tabs=python)
+### 5.6. [ジョブ内におけるデータへのアクセス (Azure Machine Learning Python SDK v2 を使用)](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-read-write-data-v2?tabs=python)
 
-#### 1. [ジョブへのデータ入力](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-read-write-data-v2?tabs=python#read-data-in-a-job)
+#### 5.6.1. [ジョブへのデータ入力](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-read-write-data-v2?tabs=python#read-data-in-a-job)
 
 ```python
 from azure.ai.ml import command
@@ -309,7 +345,7 @@ returned_job = ml_client.jobs.create_or_update(job)
 returned_job.services["Studio"].endpoint
 ```
 
-#### 2. [ジョブからのデータ出力](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-read-write-data-v2?tabs=python#write-data-in-a-job)
+#### 5.6.2. [ジョブからのデータ出力](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-read-write-data-v2?tabs=python#write-data-in-a-job)
 
 ```python
 from azure.ai.ml import command
@@ -353,12 +389,14 @@ returned_job.services["Studio"].endpoint
 
 ---
 
-## [コンピューティング インスタンスをリモート ノートブック サーバーとして構成する](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-set-up-vs-code-remote?tabs=studio#configure-compute-instance-as-remote-notebook-server)
+## 6. [コンピューティング インスタンスをリモート ノートブック サーバーとして構成する](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-set-up-vs-code-remote?tabs=studio#configure-compute-instance-as-remote-notebook-server)
+
+省略
 
 ---
 
 
-## モデルのトレーニング
+## 7. モデルのトレーニング
 
 * [ML モデルのトレーニング - Azure Machine Learning | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-train-model?tabs=python)
 
@@ -366,7 +404,7 @@ returned_job.services["Studio"].endpoint
 ---
 
 
-## クイックスタート＆ガイド
+## 8. クイックスタート＆ガイド
 
 * [クイック スタート: ノートブックを実行する - Azure Machine Learning | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/machine-learning/quickstart-run-notebooks)
 * [ワークスペースで Jupyter Notebook を実行する - Azure Machine Learning | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-run-jupyter-notebooks)
@@ -375,7 +413,7 @@ returned_job.services["Studio"].endpoint
 ---
 
 
-## チュートリアル
+## 9. チュートリアル
 
 * [チュートリアル: Python スクリプトを使ってみる (v1) - Azure Machine Learning | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/machine-learning/v1/tutorial-1st-experiment-hello-world)
 * [チュートリアル: Jupyter Notebook でサンプルをトレーニングしてデプロイする - Azure Machine Learning | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/machine-learning/v1/tutorial-train-deploy-notebook)
@@ -387,7 +425,7 @@ returned_job.services["Studio"].endpoint
 ---
 
 
-## サンプル
+## 10. サンプル
 
 * [さまざまなコンピューティング ターゲット上でのトレーニング](https://github.com/Azure/MachineLearningNotebooks/blob/master/how-to-use-azureml/training)
 * [ML フレームワークを使用したトレーニング](https://github.com/Azure/MachineLearningNotebooks/blob/master/how-to-use-azureml/ml-frameworks)
@@ -396,7 +434,7 @@ returned_job.services["Studio"].endpoint
 ---
 
 
-## 参考資料
+## 11. 参考資料
 
 * [対話型開発時に Azure クラウド ストレージからデータにアクセスする - Azure Machine Learning | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-access-data-interactive)
 * [Azure/MachineLearningNotebooks: Python notebooks with ML and deep learning examples with Azure Machine Learning | Microsoft](https://github.com/Azure/MachineLearningNotebooks)

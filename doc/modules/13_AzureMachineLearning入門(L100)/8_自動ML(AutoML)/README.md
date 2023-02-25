@@ -2,6 +2,49 @@
 
 # 8. 自動 ML (AutoML)
 
+- [8. 自動 ML (AutoML)](#8-自動-ml-automl)
+  - [1. 自動 ML](#1-自動-ml)
+    - [1.1. しくみ](#11-しくみ)
+    - [1.2. AutoML を使用する場合](#12-automl-を使用する場合)
+    - [1.3. トレーニング、検証、テストのデータ](#13-トレーニング検証テストのデータ)
+    - [1.4. 特徴エンジニアリング](#14-特徴エンジニアリング)
+    - [1.5. アンサンブル モデル](#15-アンサンブル-モデル)
+    - [1.6. AutoML と ONNX](#16-automl-と-onnx)
+    - [1.7. L200 に向けた次のステップ](#17-l200-に向けた次のステップ)
+      - [1.7.1. ガイド](#171-ガイド)
+      - [1.7.2. チュートリアル](#172-チュートリアル)
+      - [1.7.3. サンプル](#173-サンプル)
+      - [1.7.4. Python SDK](#174-python-sdk)
+  - [2. モデルの評価](#2-モデルの評価)
+    - [2.1. 回帰メトリック](#21-回帰メトリック)
+    - [2.2. 分類メトリック](#22-分類メトリック)
+    - [2.3. イメージ モデルのメトリック (プレビュー)](#23-イメージ-モデルのメトリック-プレビュー)
+    - [2.4. 画像分類メトリック](#24-画像分類メトリック)
+    - [2.5. オブジェクト検出とインスタンス セグメント化のメトリック](#25-オブジェクト検出とインスタンス-セグメント化のメトリック)
+    - [2.6. オブジェクト検出とインスタンス セグメント化のエポックレベル メトリック](#26-オブジェクト検出とインスタンス-セグメント化のエポックレベル-メトリック)
+  - [3. モデルの説明](#3-モデルの説明)
+    - [3.1. モデルの解釈可能性](#31-モデルの解釈可能性)
+      - [3.1.1. 解釈可能性の対象](#311-解釈可能性の対象)
+        - [3.1.1.1. コンピューティング先](#3111-コンピューティング先)
+        - [3.1.1.2. 機械学習モデル](#3112-機械学習モデル)
+      - [3.1.2. 解釈可能性の手法](#312-解釈可能性の手法)
+        - [3.1.2.1. Python SDK v2 / CLI v2 の責任ある AI ダッシュボード でサポートされている手法](#3121-python-sdk-v2--cli-v2-の責任ある-ai-ダッシュボード-でサポートされている手法)
+        - [3.1.2.2. Python SDK v1 でサポートされている手法](#3122-python-sdk-v1-でサポートされている手法)
+        - [3.1.2.3. Python 解釈可能性パッケージを使用した説明 (プレビュー)](#3123-python-解釈可能性パッケージを使用した説明-プレビュー)
+    - [3.2. 自動 ML でのモデル説明 (プレビュー)](#32-自動-ml-でのモデル説明-プレビュー)
+      - [3.2.1. トレーニング中](#321-トレーニング中)
+        - [3.2.1.1. モデル説明](#3211-モデル説明)
+        - [3.2.1.2. 視覚化](#3212-視覚化)
+      - [3.2.2. 推論中](#322-推論中)
+  - [4. ガイド](#4-ガイド)
+  - [5. チュートリアル](#5-チュートリアル)
+  - [6. ラーニング](#6-ラーニング)
+  - [7. 参考資料](#7-参考資料)
+
+
+---
+
+
 ## 1. [自動 ML](https://learn.microsoft.com/ja-JP/azure/machine-learning/concept-automated-ml)
 
 ### 1.1. [しくみ](https://learn.microsoft.com/ja-jp/azure/machine-learning/concept-automated-ml#how-does-automl-work)
@@ -52,7 +95,8 @@
 
 ### 1.7. L200 に向けた次のステップ
 
-#### ガイド
+#### 1.7.1. ガイド
+
 * ノーコード/ローコード
     - [スタジオ UI を使用して自動 ML を設定する - Azure Machine Learning | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-use-automated-ml-for-ml-models)
 * コードファースト
@@ -60,18 +104,18 @@
     - [Computer Vision 用に AutoML を設定する - Azure Machine Learning | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-auto-train-image-models?tabs=cli)
     - [自動 ML モデルのトレーニング コードを表示する方法 - Azure Machine Learning AutoML | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-generate-automl-training-code)
 
-#### チュートリアル
+#### 1.7.2. チュートリアル
 
 * ノーコード/ローコード
     - [チュートリアル: コードなし分類モデルを AutoML でトレーニングする - Azure Machine Learning | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/machine-learning/tutorial-first-experiment-automated-ml)
 * コードファースト
     - [チュートリアル: AutoML - オブジェクト検出モデルのトレーニング - Azure Machine Learning | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/machine-learning/tutorial-auto-train-image-models?tabs=cli)
 
-#### サンプル
+#### 1.7.3. サンプル
 
 [azureml-examples/sdk/python/jobs/automl-standalone-jobs at main · Azure/azureml-examples](https://github.com/Azure/azureml-examples/tree/main/sdk/python/jobs/automl-standalone-jobs)
 
-#### Python SDK
+#### 1.7.4. Python SDK
 
 [azure.ai.ml.automl package | Microsoft Learn](https://learn.microsoft.com/ja-jp/python/api/azure-ai-ml/azure.ai.ml.automl?view=azure-python)
 
@@ -167,12 +211,12 @@
 
 #### 3.1.1. 解釈可能性の対象
 
-##### [コンピューティング先](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-machine-learning-interpretability#local-and-remote-compute-target)
+##### 3.1.1.1. [コンピューティング先](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-machine-learning-interpretability#local-and-remote-compute-target)
 
 > `azureml.interpret` パッケージは、ローカルおよびリモート両方のコンピューティング先で動作するように設計されています。
 > パッケージをローカルで実行した場合、SDK 関数はどの Azure サービスにもアクセスしません。
 
-##### [機械学習モデル](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-machine-learning-interpretability#supported-machine-learning-models)
+##### 3.1.1.2. [機械学習モデル](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-machine-learning-interpretability#supported-machine-learning-models)
 
 > SDK の azureml.interpret パッケージでは、次のデータセット形式でトレーニングされたモデルがサポートされています。
 > 
@@ -183,11 +227,11 @@
 
 #### 3.1.2. [解釈可能性の手法](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-machine-learning-interpretability#supported-model-interpretability-techniques)
 
-##### [Python SDK v2 / CLI v2 の責任ある AI ダッシュボード でサポートされている手法](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-machine-learning-interpretability#supported-in-responsible-ai-dashboard-in-python-sdk-v2-and-cli-v2)
+##### 3.1.2.1. [Python SDK v2 / CLI v2 の責任ある AI ダッシュボード でサポートされている手法](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-machine-learning-interpretability#supported-in-responsible-ai-dashboard-in-python-sdk-v2-and-cli-v2)
 
 * Mimic Explainer ([Global Surrogate](https://christophm.github.io/interpretable-ml-book/global.html)) + [SHAP](https://github.com/slundberg/shap) tree
 
-##### [Python SDK v1 でサポートされている手法](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-machine-learning-interpretability#supported-in-python-sdk-v1)
+##### 3.1.2.2. [Python SDK v1 でサポートされている手法](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-machine-learning-interpretability#supported-in-python-sdk-v1)
 
 * SHAP Tree Explainer
 * SHAP [Deep Explainer](https://papers.nips.cc/paper/7062-a-unified-approach-to-interpreting-model-predictions)
@@ -198,13 +242,13 @@
 
 [![Tabular Data Interpretability Techniques](./assets/images/interpretability-architecture.png)](./assets/images/interpretability-architecture.png)
 
-##### [Python 解釈可能性パッケージを使用した説明 (プレビュー)](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-machine-learning-interpretability-aml)
+##### 3.1.2.3. [Python 解釈可能性パッケージを使用した説明 (プレビュー)](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-machine-learning-interpretability-aml)
 
 ### 3.2. [自動 ML でのモデル説明 (プレビュー)](https://learn.microsoft.com/ja-jp/azure/machine-learning/v1/how-to-machine-learning-interpretability-automl)
 
 #### 3.2.1. トレーニング中
 
-##### モデル説明
+##### 3.2.1.1. モデル説明
 * [最良モデル](https://learn.microsoft.com/ja-jp/azure/machine-learning/v1/how-to-machine-learning-interpretability-automl#interpretability-during-training-for-the-best-model)
     1. [最適な実行からエンジニアリングされた特徴量の重要度をダウンロードする](https://learn.microsoft.com/ja-jp/azure/machine-learning/v1/how-to-machine-learning-interpretability-automl#download-the-engineered-feature-importances-from-the-best-run)
     2. [最適な実行から生の特徴量の重要度をダウンロードする](https://learn.microsoft.com/ja-jp/azure/machine-learning/v1/how-to-machine-learning-interpretability-automl#download-the-raw-feature-importances-from-the-best-run)
@@ -215,7 +259,7 @@
     4. [Mimic Explainer を使用してエンジニアリングされた特徴量の重要度を計算および視覚化する](https://learn.microsoft.com/ja-jp/azure/machine-learning/v1/how-to-machine-learning-interpretability-automl#use-mimic-explainer-for-computing-and-visualizing-engineered-feature-importance)
     5. [Mimic Explainer を使用して生の特徴量の重要度を計算および視覚化する](https://learn.microsoft.com/ja-jp/azure/machine-learning/v1/how-to-machine-learning-interpretability-automl#use-mimic-explainer-for-computing-and-visualizing-raw-feature-importance)
 
-##### 視覚化
+##### 3.2.1.2. 視覚化
 * [トレーニング時にデータのパターンと説明を発見するために視覚化する | 自動 ML でのモデル説明 (プレビュー) - Azure Machine Learning | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/machine-learning/v1/how-to-machine-learning-interpretability-automl#visualize-to-discover-patterns-in-data-and-explanations-at-training-time)
     - [グローバル説明 (モデルの動作全体)](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-machine-learning-interpretability-aml#understand-entire-model-behavior-global-explanation)
     - [ローカル説明 (個々の予測)](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-machine-learning-interpretability-aml#understand-individual-predictions-local-explanation)
