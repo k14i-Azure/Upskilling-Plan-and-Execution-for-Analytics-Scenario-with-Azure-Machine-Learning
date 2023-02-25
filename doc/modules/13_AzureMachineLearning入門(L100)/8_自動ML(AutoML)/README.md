@@ -4,17 +4,18 @@
 
 - [8. 自動 ML (AutoML)](#8-自動-ml-automl)
   - [1. 自動 ML](#1-自動-ml)
-    - [1.1. しくみ](#11-しくみ)
-    - [1.2. AutoML を使用する場合](#12-automl-を使用する場合)
-    - [1.3. トレーニング、検証、テストのデータ](#13-トレーニング検証テストのデータ)
-    - [1.4. 特徴エンジニアリング](#14-特徴エンジニアリング)
-    - [1.5. アンサンブル モデル](#15-アンサンブル-モデル)
-    - [1.6. AutoML と ONNX](#16-automl-と-onnx)
-    - [1.7. L200 に向けた次のステップ](#17-l200-に向けた次のステップ)
-      - [1.7.1. ガイド](#171-ガイド)
-      - [1.7.2. チュートリアル](#172-チュートリアル)
-      - [1.7.3. サンプル](#173-サンプル)
-      - [1.7.4. Python SDK](#174-python-sdk)
+    - [1.1. 背景](#11-背景)
+    - [1.2. しくみ](#12-しくみ)
+    - [1.3. AutoML を使用する場合](#13-automl-を使用する場合)
+    - [1.4. トレーニング、検証、テストのデータ](#14-トレーニング検証テストのデータ)
+    - [1.5. 特徴エンジニアリング](#15-特徴エンジニアリング)
+    - [1.6. アンサンブル モデル](#16-アンサンブル-モデル)
+    - [1.7. AutoML と ONNX](#17-automl-と-onnx)
+    - [1.8. L200 に向けた次のステップ](#18-l200-に向けた次のステップ)
+      - [1.8.1. ガイド](#181-ガイド)
+      - [1.8.2. チュートリアル](#182-チュートリアル)
+      - [1.8.3. サンプル](#183-サンプル)
+      - [1.8.4. Python SDK](#184-python-sdk)
   - [2. モデルの評価](#2-モデルの評価)
     - [2.1. 回帰メトリック](#21-回帰メトリック)
     - [2.2. 分類メトリック](#22-分類メトリック)
@@ -36,6 +37,7 @@
         - [3.2.1.1. モデル説明](#3211-モデル説明)
         - [3.2.1.2. 視覚化](#3212-視覚化)
       - [3.2.2. 推論中](#322-推論中)
+  - [4. 自動ML からモデル説明の流れ](#4-自動ml-からモデル説明の流れ)
   - [4. ガイド](#4-ガイド)
   - [5. チュートリアル](#5-チュートリアル)
   - [6. ラーニング](#6-ラーニング)
@@ -47,13 +49,20 @@
 
 ## 1. [自動 ML](https://learn.microsoft.com/ja-JP/azure/machine-learning/concept-automated-ml)
 
-### 1.1. [しくみ](https://learn.microsoft.com/ja-jp/azure/machine-learning/concept-automated-ml#how-does-automl-work)
+### 1.1. 背景
+
+![AutoML](./assets/images/AzureML-Bootcamp-資料_1280x720px_00064.png)
+![AutoML のメリット](./assets/images/AzureML-Bootcamp-資料_1280x720px_00065.png)
+![マイクロソフトの AutoML](./assets/images/AzureML-Bootcamp-資料_1280x720px_00066.png)
+![Automated Machine Learning 登場の背景](./assets/images/AzureML-Bootcamp-資料_1280x720px_00067.png)
+
+### 1.2. [しくみ](https://learn.microsoft.com/ja-jp/azure/machine-learning/concept-automated-ml#how-does-automl-work)
 
 > トレーニング中、Azure Machine Learning は、さまざまなアルゴリズムとパラメーターを試行する多数のパイプラインを並列に作成します。 サービスは、機能選択と組み合わせた ML アルゴリズムを介して反復し、それぞれの反復で、トレーニング スコアを含むモデルを生成します。 最適化するメトリックのスコアが高いほど、モデルはデータに "適合している" と見なされます。 実験に定義されている終了基準に到達すると停止します。
 
 [![ダイアグラム](./assets/images/automl-concept-diagram2.png)](./assets/images/automl-concept-diagram2.png)
 
-### 1.2. [AutoML を使用する場合](https://learn.microsoft.com/ja-jp/azure/machine-learning/concept-automated-ml#when-to-use-automl-classification-regression-forecasting-computer-vision--nlp)
+### 1.3. [AutoML を使用する場合](https://learn.microsoft.com/ja-jp/azure/machine-learning/concept-automated-ml#when-to-use-automl-classification-regression-forecasting-computer-vision--nlp)
 
 > 指定したターゲット メトリックを使用して自分の代わりに Azure Machine Learning にモデルのトレーニングと調整を行わせる場合は、自動 ML を適用します。
 
@@ -66,19 +75,19 @@
 * [Computer Vision](https://learn.microsoft.com/ja-jp/azure/machine-learning/concept-automated-ml#computer-vision)
 * [自然言語処理: NLP](https://learn.microsoft.com/ja-jp/azure/machine-learning/concept-automated-ml#natural-language-processing-nlp)
 
-### 1.3. [トレーニング、検証、テストのデータ](https://learn.microsoft.com/ja-jp/azure/machine-learning/concept-automated-ml#training-validation-and-test-data)
+### 1.4. [トレーニング、検証、テストのデータ](https://learn.microsoft.com/ja-jp/azure/machine-learning/concept-automated-ml#training-validation-and-test-data)
 
 > 自動 ML では、**トレーニング データ** を与えて ML モデルをトレーニングします。実行するモデル検証の種類を指定できます。 自動 ML では、トレーニングの一環としてモデルが検証されます。 つまり、自動 ML では **検証データ** を利用し、適用されているアルゴリズムに基づき、モデルのハイパーパラメーターを調整し、トレーニング データに最適な組み合わせを見つけます。 ただし、調整が繰り返されるとき、同じ検証データが使用され、モデルの評価が偏ります。これは、モデルは向上を継続するものであり、検証データに合わせるためです。
 > 
 > このような偏りが最終的な推奨モデルに適用されないように、自動 ML では **テスト データ** を利用し、自動 ML から実験の最後に推奨される最終モデルが評価されます。 自動 ML 実験の構成でテスト データを与えるとき、実験の最後に既定でこの推奨モデルがテストされます (プレビュー)。
 
-### 1.4. [特徴エンジニアリング](https://learn.microsoft.com/ja-jp/azure/machine-learning/concept-automated-ml#feature-engineering)
+### 1.5. [特徴エンジニアリング](https://learn.microsoft.com/ja-jp/azure/machine-learning/concept-automated-ml#feature-engineering)
 
 > 特徴エンジニアリングは、データに関するドメインの知識を活用して、ML アルゴリズムの学習を支援する機能を作成するプロセスです。 Azure Machine Learning では、特徴エンジニアリングを容易にするために、**スケーリング** と **正規化** の手法が適用されます。 これらの手法と特徴エンジニアリングは、まとめて **特徴量化** と呼ばれています。
 > 
 > 自動機械学習の実験において、特徴量化は自動的に適用されますが、データに基づいてカスタマイズすることもできます。 [特徴量化の内容](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-configure-auto-features#featurization)と、[AutoML がいかにしてモデルのオーバーフィットと不均衡データを回避するか](https://learn.microsoft.com/ja-jp/azure/machine-learning/concept-manage-ml-pitfalls)について学習してください。
 
-### 1.5. [アンサンブル モデル](https://learn.microsoft.com/ja-jp/azure/machine-learning/concept-automated-ml#ensemble)
+### 1.6. [アンサンブル モデル](https://learn.microsoft.com/ja-jp/azure/machine-learning/concept-automated-ml#ensemble)
 
 > 自動機械学習では、既定で有効になっているアンサンブル モデルがサポートされています。 アンサンブル学習では、1 つのモデルを使用するのではなく、複数のモデルを組み合わせることによって、機械学習の結果と予測パフォーマンスが改善されます。 
 
@@ -91,11 +100,15 @@
 
 > 自動化された機械学習の既定のアンサンブル設定を変更するには、[AutoML パッケージ](https://learn.microsoft.com/ja-jp/python/api/azure-ai-ml/azure.ai.ml.automl)に関するページを参照してください。
 
-### 1.6. [AutoML と ONNX](https://learn.microsoft.com/ja-jp/azure/machine-learning/concept-automated-ml#automl--onnx)
+### 1.7. [AutoML と ONNX](https://learn.microsoft.com/ja-jp/azure/machine-learning/concept-automated-ml#automl--onnx)
 
-### 1.7. L200 に向けた次のステップ
+> Azure Machine Learning では、自動化された ML を使用して Python モデルを構築し、それを ONNX 形式に変換できます。 ONNX 形式になったモデルは、さまざまなプラットフォームやデバイスで実行することができます。 [ONNX での ML モデルの能率化](https://learn.microsoft.com/ja-jp/azure/machine-learning/concept-onnx)に関する詳細をご覧ください。
+> 
+> ONNX 形式に変換する方法については、[この Jupyter ノートブックの例](https://github.com/Azure/azureml-examples/tree/main/v1/python-sdk/tutorials/automl-with-azureml/classification-bank-marketing-all-features)を参照してください。 [ONNX でサポートされているアルゴリズム](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-configure-auto-train#supported-algorithms)についてご確認ください。
 
-#### 1.7.1. ガイド
+### 1.8. L200 に向けた次のステップ
+
+#### 1.8.1. ガイド
 
 * ノーコード/ローコード
     - [スタジオ UI を使用して自動 ML を設定する - Azure Machine Learning | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-use-automated-ml-for-ml-models)
@@ -104,18 +117,18 @@
     - [Computer Vision 用に AutoML を設定する - Azure Machine Learning | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-auto-train-image-models?tabs=cli)
     - [自動 ML モデルのトレーニング コードを表示する方法 - Azure Machine Learning AutoML | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-generate-automl-training-code)
 
-#### 1.7.2. チュートリアル
+#### 1.8.2. チュートリアル
 
 * ノーコード/ローコード
     - [チュートリアル: コードなし分類モデルを AutoML でトレーニングする - Azure Machine Learning | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/machine-learning/tutorial-first-experiment-automated-ml)
 * コードファースト
     - [チュートリアル: AutoML - オブジェクト検出モデルのトレーニング - Azure Machine Learning | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/machine-learning/tutorial-auto-train-image-models?tabs=cli)
 
-#### 1.7.3. サンプル
+#### 1.8.3. サンプル
 
 [azureml-examples/sdk/python/jobs/automl-standalone-jobs at main · Azure/azureml-examples](https://github.com/Azure/azureml-examples/tree/main/sdk/python/jobs/automl-standalone-jobs)
 
-#### 1.7.4. Python SDK
+#### 1.8.4. Python SDK
 
 [azure.ai.ml.automl package | Microsoft Learn](https://learn.microsoft.com/ja-jp/python/api/azure-ai-ml/azure.ai.ml.automl?view=azure-python)
 
@@ -262,7 +275,9 @@
 ##### 3.2.1.2. 視覚化
 * [トレーニング時にデータのパターンと説明を発見するために視覚化する | 自動 ML でのモデル説明 (プレビュー) - Azure Machine Learning | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/machine-learning/v1/how-to-machine-learning-interpretability-automl#visualize-to-discover-patterns-in-data-and-explanations-at-training-time)
     - [グローバル説明 (モデルの動作全体)](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-machine-learning-interpretability-aml#understand-entire-model-behavior-global-explanation)
+    ![グローバルな解釈](./assets/images/AzureML-Bootcamp-資料_1280x720px_00108.png)
     - [ローカル説明 (個々の予測)](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-machine-learning-interpretability-aml#understand-individual-predictions-local-explanation)
+    ![ローカルな解釈](./assets/images/AzureML-Bootcamp-資料_1280x720px_00109.png)
     - 共通
         - [Azure Machine Learning Studio での視覚化](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-machine-learning-interpretability-aml#visualization-in-azure-machine-learning-studio)
 
@@ -284,6 +299,19 @@
 > * Naive
 > * Seasonal Average
 > * Seasonal Naive
+
+---
+
+## 4. 自動ML からモデル説明の流れ
+
+![自動機械学習によるモデル開発](./assets/images/AzureML-Bootcamp-資料_1280x720px_00124.png)
+![AutoMLConfig による自動機械学習の設定](./assets/images/AzureML-Bootcamp-資料_1280x720px_00126.png)
+![モデルの解釈](./assets/images/AzureML-Bootcamp-資料_1280x720px_00127.png)
+![Widget で結果確認](./assets/images/AzureML-Bootcamp-資料_1280x720px_00128.png)
+![グローバル説明](./assets/images/AzureML-Bootcamp-資料_1280x720px_00129.png)
+![データの見せ方の変更](./assets/images/AzureML-Bootcamp-資料_1280x720px_00130.png)
+![ローカル説明](./assets/images/AzureML-Bootcamp-資料_1280x720px_00131.png)
+
 
 ---
 

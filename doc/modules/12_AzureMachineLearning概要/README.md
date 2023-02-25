@@ -2,13 +2,27 @@
 
 ## 背景
 
+```
 1. 機械学習のシステム
 2. 機械学習プロジェクトのプロセス
+```
 
 ### 1. 機械学習のシステム
 
 * 本当に重要なのは、機械学習モデルを支えるシステム構築・運用管理。
     - これらは今日非常に複雑になっている。
+
+![今日複雑になるシステム](./assets/images/hidden-technical-debt-in-machine-learning-systems.png)
+
+![ストレージ&DB](./assets/images/AzureML-Bootcamp-資料_1280x720px_00037.png)
+![計算環境](./assets/images/AzureML-Bootcamp-資料_1280x720px_00038.png)
+![コンテナ](./assets/images/AzureML-Bootcamp-資料_1280x720px_00039.png)
+![セキュリティ](./assets/images/AzureML-Bootcamp-資料_1280x720px_00040.png)
+![スクラッチで全部作る？？](./assets/images/AzureML-Bootcamp-資料_1280x720px_00042.png)
+
+![AI成熟度](./assets/images/AzureML-Bootcamp-資料_1280x720px_00044.png)
+![管理コストが次第に大きくなる問題](./assets/images/AzureML-Bootcamp-資料_1280x720px_00045.png)
+![マネージドサービスによって、機械学習に集中](./assets/images/AzureML-Bootcamp-資料_1280x720px_00046.png)
 
 <details>
 <summary>解説</summary>
@@ -31,10 +45,15 @@
     - [Hidden technical debt in machine learning systems（日本語資料）](https://www.slideshare.net/Gushi/hidden-technical-debt-in-machine-learning-systems)
     - [データ活用における課題と対策](https://www.bcm.co.jp/site/2019/08/ntt-com/1908-ntt-com-01-05.pdf)
 
+
+
 ### 2. 機械学習プロジェクトのプロセス
 
 * 機械学習のライフサイクルを高速かつ効率的に回していくことが、市場競争において重要になっている。
     - 既存のしくみに乗っかることで、効率的に実現することができる。
+
+![機械学習プロジェクトのプロセス](./assets/images/AzureML-Bootcamp-資料_1280x720px_00030.png)
+![ライフサイクルを早く回す](./assets/images/AzureML-Bootcamp-資料_1280x720px_00031.png)
 
 <details>
 <summary>解説</summary>
@@ -78,7 +97,9 @@
 </i>
 </details>
 
+
 ---
+
 
 <details>
 <summary>解説</summary>
@@ -95,6 +116,15 @@
 * 継続的なモデルのデプロイ & 運用管理をサポート
 * スケーラブルな計算環境による並列分散処理 etc
 
+![機械学習プロセスをエンドツーエンドでサポートするマネージドサービス](./assets/images/AzureML-Bootcamp-資料_1280x720px_00049.png)
+![必要なシステムモジュールをあらかじめビルトインしている](./assets/images/AzureML-Bootcamp-資料_1280x720px_00051.png)
+![資産管理](./assets/images/AzureMachineLearningService2019May1.2_1280x720px-00033.png)
+![モデル管理](./assets/images/AzureMachineLearningService2019May1.2_1280x720px-00037.png)
+![自動機械学習やパラメータチューニング機能による効率的なモデル開発](./assets/images/AzureMachineLearningService2019May1.2_1280x720px-00009.png)
+![自動機械学習やパラメータチューニング機能による効率的なモデル開発](./assets/images/AzureMachineLearningService2019May1.2_1280x720px-00024.png)
+![継続的なモデルのデプロイ & 運用管理をサポート](./assets/images/AzureML-Bootcamp-資料_1280x720px_00059.png)
+![スケーラブルな計算環境による並列分散処理](./assets/images/AzureML-Bootcamp-資料_1280x720px_00060.png)
+
 <details>
 <summary>解説</summary>
 <i>
@@ -106,7 +136,9 @@ Azure Machine Learning は機械学習のプロセスをend-to-endでサポー�
 </i>
 </details>
 
+
 ---
+
 
 ## 4 つの特徴
 
@@ -139,8 +171,21 @@ Azure Machine Learning の4つの特徴・差別化要素についてご紹介�
     - 機械学習の自動化による民主化・大規模 AI 開発の実現
 * [デザイナー (ドラッグアンドドロップ ML)](https://learn.microsoft.com/ja-jp/azure/machine-learning/concept-designer)
     - マウスのドラッグ & ドロップで構築する機械学習パイプライン
-* ノートブック (Python, R)
+* Python SDK + ノートブック (Python, R)
     - Python・R によるコードファーストアプローチ
+
+![スキルレベルに応じた3つのインターフェース](./assets/images/AzureMachineLearningService2019May1.2_1280x720px-00008.png)
+
+#### 自動機械学習 (AutoML)
+![自動機械学習 (AutoML)](./assets/images/AzureMachineLearningService2019May1.2_1280x720px-00009.png)
+
+#### デザイナー (ドラッグアンドドロップ ML)
+![デザイナー](./assets/images/AzureMachineLearningService2019May1.2_1280x720px-00011.png)
+
+#### Python SDK + ノートブック (Python, R)
+![Python SDK](./assets/images/AzureMachineLearningService2019May1.2_1280x720px-00012.png)
+![Python Library](./assets/images/AzureMachineLearningService2019May1.2_1280x720px-00013.png)
+![ノートブック](./assets/images/AzureMachineLearningService2019May1.2_1280x720px-00014.png)
 
 <details>
 <summary>解説</summary>
@@ -163,9 +208,21 @@ For all skill leves に関してはまず自動機械学習 Automated Mchine Lea
 * [スタジオ | Azure Machine Learning とは - Azure Machine Learning | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/machine-learning/overview-what-is-azure-machine-learning#studio)
 * [特徴量化とアルゴリズムの選択の自動化 (AutoML) | Azure Machine Learning とは - Azure Machine Learning | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/machine-learning/overview-what-is-azure-machine-learning#automated-featurization-and-algorithm-selection-automl)
 
+
 ### 2. Industry leading MLOps
 
 エンドーツーエンドの機械学習ライフサイクルを実現
+
+![モニタリング](./assets/images/AzureMachineLearningService2019May1.2_1280x720px-00049.png)
+![再学習のタイミング](./assets/images/AzureMachineLearningService2019May1.2_1280x720px-00050.png)
+![MLOps = DevOps for AI](./assets/images/AzureMachineLearningService2019May1.2_1280x720px-00038.png)
+![MLops with Azure Machine Learning](./assets/images/AzureMachineLearningService2019May1.2_1280x720px-00041.png)
+![MLops with Azure Machine Learning](./assets/images/AzureMachineLearningService2019May1.2_1280x720px-00042.png)
+![MLops with Azure Machine Learning](./assets/images/AzureMachineLearningService2019May1.2_1280x720px-00043.png)
+![MLops with Azure Machine Learning](./assets/images/AzureMachineLearningService2019May1.2_1280x720px-00044.png)
+![MLops with Azure Machine Learning](./assets/images/AzureMachineLearningService2019May1.2_1280x720px-00045.png)
+![MLops with Azure Machine Learning](./assets/images/AzureMachineLearningService2019May1.2_1280x720px-00046.png)
+![MLops with Azure Machine Learning](./assets/images/AzureMachineLearningService2019May1.2_1280x720px-00047.png)
 
 <details>
 <summary>解説</summary>
@@ -184,6 +241,15 @@ Azure DevOps や Github にはアジュールマシンラーニングと結合�
 ### 3. Open & Interoperable
 
 オープンテクノロジーの採用による生産性の向上
+
+![Python Library](./assets/images/AzureMachineLearningService2019May1.2_1280x720px-00013.png)
+![Open Platform 連携](./assets/images/AzureMachineLearningService2019May1.2_1280x720px-00015.png)
+![mlflow](./assets/images/AzureMachineLearningService2019May1.2_1280x720px-00016.png)
+![モデル標準フォーマット "ONNX"](./assets/images/AzureMachineLearningService2019May1.2_1280x720px-00017.png)
+![ONNX Partners](./assets/images/AzureMachineLearningService2019May1.2_1280x720px-00018.png)
+![ONNX Runtime](./assets/images/AzureMachineLearningService2019May1.2_1280x720px-00019.png)
+![ONNX 作成とデプロイ](./assets/images/onnx.png)
+![VoTT](./assets/images/AzureMachineLearningService2019May1.2_1280x720px-00067.png)
 
 <details>
 <summary>解説</summary>
@@ -206,6 +272,14 @@ Azure Machine Learning は特定の技術にロックインされることなく
 ### 4. Trusted
 
 モデルの透明性の向上とステークホルダーとの信頼構築
+
+![モデル解釈](./assets/images/AzureML-Bootcamp-資料_1280x720px_00101.png)
+![Black Box モデルの弊害](./assets/images/AzureML-Bootcamp-資料_1280x720px_00102.png)
+![モデル解釈のアプローチ方法](./assets/images/AzureML-Bootcamp-資料_1280x720px_00103.png)
+![モデル解釈を支えるテクノロジー](./assets/images/AzureML-Bootcamp-資料_1280x720px_00104.png)
+![モデル解釈を支えるテクノロジー](./assets/images/AzureML-Bootcamp-資料_1280x720px_00105.png)
+![Interpretability Community](./assets/images/AzureML-Bootcamp-資料_1280x720px_00106.png)
+![提供している Explainer](./assets/images/AzureML-Bootcamp-資料_1280x720px_00107.png)
 
 <details>
 <summary>解説</summary>
@@ -231,7 +305,9 @@ Azure Machine Learning は特定の技術にロックインされることなく
 </i>
 </details>
 
+
 ---
+
 
 ## まとめ
 
