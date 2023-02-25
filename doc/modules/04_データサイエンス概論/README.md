@@ -25,8 +25,6 @@
       - [3.1.10. スプレッドシート](#3110-スプレッドシート)
   - [4. データサイエンスのプロセス](#4-データサイエンスのプロセス)
   - [5. データサイエンスのワークフロー](#5-データサイエンスのワークフロー)
-    - [5.1. 分析フェーズ](#51-分析フェーズ)
-    - [5.2. 実装フェーズ](#52-実装フェーズ)
 
 
 ---
@@ -82,9 +80,9 @@
 
 ## 2. データサイエンスにおける登場人物
 
-* データサイエンスにおけるメインのプレイヤーは __データサイエンティスト__ である。プロジェクトのライフサイクルの中で、必要に応じて他のプレイヤーとの連携を行う。
-* 最初データサイエンティスト1名で始めたチームは、データサイエンティスト、 __ビジネスアナリスト__ 、 __データエンジニア__ の順でメンバーを追加していくことで、プロジェクトのライフサイクルに合った強化を行うことができる。
-* 要求次第では、データサイエンティストから __機械学習エンジニア__ にバトンタッチした方が良い場合もある。
+* データサイエンスにおけるメインのプレイヤーは __[データサイエンティスト](https://shigoto.mhlw.go.jp/User/Occupation/Detail/323)__ である。プロジェクトのライフサイクルの中で、必要に応じて他のプレイヤーとの連携を行う。
+* 最初データサイエンティスト1名で始めたチームは、データサイエンティスト、 __[ビジネスアナリスト](https://www.michaelpage.co.jp/advice/%E3%82%AD%E3%83%A3%E3%83%AA%E3%82%A2%E3%82%A2%E3%83%89%E3%83%90%E3%82%A4%E3%82%B9/%E8%BB%A2%E8%81%B7/%E3%83%93%E3%82%B8%E3%83%8D%E3%82%B9%E3%82%A2%E3%83%8A%E3%83%AA%E3%82%B9%E3%83%88%E3%81%A3%E3%81%A6%E3%81%A9%E3%82%93%E3%81%AA%E4%BB%95%E4%BA%8B%EF%BC%9F%E4%BB%95%E4%BA%8B%E5%86%85%E5%AE%B9%E3%83%BB%E5%AD%98%E5%9C%A8%E6%84%8F%E7%BE%A9%E3%83%BB%E6%B1%82%E3%82%81%E3%82%89%E3%82%8C%E3%82%8B%E3%82%B9%E3%82%AD%E3%83%AB)__ 、 __[データエンジニア](https://shigoto.mhlw.go.jp/User/Occupation/Detail/523)__ の順でメンバーを追加していくことで、プロジェクトのライフサイクルに合った強化を行うことができる。
+* 要求次第では、データサイエンティストから __[機械学習エンジニア](https://shigoto.mhlw.go.jp/User/Occupation/Detail/325)__ にバトンタッチした方が良い場合もある。
 
 ### 2.1. データサイエンティスト
 
@@ -215,7 +213,7 @@
 ## 4. データサイエンスのプロセス
 
 * 一般的に、データマイニングをはじめとするデータ分析プロセスにおいて、KDD (Knowledge Discovery in Databases) やEU発の標準化されたプロセスモデルとして [CRISP-DM (Cross-industry standard process for data mining)](https://dev.classmethod.jp/articles/data-analysis-crisp-dm/) が広く用いられている。
-* 2015年、IBMはCRISP-DMを刷新し拡張するものとして、[ASUM (Analytics Solutions Unified Method)](ftp://ftp.software.ibm.com/software/data/sw-library/services/ASUM.pdf) を発表。CRISP-DMに対して開発と運用の観点を加えた。
+* 2015年、IBMはCRISP-DMを刷新し拡張するものとして、[ASUM (Analytics Solutions Unified Method)](https://note.com/fukusanity/n/nd539d4b79c70) を発表。CRISP-DMに対して開発と運用の観点を加えた。
 * マイクロソフトはデータサイエンスに関する体系化された文書として Team Data Science Process Documentation を公開。その中でより発展的なプロセスモデル [TDSP (Team Data Science Process)](https://learn.microsoft.com/ja-jp/azure/architecture/data-science-process/overview) ライフサイクルを提示している。
 
 ![CRISP-DM](./assets/images/data-science-process-00001.png)
@@ -234,6 +232,7 @@
 
 [![データサイエンスのワークフロー](./assets/images/data-science-workflow.png)](./assets/images/data-science-workflow.png)
 
+<!--
 ### 5.1. 分析フェーズ
 
 | No. | ステップ | 目安の期間 | 代表的なタスクの例 |
@@ -258,3 +257,4 @@
 * ※2 合計で 4〜20週間
 * 実装フェーズでは通常のソフトウェア開発プロセスを適用
 * 運用が始まったらモデルの改良や最新データでの再学習を検討
+-->

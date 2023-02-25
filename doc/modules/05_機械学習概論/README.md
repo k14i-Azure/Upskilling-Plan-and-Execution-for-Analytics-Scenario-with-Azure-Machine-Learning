@@ -36,7 +36,7 @@
 
 ## 2. 機械学習の種類
 
-* 機械学習は、大別して「 [教師あり学習](https://www.stat.go.jp/teacher/dl/pdf/c4learn/materials/fourth/dai3.pdf) 」「 [教師なし学習](https://www.stat.go.jp/teacher/dl/pdf/c4learn/materials/fourth/dai4.pdf) 」「 [強化学習](https://ja.wikipedia.org/wiki/%E5%BC%B7%E5%8C%96%E5%AD%A6%E7%BF%92) 」に分類できる。「教師あり学習」は、問題の性質に応じて「 [回帰](https://ja.wikipedia.org/wiki/%E5%9B%9E%E5%B8%B0%E5%88%86%E6%9E%90) 」と「 [分類](https://ja.wikipedia.org/wiki/%E5%88%86%E9%A1%9E_(%E7%B5%B1%E8%A8%88%E5%AD%A6)) 」とを使い分ける。
+* 機械学習は、大別して「 __[教師あり学習](https://www.stat.go.jp/teacher/dl/pdf/c4learn/materials/fourth/dai3.pdf)__ 」「 __[教師なし学習](https://www.stat.go.jp/teacher/dl/pdf/c4learn/materials/fourth/dai4.pdf)__ 」「 __[強化学習](https://ja.wikipedia.org/wiki/%E5%BC%B7%E5%8C%96%E5%AD%A6%E7%BF%92)__ 」に分類できる。「教師あり学習」は、問題の性質に応じて「 __[回帰](https://ja.wikipedia.org/wiki/%E5%9B%9E%E5%B8%B0%E5%88%86%E6%9E%90)__ 」と「 __[分類](https://ja.wikipedia.org/wiki/%E5%88%86%E9%A1%9E_(%E7%B5%B1%E8%A8%88%E5%AD%A6))__ 」とを使い分ける。
 * 教師あり学習はデータから統計的・確率的にモデルを生成するのに対し、教師なし学習はデータから幾何学的にモデルを生成する。
 * 強化学習はゲームAIに用いられるほか、自動運転車にも応用されている。
 
@@ -58,8 +58,8 @@
 ## 3. 教師あり学習
 
 * 教師あり学習の実行は、 __学習と推論の2つのフェーズ__ に分けて行う。学習フェーズでは教師データからの学習を通してモデルを生成する。推論フェーズでは入力値を生成されたモデルにあてはめて、結果（予測値）を出力する。
-* 学習フェーズにおいて、モデルは教師データとの __誤差が小さくなるようパラメータの更新__ を行いながら生成される。
-* 例えば、𝑦=𝑎𝑥+𝑏 という線形回帰モデルを生成するにあたって、学習フェーズでは𝑎と𝑏を求めるために、学習データと生成中のモデルとの間の誤差が最小になるよう、𝑎と𝑏を更新していく。どのアルゴリズムに基づくモデルにするかは人が決める。
+* 学習フェーズにおいて、モデルは教師データとの __(訓練)誤差が小さくなるようパラメータの更新__ を行いながら生成される。
+* 例えば、𝑦 = 𝑎𝑥 + 𝑏 という[線形回帰](https://ja.wikipedia.org/wiki/%E7%B7%9A%E5%BD%A2%E5%9B%9E%E5%B8%B0)モデルを生成するにあたって、学習フェーズでは 𝑎 と 𝑏 を求めるために、学習データと生成中のモデルとの間の誤差が最小になるよう、 𝑎 と 𝑏 を更新していく。どのアルゴリズムに基づくモデルにするかは人が決める。
 
 ![データとアルゴリズムからロジックを生成](./assets/images/logic-generation-with-data-and-algorithm.png)
 ![教師あり学習のイメージ](./assets/images/an-image-of-supervised-learning.png)
@@ -91,10 +91,12 @@
 * スパムメールと判定したうち、実際にスパムメールである割合を「 __適合率__ 」といい、 𝑇𝑃/(𝑇𝑃+𝐹𝑃) で表すことができる。
 * 基本的には、再現率と適合率は __トレードオフ__ の関係であり、どちらを優先するかは課題設定次第である。
 
+<!--
 | (混同行列) | 判定 "スパムである" | 判定 "スパムではない" |
 | -- | -- | -- |
 | データ "実際のスパムメール" | True Positive ( __TP__ ): 実際にスパムであり、それを __正しく__ 判定 | False Negative ( __FN__ ): 実際はスパムであるが、スパムではないと __誤って__ 判定 = __検知漏れ__ |
 | データ "実際にスパムではないメール" | False Positive ( __FP__ ): 実際はスパムではないが、スパムであると __誤って__ 判定 = __誤検知__ | True Negative ( __TN__ ): 実際はスパムではなく、それを __正しく__ 判定 |
+-->
 
 [![再現率と適合率](./assets/images/precision-and-recall-00001.png)](./assets/images/precision-and-recall-00001.png)
 
@@ -137,7 +139,7 @@ $$
 
 ### 5.2. 参考文献
 
-* [分類器の評価指標~Accuracy, Precision, Recall, Specificity~【機械学習入門20】](https://datawokagaku.com/classifier_metrics1/)
+* [分類器の評価指標〜Accuracy, Precision, Recall, Specificity〜【機械学習入門20】](https://datawokagaku.com/classifier_metrics1/)
 * [F値とPrecisionとRecallのトレードオフを理解する(超重要!!)【機械学習入門21】](https://datawokagaku.com/f1score/)
 
 
