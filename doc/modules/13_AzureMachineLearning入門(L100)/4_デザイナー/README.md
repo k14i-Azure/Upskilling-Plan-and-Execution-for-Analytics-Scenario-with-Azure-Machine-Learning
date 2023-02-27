@@ -15,8 +15,8 @@
       - [3.1.4. 統計関数](#314-統計関数)
     - [3.2. 機械学習のアルゴリズム](#32-機械学習のアルゴリズム)
       - [3.2.1. 回帰](#321-回帰)
-      - [3.2.2. クラスタリング](#322-クラスタリング)
-      - [3.2.3. 分類](#323-分類)
+      - [3.2.2. 分類](#322-分類)
+      - [3.2.3. クラスタリング](#323-クラスタリング)
     - [3.3. モデルを構築および評価するためのコンポーネント](#33-モデルを構築および評価するためのコンポーネント)
       - [3.3.1. モデル トレーニング](#331-モデル-トレーニング)
       - [3.3.2. モデルのスコアリングと評価](#332-モデルのスコアリングと評価)
@@ -46,7 +46,10 @@
 
 ---
 
-[![ドラッグアンドドロップML](./assets/images/designer-drag-and-drop.gif)](./assets/images/designer-drag-and-drop.gif)
+
+![Designer](./assets/images/mlinsider_step_by_step_mlops_v1.01_1280x720px-00058.png)
+
+![ドラッグアンドドロップML](./assets/images/designer-drag-and-drop.gif)]
 
 ## 1. [パイプライン](https://learn.microsoft.com/ja-jp/azure/machine-learning/concept-designer#pipeline)
 
@@ -144,6 +147,8 @@
 
 ### 3.2. [機械学習のアルゴリズム](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/component-reference#machine-learning-algorithms)
 
+![Azure Machine Learning Studio 実装アルゴリズム](./assets/images/Azure-Machine-Learning-service-概要資料-20190111_1280x720px-00039.png)
+
     1. 回帰
     2. クラスタリング
     3. 分類
@@ -159,13 +164,7 @@
 | 5 | ニューラル ネットワーク回帰 | Neural Network Regression |
 | 6 | ポワソン回帰 | Poisson Regression |
 
-#### 3.2.2. クラスタリング
-
-| #   | コンポーネント   | Component    |
-| --- | -------------- | ------------ |
-| 1 | K-Means クラスタリング | K-Means Clustering |
-
-#### 3.2.3. 分類
+#### 3.2.2. 分類
 
 | #   | コンポーネント   | Component    |
 | --- | -------------- | ------------ |
@@ -181,6 +180,12 @@
 | 10 | 2 クラス ロジスティック回帰 | Two-Class Logistic Regression |
 | 11 | 2 クラス ニューラル ネットワーク | Two-Class Neural Network |
 | 12 | 2 クラス サポート ベクター マシン | Two Class Support Vector Machine |
+
+#### 3.2.3. クラスタリング
+
+| #   | コンポーネント   | Component    |
+| --- | -------------- | ------------ |
+| 1 | K-Means クラスタリング | K-Means Clustering |
 
 ### 3.3. モデルを構築および評価するためのコンポーネント
 

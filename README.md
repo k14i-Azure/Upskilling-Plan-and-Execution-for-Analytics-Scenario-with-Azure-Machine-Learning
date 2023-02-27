@@ -49,8 +49,8 @@
 | 8 | 今日から始めるために | 座学 | 15分 |
 |||||
 | 9 | Azure における AI/ML の概要 | 座学 | 30分 |
-| 10 | Appendix 1: Azure Cognitive Services 紹介 | 座学 | 30分 |
-| 11 | Appendix 2: Azure Applied AI Services 紹介 | 座学 | 30分 |
+| 10 | Appendix 1: Azure Applied AI Services 紹介 | 座学 | 30分 |
+| 11 | Appendix 2: Azure Cognitive Services 紹介 | 座学 | 30分 |
 | 12 | Azure Machine Learning 概要 | 座学 | 150分 |
 | 13 | Azure Machine Learning 入門 (L100) | 座学 | 150分 |
 | 14 | デザイナーを触ってみよう | ハンズオン | 60分 |

@@ -47,7 +47,12 @@
 
 責任ある AI へのアプローチをガイドする 6つの基本原則
 
-[![6つの基本原則](./assets/images/concept-responsible-ml.png)](./assets/images/concept-responsible-ml.png)
+![責任ある AI - 基本原則](./assets/images/%E3%83%87%E3%83%BC%E3%82%BF%E3%82%B5%E3%82%A4%E3%82%A8%E3%83%B3%E3%83%86%E3%82%A3%E3%82%B9%E3%83%88%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEAzure-Machine-Learning-%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E3%81%94%E7%B4%B9%E4%BB%8B_full_1280x720px-00080.png)
+
+![ガバナンスフレームワーク](./assets/images/%E3%83%87%E3%83%BC%E3%82%BF%E3%82%B5%E3%82%A4%E3%82%A8%E3%83%B3%E3%83%86%E3%82%A3%E3%82%B9%E3%83%88%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEAzure-Machine-Learning-%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E3%81%94%E7%B4%B9%E4%BB%8B_full_1280x720px-00081.png)
+
+![責任ある AI - ツール](./assets/images/%E3%83%87%E3%83%BC%E3%82%BF%E3%82%B5%E3%82%A4%E3%82%A8%E3%83%B3%E3%83%86%E3%82%A3%E3%82%B9%E3%83%88%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEAzure-Machine-Learning-%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E3%81%94%E7%B4%B9%E4%BB%8B_full_1280x720px-00082.png)
+
 
 ```
 1. 公平性 (Fairness)
@@ -64,6 +69,8 @@
 
 > **Azure Machine Learning での公平性と包括性**: [責任ある AI ダッシュボード](https://learn.microsoft.com/ja-jp/azure/machine-learning/concept-responsible-ai-dashboard)の[公平性評価](https://learn.microsoft.com/ja-jp/azure/machine-learning/concept-fairness-ml)コンポーネントを使うと、データ サイエンティストと開発者は、性別、民族性、年齢などの観点から定義された機密グループ全体でモデルの公平性を評価できるようになります。
 
+![アプローチ: 機械学習モデルの不公平性](./assets/images/%E3%83%87%E3%83%BC%E3%82%BF%E3%82%B5%E3%82%A4%E3%82%A8%E3%83%B3%E3%83%86%E3%82%A3%E3%82%B9%E3%83%88%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEAzure-Machine-Learning-%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E3%81%94%E7%B4%B9%E4%BB%8B_full_1280x720px-00085.png)
+
 ### 1.2. [信頼性と安全性](https://learn.microsoft.com/ja-jp/azure/machine-learning/concept-responsible-ai#reliability-and-safety) ([Reliability & Safety](https://learn.microsoft.com/en-us/azure/machine-learning/concept-responsible-ai#reliability-and-safety))
 
 > AI システムは信頼でき安全に実行する必要があります
@@ -71,6 +78,8 @@
 > **Azure Machine Learning における信頼性と安全性**: [責任ある AI ダッシュボード](https://learn.microsoft.com/ja-jp/azure/machine-learning/concept-responsible-ai-dashboard)の[エラー分析](https://learn.microsoft.com/ja-jp/azure/machine-learning/concept-error-analysis)コンポーネントにより、データ サイエンティストと開発者は次のことが可能になります。
 > * モデルに対するエラーの分散について詳しく理解する。
 > * 全体的なベンチマークよりもエラー率が高いデータのコーホート (サブセット) を特定する。
+
+![アプローチ: 後方互換性](./assets/images/%E3%83%87%E3%83%BC%E3%82%BF%E3%82%B5%E3%82%A4%E3%82%A8%E3%83%B3%E3%83%86%E3%82%A3%E3%82%B9%E3%83%88%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEAzure-Machine-Learning-%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E3%81%94%E7%B4%B9%E4%BB%8B_full_1280x720px-00088.png)
 
 ### 1.3. [プライバシーとセキュリティ](https://learn.microsoft.com/ja-jp/azure/machine-learning/concept-responsible-ai#privacy-and-security) ([Privacy & Security](https://learn.microsoft.com/en-us/azure/machine-learning/concept-responsible-ai#privacy-and-security))
 
@@ -82,6 +91,8 @@
 > * 転送中および保存中のデータを暗号化する。
 > * 脆弱性をスキャンする。
 > * 構成ポリシーを適用および監査する。
+
+![アプローチ: 差分プライバシー](./assets/images/%E3%83%87%E3%83%BC%E3%82%BF%E3%82%B5%E3%82%A4%E3%82%A8%E3%83%B3%E3%83%86%E3%82%A3%E3%82%B9%E3%83%88%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEAzure-Machine-Learning-%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E3%81%94%E7%B4%B9%E4%BB%8B_full_1280x720px-00087.png)
 
 ### 1.4. [包括性](https://learn.microsoft.com/ja-jp/azure/machine-learning/concept-responsible-ai#fairness-and-inclusiveness) ([inclusiveness](https://learn.microsoft.com/en-us/azure/machine-learning/concept-responsible-ai#fairness-and-inclusiveness))
 
@@ -96,6 +107,8 @@
 > 透明性の重要な部分は、_"解釈可能性"_、つまり AI システムとそのコンポーネントの動作の有効な説明です。
 
 > **Azure Machine Learning における透明性**: [責任ある AI ダッシュボード](https://learn.microsoft.com/ja-jp/azure/machine-learning/concept-responsible-ai-dashboard)の [モデルの解釈可能性](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-machine-learning-interpretability)と[反事実条件 What-If](https://learn.microsoft.com/ja-jp/azure/machine-learning/concept-counterfactual-analysis) の各コンポーネントを使い、データ サイエンティストと開発者は、モデルの予測について人間が理解できる説明を生成できます。
+
+![アプローチ: モデルの説明性・解釈性](./assets/images/%E3%83%87%E3%83%BC%E3%82%BF%E3%82%B5%E3%82%A4%E3%82%A8%E3%83%B3%E3%83%86%E3%82%A3%E3%82%B9%E3%83%88%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEAzure-Machine-Learning-%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E3%81%94%E7%B4%B9%E4%BB%8B_full_1280x720px-00083.png)
 
 ### 1.6. [アカウンタビリティ](https://learn.microsoft.com/ja-jp/azure/machine-learning/concept-responsible-ai#accountability) ([Accountability](https://learn.microsoft.com/en-us/azure/machine-learning/concept-responsible-ai#accountability))
 
@@ -211,6 +224,8 @@
 > 
 > ダッシュボードのこのコンポーネントの機能は、[Fairlearn](https://fairlearn.org/) パッケージから提供されます。
 
+![Fairlearn](./assets/images/%E3%83%87%E3%83%BC%E3%82%BF%E3%82%B5%E3%82%A4%E3%82%A8%E3%83%B3%E3%83%86%E3%82%A3%E3%82%B9%E3%83%88%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEAzure-Machine-Learning-%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E3%81%94%E7%B4%B9%E4%BB%8B_full_1280x720px-00086.png)
+
 > AI によって発生する 2 つの一般的な種類の危害を次に示します。
 > * 割り当ての害: AI システムによって、特定のグループの機会、リソース、または情報が増減されます。 たとえば、雇用、入学許可、融資などで、特定のグループの人が、他のグループより、適切な候補としてモデルで選択されやすくなる場合があります。
 > * サービス品質の害: AI システムによる対応のよさが、ユーザーのグループによって異なります。 たとえば、音声認識システムでは、女性に対する対応が男性より悪くなる場合があります。
@@ -237,6 +252,8 @@
 > * 選択したコーホートまたはデータ ポイントに対するモデルの説明 (たとえば、低所得の申請者に対するローン配賦モデルの全体的な動作に影響する特徴は何ですか?)
 > 
 > ダッシュボードのこのコンポーネントの機能は、[InterpretML](https://interpret.ml/) パッケージから提供されます。
+
+![InterpretML](./assets/images/%E3%83%87%E3%83%BC%E3%82%BF%E3%82%B5%E3%82%A4%E3%82%A8%E3%83%B3%E3%83%86%E3%82%A3%E3%82%B9%E3%83%88%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEAzure-Machine-Learning-%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E3%81%94%E7%B4%B9%E4%BB%8B_full_1280x720px-00084.png)
 
 > 次のことが必要なときは、解釈可能性を使用します。
 > * 予測に最も重要な特徴を理解することで、AI システムの予測がどの程度信頼できるかを判断します。

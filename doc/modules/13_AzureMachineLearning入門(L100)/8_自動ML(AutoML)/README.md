@@ -49,6 +49,10 @@
 
 ## 1. [自動 ML](https://learn.microsoft.com/ja-JP/azure/machine-learning/concept-automated-ml)
 
+![AutoML](./assets/images/mlinsider_step_by_step_mlops_v1.01_1280x720px-00059.png)
+
+![Automated ML の優位性](assets/images/データサイエンティストのためのAzure-Machine-Learning-サービスご紹介_full_1280x720px-00033.png)
+
 ### 1.1. 背景
 
 ![AutoML](./assets/images/AzureML-Bootcamp-資料_1280x720px_00064.png)
@@ -139,6 +143,8 @@
 ## 2. [モデルの評価](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-understand-automated-ml)
 
 > 自動 ML では、モデルごとに、モデルのパフォーマンスを測定するのに役立つ評価メトリックとグラフが生成されます。
+
+![](./assets/images/データサイエンティストのためのAzure-Machine-Learning-サービスご紹介_full_1280x720px-00035.png)
 
     1. 回帰メトリック
     2. 分類メトリック
@@ -256,6 +262,8 @@
 [![Tabular Data Interpretability Techniques](./assets/images/interpretability-architecture.png)](./assets/images/interpretability-architecture.png)
 
 ##### 3.1.2.3. [Python 解釈可能性パッケージを使用した説明 (プレビュー)](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-machine-learning-interpretability-aml)
+
+![Model Interpretability SDK](./assets/images/データサイエンティストのためのAzure-Machine-Learning-サービスご紹介_full_1280x720px-00029.png)
 
 ### 3.2. [自動 ML でのモデル説明 (プレビュー)](https://learn.microsoft.com/ja-jp/azure/machine-learning/v1/how-to-machine-learning-interpretability-automl)
 

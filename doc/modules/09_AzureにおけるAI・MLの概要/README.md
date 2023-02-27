@@ -4,11 +4,11 @@
 
 ### 概要
 
-[![Microsoft Portfolio for AI](./assets/images/20211216_dllab_Ignite_2021_Update_AI_M-Slide4.png)](./assets/images/20211216_dllab_Ignite_2021_Update_AI_M-Slide4.png)
+![Microsoft Portfolio for AI](./assets/images/20211216_dllab_Ignite_2021_Update_AI_M-Slide4.png)
 
-[![Microsoft AI Portfolio for developers and data scientists](./assets/images/20211216_dllab_Ignite_2021_Update_AI_M-Slide5.png)](./assets/images/20211216_dllab_Ignite_2021_Update_AI_M-Slide5.png)
+![Microsoft AI Portfolio for developers and data scientists](./assets/images/20211216_dllab_Ignite_2021_Update_AI_M-Slide5.png)
 
-[![Azure AI](./assets/images/20211216_dllab_Ignite_2021_Update_AI_M-Slide6.png)](./assets/images/20211216_dllab_Ignite_2021_Update_AI_M-Slide6.png)
+![Azure AI](./assets/images/20211216_dllab_Ignite_2021_Update_AI_M-Slide6.png)
 
 * [Azure Applied AI Services](https://learn.microsoft.com/ja-jp/azure/applied-ai-services/)
     - 特定のビジネス シナリオ向けの特殊な AI サービス
@@ -61,7 +61,7 @@
 
 * [Azure Immersive Reader](https://learn.microsoft.com/ja-jp/azure/applied-ai-services/what-are-applied-ai-services#azure-immersive-reader)
 * [Azure Bot Service](https://learn.microsoft.com/ja-jp/azure/applied-ai-services/what-are-applied-ai-services#azure-bot-service)
-* [Azure Video indexer](https://learn.microsoft.com/ja-jp/azure/applied-ai-services/what-are-applied-ai-services#azure-video-analyzer)
+* [Azure Video Analyzer](https://learn.microsoft.com/ja-jp/azure/applied-ai-services/what-are-applied-ai-services#azure-video-analyzer)
     - [ビデオ モデル](https://learn.microsoft.com/ja-jp/azure/azure-video-indexer/video-indexer-overview#video-models)
     - [オーディオ モデル](https://learn.microsoft.com/ja-jp/azure/azure-video-indexer/video-indexer-overview#audio-models)
     - [オーディオとビデオのモデル (マルチチャンネル)](https://learn.microsoft.com/ja-jp/azure/azure-video-indexer/video-indexer-overview#audio-and-video-models-multi-channels)
