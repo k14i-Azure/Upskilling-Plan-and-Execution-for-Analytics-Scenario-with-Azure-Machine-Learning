@@ -56,8 +56,11 @@
 ### 1.1. 背景
 
 ![AutoML](./assets/images/AzureML-Bootcamp-資料_1280x720px_00064.png)
+
 ![AutoML のメリット](./assets/images/AzureML-Bootcamp-資料_1280x720px_00065.png)
+
 ![マイクロソフトの AutoML](./assets/images/AzureML-Bootcamp-資料_1280x720px_00066.png)
+
 ![Automated Machine Learning 登場の背景](./assets/images/AzureML-Bootcamp-資料_1280x720px_00067.png)
 
 ### 1.2. [しくみ](https://learn.microsoft.com/ja-jp/azure/machine-learning/concept-automated-ml#how-does-automl-work)
@@ -144,14 +147,15 @@
 
 > 自動 ML では、モデルごとに、モデルのパフォーマンスを測定するのに役立つ評価メトリックとグラフが生成されます。
 
-![](./assets/images/データサイエンティストのためのAzure-Machine-Learning-サービスご紹介_full_1280x720px-00035.png)
+![モデル精度を確認する様々なチャート](./assets/images/データサイエンティストのためのAzure-Machine-Learning-サービスご紹介_full_1280x720px-00035.png)
 
-    1. 回帰メトリック
-    2. 分類メトリック
-    3. イメージ モデルのメトリック (プレビュー)
-    4. 画像分類メトリック
-    5. オブジェクト検出とインスタンス セグメント化のメトリック
-    6. オブジェクト検出とインスタンス セグメント化のエポックレベル メトリック
+    モデルの評価
+    ├─ 1. 回帰メトリック
+    ├─ 2. 分類メトリック
+    ├─ 3. イメージ モデルのメトリック (プレビュー)
+    ├─ 4. 画像分類メトリック
+    ├─ 5. オブジェクト検出とインスタンス セグメント化のメトリック
+    └─ 6. オブジェクト検出とインスタンス セグメント化のエポックレベル メトリック
 
 ### 2.1. [回帰メトリック](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-understand-automated-ml#regressionforecasting-metrics)
 
@@ -223,8 +227,9 @@
 
 ## 3. モデルの説明
 
-    1. モデルの解釈可能性
-    2. 自動 ML でのモデル説明
+    モデルの説明
+    ├─ 1. モデルの解釈可能性
+    └─ 2. 自動 ML でのモデル説明
 
 ### 3.1. [モデルの解釈可能性](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-machine-learning-interpretability)
 
@@ -313,11 +318,17 @@
 ## 4. 自動ML からモデル説明の流れ
 
 ![自動機械学習によるモデル開発](./assets/images/AzureML-Bootcamp-資料_1280x720px_00124.png)
+
 ![AutoMLConfig による自動機械学習の設定](./assets/images/AzureML-Bootcamp-資料_1280x720px_00126.png)
+
 ![モデルの解釈](./assets/images/AzureML-Bootcamp-資料_1280x720px_00127.png)
+
 ![Widget で結果確認](./assets/images/AzureML-Bootcamp-資料_1280x720px_00128.png)
+
 ![グローバル説明](./assets/images/AzureML-Bootcamp-資料_1280x720px_00129.png)
+
 ![データの見せ方の変更](./assets/images/AzureML-Bootcamp-資料_1280x720px_00130.png)
+
 ![ローカル説明](./assets/images/AzureML-Bootcamp-資料_1280x720px_00131.png)
 
 

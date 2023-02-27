@@ -1,7 +1,14 @@
 # クロージング
 
+- [クロージング](#クロージング)
+  - [ラーニング パス](#ラーニング-パス)
+    - [経験者レベル (L300)](#経験者レベル-l300)
+    - [エキスパートレベル (L400)](#エキスパートレベル-l400)
+  - [アンケートへのご協力のお願い](#アンケートへのご協力のお願い)
+
 
 ---
+
 
 ## ラーニング パス
 
@@ -48,6 +55,14 @@
   * Azure Machine Learning best practices for enterprise security
   * Machine learning DevOps guide
   * Manage budgets, costs, and quota for Azure Machine Learning at organizational scale
+
+
+---
+
+
+## アンケートへのご協力のお願い
+
+TBD
 
 
 ---

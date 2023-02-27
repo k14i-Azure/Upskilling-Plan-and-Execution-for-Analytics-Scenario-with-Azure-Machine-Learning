@@ -17,6 +17,11 @@
 
 ## 1. リソースの作成
 
+    リソースの作成
+    ├─ 1. ワークスペースの作成
+    ├─ 2. コンピューティングの作成
+    └─ 3. データストアの作成
+
 ### 1.1. [ワークスペースの作成](https://learn.microsoft.com/ja-jp/azure/machine-learning/concept-azure-machine-learning-v2?tabs=sdk#create-a-workspace)
 
 ```python
@@ -64,6 +69,9 @@ ml_client.create_or_update(blob_datastore1)
 
 
 ## 2. アセットの作成
+
+    アセットの作成
+    └─ 1. モデルの作成
 
 ### 2.1. [モデルの作成](https://learn.microsoft.com/ja-jp/azure/machine-learning/concept-azure-machine-learning-v2?tabs=sdk#creating-a-model)
 

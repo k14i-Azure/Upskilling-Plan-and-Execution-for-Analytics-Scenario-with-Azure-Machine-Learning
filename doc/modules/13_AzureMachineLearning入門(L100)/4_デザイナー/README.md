@@ -37,21 +37,26 @@
       - [4.1.5. ユーティリティ](#415-ユーティリティ)
     - [4.2. サンプル データセット](#42-サンプル-データセット)
   - [5. コンピューティング リソース](#5-コンピューティング-リソース)
-  - [6. チュートリアル](#6-チュートリアル)
-    - [6.1. 回帰モデルのトレーニング](#61-回帰モデルのトレーニング)
-    - [6.2. モデルのデプロイ](#62-モデルのデプロイ)
-      - [6.2.1. 制限事項](#621-制限事項)
-  - [7. ラーニング](#7-ラーニング)
-  - [8. 参考資料](#8-参考資料)
+  - [6. アルゴリズムの選択](#6-アルゴリズムの選択)
+  - [7. チュートリアル](#7-チュートリアル)
+    - [7.1. 回帰モデルのトレーニング](#71-回帰モデルのトレーニング)
+    - [7.2. モデルのデプロイ](#72-モデルのデプロイ)
+      - [7.2.1. 制限事項](#721-制限事項)
+  - [8. ラーニング](#8-ラーニング)
+  - [9. 参考リンク](#9-参考リンク)
 
 ---
 
 
 ![Designer](./assets/images/mlinsider_step_by_step_mlops_v1.01_1280x720px-00058.png)
 
-![ドラッグアンドドロップML](./assets/images/designer-drag-and-drop.gif)]
+![ドラッグアンドドロップML](./assets/images/designer-drag-and-drop.gif)
 
 ## 1. [パイプライン](https://learn.microsoft.com/ja-jp/azure/machine-learning/concept-designer#pipeline)
+
+![Azure ML Pipelines](../1_%E3%82%A4%E3%83%B3%E3%83%88%E3%83%AD%E3%83%80%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3%EF%BC%86%E6%A6%82%E8%A6%81/assets/images/mlinsider_step_by_step_mlops_v1.01_1280x720px-00057.png)
+
+![Machine Learning Pipeline](../1_%E3%82%A4%E3%83%B3%E3%83%88%E3%83%AD%E3%83%80%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3%EF%BC%86%E6%A6%82%E8%A6%81/assets/images/データサイエンティストのためのAzure-Machine-Learning-サービスご紹介_full_1280x720px-00062.png)
 
 > パイプラインは、ユーザーによって接続された **データ資産** と **分析コンポーネント** で構成されます。 パイプラインには多くの用途があります。1 つのモデルをトレーニングするパイプラインや、複数のモデルをトレーニングするパイプラインを作成できます。 リアルタイムまたはバッチで予測を行うパイプラインや、データをクリーンアップするだけのパイプラインを作成できます。 パイプラインを使用して、作業を再利用し、プロジェクトを整理することができます。
 
@@ -88,17 +93,20 @@
 
 [![コンポーネントとプロパティ](./assets/images/properties.png)](./assets/images/properties.png)
 
-    1. データ準備コンポーネント
-    2. 機械学習のアルゴリズム
-    3. モデルを構築および評価するためのコンポーネント
-    4. Web サービス コンポーネント
+    (事前構築済み)コンポーネント
+    ├─ 1. データ準備コンポーネント
+    ├─ 2. 機械学習のアルゴリズム
+    ├─ 3. モデルを構築および評価するためのコンポーネント
+    └─ 4. Web サービス コンポーネント
 
 ### 3.1. [データ準備コンポーネント](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/component-reference#data-preparation-components)
 
-    1. データの入力と出力
-    2. データの変換
-    3. 特徴選択
-    4. 統計関数
+    (事前構築済み)コンポーネント
+    └─ 1. データ準備コンポーネント
+        ├─ 1. データの入力と出力
+        ├─ 2. データの変換
+        ├─ 3. 特徴選択
+        └─ 4. 統計関数
 
 #### 3.1.1. データの入力と出力
 
@@ -149,9 +157,11 @@
 
 ![Azure Machine Learning Studio 実装アルゴリズム](./assets/images/Azure-Machine-Learning-service-概要資料-20190111_1280x720px-00039.png)
 
-    1. 回帰
-    2. クラスタリング
-    3. 分類
+    (事前構築済み)コンポーネント
+    └─ 2. 機械学習のアルゴリズム
+        ├─ 1. 回帰
+        ├─ 2. 分類
+        └─ 3. クラスタリング
 
 #### 3.2.1. 回帰
 
@@ -187,16 +197,19 @@
 | --- | -------------- | ------------ |
 | 1 | K-Means クラスタリング | K-Means Clustering |
 
+
 ### 3.3. モデルを構築および評価するためのコンポーネント
 
-    1. モデル トレーニング
-    2. モデルのスコアリングと評価
-    3. Python 言語
-    4. R スクリプトの実行
-    5. Text Analytics
-    6. Computer Vision
-    7. レコメンデーション
-    8. 異常検出
+    (事前構築済み)コンポーネント
+    └─ 3. モデルを構築および評価するためのコンポーネント
+        ├─ 1. モデル トレーニング
+        ├─ 2. モデルのスコアリングと評価
+        ├─ 3. Python 言語
+        ├─ 4. R スクリプトの実行
+        ├─ 5. Text Analytics
+        ├─ 6. Computer Vision
+        ├─ 7. レコメンデーション
+        └─ 8. 異常検出
 
 #### 3.3.1. モデル トレーニング
 
@@ -273,7 +286,9 @@
 
 ### 3.4. Web サービス コンポーネント
 
-    1. Web サービスの入出力
+    (事前構築済み)コンポーネント
+    └─ 4. Web サービス コンポーネント
+        └─ 1. Web サービスの入出力
 
 #### 3.4.1. [Web サービスの入出力](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/web-service-input-output)
 
@@ -286,16 +301,19 @@
 
 ## 4. 組み込みサンプル
 
-    1. サンプル パイプライン
-    2. サンプル データセット
+    組み込みサンプル
+    ├─ 1. サンプル パイプライン
+    └─ 2. サンプル データセット
 
 ### 4.1. [サンプル パイプライン](https://learn.microsoft.com/ja-jp/azure/machine-learning/samples-designer#use-sample-pipelines)
 
-    1. 回帰
-    2. 分類
-    3. Computer Vision
-    4. レコメンダー
-    5. ユーティリティ
+    組み込みサンプル
+    └─ 1. サンプル パイプライン
+        ├─ 1. 回帰
+        ├─ 2. 分類
+        ├─ 3. Computer Vision
+        ├─ 4. レコメンダー
+        └─ 5. ユーティリティ
 
 #### 4.1.1. 回帰
 
@@ -339,6 +357,9 @@
 
 ### 4.2. [サンプル データセット](https://learn.microsoft.com/ja-jp/azure/machine-learning/samples-designer#datasets)
 
+    組み込みサンプル
+    └─ 2. サンプル データセット
+
 | #   | データセットの名前 | Dataset name |
 | --- | --------------- | ------------ |
 | 1 | 米国国勢調査局提供の、成人収入に関する二項分類データセット | Adult Census Income Binary Classification dataset |
@@ -367,14 +388,30 @@
 ---
 
 
-## 6. チュートリアル
+## 6. [アルゴリズムの選択](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-select-algorithms)
 
-    1. 回帰モデルのトレーニング
-    2. モデルのデプロイ
+> よくある質問は、「どの機械学習アルゴリズムを使用すればよいか」ということです。 選択するアルゴリズムは、主として、データ サイエンス シナリオの次の 2 つの異なる側面によって決まります。
+> 
+> **データを使って何をしたいか?** 具体的には、過去のデータから学習することによって回答を得たいビジネス上の質問は何かということです。
+> 
+> **データ サイエンス シナリオの要件は何か?** 具体的には、ソリューションでサポートする精度、トレーニング時間、線形性、パラメーターの数、特徴の数はどのくらいかということです。
 
-### 6.1. [回帰モデルのトレーニング](https://learn.microsoft.com/ja-jp/azure/machine-learning/tutorial-designer-automobile-price-train-score)
+> [Azure Machine Learning アルゴリズム チート シート](https://learn.microsoft.com/ja-jp/azure/machine-learning/algorithm-cheat-sheet)は、最初の考慮事項である、「データを使って何をしたいか」について検討するのに役立ちます。
 
-### 6.2. [モデルのデプロイ](https://learn.microsoft.com/ja-jp/azure/machine-learning/tutorial-designer-automobile-price-deploy)
+[![Machine Learning Algorithm Cheat Sheet](./assets/images/machine-learning-algorithm-cheat-sheet.png)](./assets/images/machine-learning-algorithm-cheat-sheet.png)
+
+---
+
+
+## 7. チュートリアル
+
+    チュートリアル
+    ├─ 1. 回帰モデルのトレーニング
+    └─ 2. モデルのデプロイ
+
+### 7.1. [回帰モデルのトレーニング](https://learn.microsoft.com/ja-jp/azure/machine-learning/tutorial-designer-automobile-price-train-score)
+
+### 7.2. [モデルのデプロイ](https://learn.microsoft.com/ja-jp/azure/machine-learning/tutorial-designer-automobile-price-deploy)
 
 1. [リアルタイム推論パイプラインを作成](https://learn.microsoft.com/ja-jp/azure/machine-learning/tutorial-designer-automobile-price-deploy#create-a-real-time-inference-pipeline)
 2. [推論クラスターを作成](https://learn.microsoft.com/ja-jp/azure/machine-learning/tutorial-designer-automobile-price-deploy#create-an-inferencing-cluster)
@@ -382,7 +419,7 @@
 4. [リアルタイム エンドポイントをテスト](https://learn.microsoft.com/ja-jp/azure/machine-learning/tutorial-designer-automobile-price-deploy#test-the-real-time-endpoint)
 5. [リアルタイム エンドポイントを更新](https://learn.microsoft.com/ja-jp/azure/machine-learning/tutorial-designer-automobile-price-deploy#update-the-real-time-endpoint)
 
-#### 6.2.1. [制限事項](https://learn.microsoft.com/ja-jp/azure/machine-learning/tutorial-designer-automobile-price-deploy#limitations)
+#### 7.2.1. [制限事項](https://learn.microsoft.com/ja-jp/azure/machine-learning/tutorial-designer-automobile-price-deploy#limitations)
 
 > * データストアのアクセス制限により、推論パイプラインに **データのインポート** または **データのエクスポート** コンポーネントが含まれている場合、リアルタイム エンドポイントへのデプロイ時にこれらは <ins>自動的に削除</ins>されます。
 > * リアルタイム推論パイプラインにデータセットがあり、それをリアルタイム エンドポイントにデプロイする場合、現在、このフローでは <ins>BLOB データストアから登録されたデータセットのみ</ins>がサポートされています。 他の型データストアのデータセットを使用する場合は、[列の選択] を使用して、すべての列を選択する設定で初期データセットに接続し、[列をファイルとして選択] データセットの出力を登録した後、リアルタイム推論パイプラインの初期データセットを、この新しく登録されたデータセットに置き換えることができます。
@@ -391,7 +428,7 @@
 
 ---
 
-## 7. ラーニング
+## 8. ラーニング
 
 | #   | モジュール | 所要時間 |
 | --- | -------- | ------- |
@@ -402,7 +439,7 @@
 ---
 
 
-## 8. 参考資料
+## 9. 参考リンク
 
 * [Azure Machine Learning デザイナーとは - Azure Machine Learning | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/machine-learning/concept-designer)
 * [アルゴリズムおよびコンポーネント リファレンス - Azure Machine Learning | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/component-reference#machine-learning-algorithms)

@@ -12,3 +12,10 @@ https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-manage-environme
 | #   | モジュール | 所要時間 |
 | --- | -------- | ------- |
 | 1 | [Azure Machine Learning SDK の概要](https://learn.microsoft.com/ja-jp/training/modules/intro-to-azure-machine-learning-service/) | 60 分 |
+
+
+---
+
+# 参考リンク
+
+* [Azure Machine Learning 日本語版 - オープンソースの Azure Machine Learning チートシート](https://azure.github.io/azureml-cheatsheets/ja/)

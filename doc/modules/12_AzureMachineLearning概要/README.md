@@ -20,6 +20,7 @@
     - [4. Trusted](#4-trusted)
       - [参考文献](#参考文献-5)
   - [まとめ](#まとめ)
+  - [参考リンク](#参考リンク)
 
 
 ---
@@ -164,11 +165,13 @@
 
 ![各実験の履歴(メトリック、ログ)](./assets/images/データサイエンティストのためのAzure-Machine-Learning-サービスご紹介_full_1280x720px-00052.png)
 
-![自動機械学習やパラメータチューニング機能による効率的なモデル開発](./assets/images/AzureMachineLearningService2019May1.2_1280x720px-00009.png)
+![自動機械学習 Automated Machine Learning](./assets/images/AzureMachineLearningService2019May1.2_1280x720px-00009.png)
 
-![自動機械学習やパラメータチューニング機能による効率的なモデル開発](./assets/images/AzureMachineLearningService2019May1.2_1280x720px-00024.png)
+![機械学習をより扱いやすく - ハイパーパラメータ探索](./assets/images/Azure-Machine-Learning-%E3%81%A8-Cognitive-Search-%E6%A6%82%E8%A6%81_1280x720px-00012.png)
 
-![自動機械学習やパラメータチューニング機能による効率的なモデル開発](./assets/images/Azure-Machine-Learning-service-概要-JPN-asof-20190111_1280x720px-00017.png)
+![ハイパーパラメータチューニング "Hyperdrive"](./assets/images/AzureMachineLearningService2019May1.2_1280x720px-00024.png)
+
+![ハイパーパラメータチューニング "Hyperdrive"](./assets/images/Azure-Machine-Learning-service-概要-JPN-asof-20190111_1280x720px-00017.png)
 
 ![継続的なモデルのデプロイ & 運用管理をサポート](./assets/images/AzureML-Bootcamp-資料_1280x720px_00059.png)
 
@@ -1403,3 +1406,9 @@ Azure Machine Learning は、複雑な機械学習システムがあらかじめ
 またこの後ご説明がありますがアイエスID様におかれましても Azure Machine Learning をフルに活用した製造業さまに向けた機械学習のソリューションをご提供しております。ぜひ、こちらも注目していただければ幸いです
 </i>
 </details>
+
+---
+
+## 参考リンク
+
+* [Machine Learng Practices and Tips - 機械学習プロジェクトを進めるためのガイドブック](https://azure.github.io/machine-learning-best-practices/#/)

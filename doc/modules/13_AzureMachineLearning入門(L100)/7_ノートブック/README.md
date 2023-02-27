@@ -109,14 +109,13 @@ https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-access-terminal
 
 ## 5. データへのアクセス
 
-```
-1. データ資産へのアクセス (Azure Machine Learning SDK for Python を使用)
-2. データ資産へのアクセス (mltable Python ライブラリ を使用)
-3. 外部データへのアクセス (mltable Python ライブラリ を使用)
-4. 外部データへのアクセス (fspec を使用)
-5. 外部データのダウンロード (azcopy ユーティリティ を使用)
-6. ジョブ内におけるデータへのアクセス (Azure Machine Learning Python SDK v2 を使用)
-```
+    データへのアクセス
+    ├─ 1. データ資産へのアクセス (Azure Machine Learning SDK for Python を使用)
+    ├─ 2. データ資産へのアクセス (mltable Python ライブラリ を使用)
+    ├─ 3. 外部データへのアクセス (mltable Python ライブラリ を使用)
+    ├─ 4. 外部データへのアクセス (fspec を使用)
+    ├─ 5. 外部データのダウンロード (azcopy ユーティリティ を使用)
+    └─ 6. ジョブ内におけるデータへのアクセス (Azure Machine Learning Python SDK v2 を使用)
 
 ### 5.1. [データ資産へのアクセス (Azure Machine Learning SDK for Python を使用)](https://learn.microsoft.com/ja-jp/python/api/overview/azure/ml/?view=azure-ml-py#dataset)
 

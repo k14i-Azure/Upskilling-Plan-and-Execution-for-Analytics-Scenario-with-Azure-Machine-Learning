@@ -6,7 +6,7 @@
   - [1. YAML ファイルの作成](#1-yaml-ファイルの作成)
     - [1.1. ワークスペース YAML の作成](#11-ワークスペース-yaml-の作成)
       - [解説付きの例](#解説付きの例)
-      - [解説無しの例](#解説無しの例)
+      - [解説コメント行無しの例](#解説コメント行無しの例)
       - [必須項目のみの例](#必須項目のみの例)
     - [1.2. コンピューティング YAML の作成](#12-コンピューティング-yaml-の作成)
       - [コンピューティング インスタンス](#コンピューティング-インスタンス)
@@ -33,7 +33,16 @@
 
 ## 1. YAML ファイルの作成
 
+    YAML ファイルの作成
+    ├─ 1. ワークスペース YAML の作成
+    ├─ 2. コンピューティング YAML の作成
+    ├─ 3. データストア YAML の作成
+    └─ 4. モデル YAML の作成
+
 ### 1.1. [ワークスペース YAML](https://learn.microsoft.com/ja-jp/azure/machine-learning/reference-yaml-workspace) の作成
+
+    YAML ファイルの作成
+    └─ 1. ワークスペース YAML の作成
 
 #### 解説付きの例
 
@@ -95,7 +104,7 @@ public_network_access: Disabled
 #   既定値: default
 ```
 
-#### 解説無しの例
+#### 解説コメント行無しの例
 
 ```yaml
 $schema: https://azuremlschemas.azureedge.net/latest/workspace.schema.json
@@ -128,12 +137,12 @@ name: mlw-basic-prod
 
 ### 1.2. [コンピューティング YAML](https://learn.microsoft.com/ja-jp/azure/machine-learning/reference-yaml-overview#compute) の作成
 
-```
-1. コンピューティング インスタンス
-2. コンピューティング クラスター (AmlCompute)
-3. 接続された仮想マシン
-4. アタッチされた Azure Arc 対応 Kubernetes (KubernetesCompute)
-```
+    YAML ファイルの作成
+    └─ 2. コンピューティング YAML の作成
+        ├─ 1. コンピューティング インスタンス
+        ├─ 2. コンピューティング クラスター (AmlCompute)
+        ├─ 3. 接続された仮想マシン
+        └─ 4. アタッチされた Azure Arc 対応 Kubernetes (KubernetesCompute)
 
 #### [コンピューティング インスタンス](https://learn.microsoft.com/ja-jp/azure/machine-learning/reference-yaml-compute-instance)
 
@@ -288,12 +297,13 @@ identity:
 
 ### 1.3. [データストア YAML](https://learn.microsoft.com/ja-jp/azure/machine-learning/reference-yaml-overview#datastore) の作成
 
-```
-1. Azure BLOB
-2. Azure Data Lake Gen2
-3. Azure Files
-4. Azure Data Lake Gen1
-```
+    YAML ファイルの作成
+    └─ 3. データストア YAML の作成
+          ├─ 1. Azure BLOB
+          ├─ 2. Azure Data Lake Gen2
+          ├─ 3. Azure Files
+          └─ 4. Azure Data Lake Gen1
+
 
 #### [Azure BLOB](https://learn.microsoft.com/ja-jp/azure/machine-learning/reference-yaml-datastore-blob)
 
@@ -408,6 +418,9 @@ credentials:
 
 ### 1.4. [モデル YAML](https://learn.microsoft.com/ja-jp/azure/machine-learning/reference-yaml-model) の作成
 
+    YAML ファイルの作成
+    └─ 4. モデル YAML の作成
+
 ```yaml
 $schema: https://azuremlschemas.azureedge.net/latest/model.schema.json
 # └ YAML スキーマ。
@@ -449,6 +462,11 @@ flavors:
 
 ## 2. リソースの作成
 
+    リソースの作成
+    ├─ 1. ワークスペースの作成
+    ├─ 2. コンピューティングの作成
+    └─ 3. データストアの作成
+
 ### 2.1. [ワークスペースの作成](https://learn.microsoft.com/ja-jp/azure/machine-learning/concept-azure-machine-learning-v2?tabs=cli#workspace)
 
 ```bash
@@ -472,6 +490,9 @@ az ml datastore create --file my_datastore.yml
 
 
 ## 3. アセットの作成
+
+    アセットの作成
+    └─ 1. モデルの作成
 
 ### 3.1. [モデルの作成](https://learn.microsoft.com/ja-jp/azure/machine-learning/concept-azure-machine-learning-v2?tabs=cli#model)
 
