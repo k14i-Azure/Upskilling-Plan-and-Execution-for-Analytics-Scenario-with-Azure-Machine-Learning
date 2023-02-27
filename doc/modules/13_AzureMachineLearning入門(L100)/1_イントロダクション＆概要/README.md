@@ -248,7 +248,7 @@ https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-configure-cli?ta
 
 ### 4.2. Python 開発環境の構築
 
-https://learn.microsoft.com/ja-jp/azure/machine-learning/concept-azure-machine-learning-v2?tabs=sdk
+https://learn.microsoft.com/ja-jp/python/api/overview/azure/ai-ml-readme?view=azure-python
 
 #### 4.2.1. サポートされる Python のバージョン
 

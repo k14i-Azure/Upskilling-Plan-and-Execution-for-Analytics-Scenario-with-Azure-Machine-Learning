@@ -7,7 +7,7 @@
 https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-manage-environments-v2?tabs=cli
 
 
-## 6. ラーニング
+## ラーニング
 
 | #   | モジュール | 所要時間 |
 | --- | -------- | ------- |
@@ -22,3 +22,13 @@ https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-manage-environme
 | #   | ラーニング パス | 所要時間 |
 | --- | ------------ | ------- |
 | 1 | [CLI を使用した Azure Machine Learning でのモデルのトレーニング (v2)](https://learn.microsoft.com/ja-jp/training/paths/train-models-azure-machine-learning-cli-v2/) | 2 時間 56 分 |
+
+
+## 参考リンク
+
+* [CLI (v2) のインストールと設定](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-configure-cli?tabs=public)
+* [Azure CLI を使用して Azure Machine Learning ワークスペースを管理する](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-manage-workspace-cli?tabs=createnewresources)
+* [CLI & SDK (v2) を使用して Azure Machine Learning 環境を管理する](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-manage-environments-v2?tabs=cli)
+* [Azure Machine Learning CLI、SDK、REST API を使用してモデルをトレーニングする](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-train-model?tabs=azurecli)
+* [Azure Machine Learning CLI でコンポーネントを使用して機械学習パイプラインを作成して実行する](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-create-component-pipelines-cli)
+* [az ml](https://learn.microsoft.com/ja-jp/cli/azure/ml?view=azure-cli-latest)
