@@ -384,6 +384,8 @@
 
 ## 5. [コンピューティング リソース](https://learn.microsoft.com/ja-jp/azure/machine-learning/concept-designer#compute)
 
+> 自分のワークスペースからコンピューティング リソースを使用して、パイプラインを実行し、デプロイ済みのモデルをオンライン エンドポイントまたはパイプライン エンドポイント (バッチ推論用) としてホストします。
+
 
 ---
 
@@ -410,6 +412,24 @@
     └─ 2. モデルのデプロイ
 
 ### 7.1. [回帰モデルのトレーニング](https://learn.microsoft.com/ja-jp/azure/machine-learning/tutorial-designer-automobile-price-train-score)
+
+1. [新しいパイプラインを作成する](https://learn.microsoft.com/ja-jp/azure/machine-learning/tutorial-designer-automobile-price-train-score#create-a-new-pipeline)
+   1. [新しいワークスペースを作成する](https://learn.microsoft.com/ja-jp/azure/machine-learning/tutorial-designer-automobile-price-train-score#create-a-new-workspace)
+   2. [パイプラインを作成する](https://learn.microsoft.com/ja-jp/azure/machine-learning/tutorial-designer-automobile-price-train-score#create-the-pipeline)
+   3. [既定のコンピューティング先を設定する](https://learn.microsoft.com/ja-jp/azure/machine-learning/tutorial-designer-automobile-price-train-score#set-the-default-compute-target)
+2. [データをインポートする](https://learn.microsoft.com/ja-jp/azure/machine-learning/tutorial-designer-automobile-price-train-score#import-data)
+   1. [データの視覚化](https://learn.microsoft.com/ja-jp/azure/machine-learning/tutorial-designer-automobile-price-train-score#visualize-the-data)
+3. [データを準備する](https://learn.microsoft.com/ja-jp/azure/machine-learning/)
+   1. [列の削除](https://learn.microsoft.com/ja-jp/azure/machine-learning/tutorial-designer-automobile-price-train-score#remove-a-column)
+   2. [見つからないデータのクリーンアップ](https://learn.microsoft.com/ja-jp/azure/machine-learning/tutorial-designer-automobile-price-train-score#clean-missing-data)
+4. [機械学習モデルをトレーニングする](https://learn.microsoft.com/ja-jp/azure/machine-learning/tutorial-designer-automobile-price-train-score#train-a-machine-learning-model)
+   1. [データを分割する](https://learn.microsoft.com/ja-jp/azure/machine-learning/tutorial-designer-automobile-price-train-score#split-the-data)
+   2. [モデルをトレーニングする](https://learn.microsoft.com/ja-jp/azure/machine-learning/tutorial-designer-automobile-price-train-score#train-the-model)
+   3. [Score Model (モデルのスコア付け) コンポーネントを追加する](https://learn.microsoft.com/ja-jp/azure/machine-learning/tutorial-designer-automobile-price-train-score#add-the-score-model-component)
+   4. [Evaluate Model (モデルの評価) コンポーネントを追加する](https://learn.microsoft.com/ja-jp/azure/machine-learning/tutorial-designer-automobile-price-train-score#add-the-evaluate-model-component)
+   5. [パイプラインを送信する](https://learn.microsoft.com/ja-jp/azure/machine-learning/tutorial-designer-automobile-price-train-score#submit-the-pipeline)
+   6. [スコア付けラベルを確認する](https://learn.microsoft.com/ja-jp/azure/machine-learning/tutorial-designer-automobile-price-train-score#view-scored-labels)
+5. [機械学習モデルを評価する](https://learn.microsoft.com/ja-jp/azure/machine-learning/tutorial-designer-automobile-price-train-score#evaluate-models)
 
 ### 7.2. [モデルのデプロイ](https://learn.microsoft.com/ja-jp/azure/machine-learning/tutorial-designer-automobile-price-deploy)
 
