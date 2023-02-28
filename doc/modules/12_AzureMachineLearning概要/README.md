@@ -3,24 +3,24 @@
 - [Azure Machine Learning 概要](#azure-machine-learning-概要)
   - [背景](#背景)
     - [1. 機械学習のシステム](#1-機械学習のシステム)
-      - [参考文献](#参考文献)
+      - [参考リンク](#参考リンク)
     - [2. 機械学習プロジェクトのプロセス](#2-機械学習プロジェクトのプロセス)
-      - [参考文献](#参考文献-1)
+      - [参考リンク](#参考リンク-1)
   - [Azure Machine Learning とは](#azure-machine-learning-とは)
   - [4 つの特徴](#4-つの特徴)
     - [1. For all skill levels](#1-for-all-skill-levels)
       - [自動機械学習 (AutoML)](#自動機械学習-automl)
       - [デザイナー (ドラッグアンドドロップ ML)](#デザイナー-ドラッグアンドドロップ-ml)
       - [Python SDK + ノートブック (Python 3.7+, R)](#python-sdk--ノートブック-python-37-r)
-      - [参考文献](#参考文献-2)
+      - [参考リンク](#参考リンク-2)
     - [2. Industry leading MLOps](#2-industry-leading-mlops)
-      - [参考文献](#参考文献-3)
+      - [参考リンク](#参考リンク-3)
     - [3. Open \& Interoperable](#3-open--interoperable)
-      - [参考文献](#参考文献-4)
+      - [参考リンク](#参考リンク-4)
     - [4. Trusted](#4-trusted)
-      - [参考文献](#参考文献-5)
+      - [参考リンク](#参考リンク-5)
   - [まとめ](#まとめ)
-  - [参考リンク](#参考リンク)
+  - [参考リンク](#参考リンク-6)
 
 
 ---
@@ -38,7 +38,7 @@
 * 本当に重要なのは、機械学習モデルを支えるシステム構築・運用管理。
     - これらは今日非常に複雑になっている。
 
-![今日複雑になるシステム](./assets/images/hidden-technical-debt-in-machine-learning-systems.png)
+![今日複雑になるシステム](./assets/images/mlinsider_step_by_step_mlops_v1.01_1280x720px-00008.png)
 
 ![ストレージ&DB](./assets/images/AzureML-Bootcamp-資料_1280x720px_00037.png)
 
@@ -70,7 +70,7 @@
 </details>
 
 
-#### 参考文献
+#### 参考リンク
 
 * [“Hidden Technical Debt in Machine Learning Systems,” Google NIPS 2015  
 ](https://proceedings.neurips.cc/paper/2015/file/86df7dcfd896fcaf2674f757a2463eba-Paper.pdf)
@@ -117,7 +117,7 @@
 </i>
 </details>
 
-#### 参考文献
+#### 参考リンク
 
 * [機械学習プロジェクトのワークフロー | Azure Machine Learning とは - Azure Machine Learning | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/machine-learning/overview-what-is-azure-machine-learning#machine-learning-project-workflow)
 
@@ -268,7 +268,7 @@ For all skill leves に関してはまず自動機械学習 Automated Mchine Lea
 </i>
 </details>
 
-#### 参考文献
+#### 参考リンク
 
 * [Azure Machine Learning の対象ユーザー | Azure Machine Learning とは - Azure Machine Learning | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/machine-learning/overview-what-is-azure-machine-learning#who-is-azure-machine-learning-for)
 * [チームの全員の生産性 | Azure Machine Learning とは - Azure Machine Learning | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/machine-learning/overview-what-is-azure-machine-learning#productivity-for-everyone-on-the-team)
@@ -327,7 +327,7 @@ Azure DevOps や Github にはアジュールマシンラーニングと結合�
 </i>
 </details>
 
-#### 参考文献
+#### 参考リンク
 
 * [MLOps: 機械学習モデル管理 - Azure Machine Learning | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/machine-learning/concept-model-management-and-deployment)
 
@@ -1332,7 +1332,7 @@ Azure Machine Learning は特定の技術にロックインされることなく
 </i>
 </details>
 
-#### 参考文献
+#### 参考リンク
 
 * [オープン性と相互運用性 | Azure Machine Learning とは - Azure Machine Learning | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/machine-learning/overview-what-is-azure-machine-learning#open-and-interoperable)
 * [オープンソースの機械学習 | Microsoft Azure](https://azure.microsoft.com/ja-jp/solutions/open-source/machine-learning/)
@@ -1366,7 +1366,7 @@ Azure Machine Learning は特定の技術にロックインされることなく
 </i>
 </details>
 
-#### 参考文献
+#### 参考リンク
 
 * [責任ある AI とは? - Azure Machine Learning | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/machine-learning/concept-responsible-ai)
 

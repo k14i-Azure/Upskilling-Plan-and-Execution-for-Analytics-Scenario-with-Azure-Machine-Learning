@@ -41,7 +41,7 @@
   - [4. ガイド](#4-ガイド)
   - [5. チュートリアル](#5-チュートリアル)
   - [6. ラーニング](#6-ラーニング)
-  - [7. 参考資料](#7-参考資料)
+  - [7. 参考リンク](#7-参考リンク)
 
 
 ---
@@ -377,7 +377,7 @@
 ---
 
 
-## 7. 参考資料
+## 7. 参考リンク
 
 * [自動 ML とは AutoML - Azure Machine Learning | Microsoft Learn](https://learn.microsoft.com/ja-JP/azure/machine-learning/concept-automated-ml)
 * [AutoML 実験結果の評価 - Azure Machine Learning | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-understand-automated-ml)

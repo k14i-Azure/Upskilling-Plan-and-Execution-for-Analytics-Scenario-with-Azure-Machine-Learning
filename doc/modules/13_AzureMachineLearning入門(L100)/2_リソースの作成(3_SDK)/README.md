@@ -9,7 +9,7 @@
     - [1.3. データストアの作成](#13-データストアの作成)
   - [2. アセットの作成](#2-アセットの作成)
     - [2.1. モデルの作成](#21-モデルの作成)
-  - [3. 参考資料](#3-参考資料)
+  - [3. 参考リンク](#3-参考リンク)
 
 
 ---
@@ -90,7 +90,7 @@ ml_client.models.create_or_update(my_model) # use the MLClient to connect to wor
 ---
 
 
-## 3. 参考資料
+## 3. 参考リンク
 
 * [Azure Machine Learning Python SDK v2 | CLI と SDK v2 - Azure Machine Learning | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/machine-learning/concept-v2#azure-machine-learning-python-sdk-v2)
 * [Azure Machine Learning SDK for Python - Azure Machine Learning Python | Microsoft Learn](https://learn.microsoft.com/ja-jp/python/api/overview/azure/ml/?view=azure-ml-py)

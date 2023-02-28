@@ -25,7 +25,7 @@
     - [2.3. データストアの作成](#23-データストアの作成)
   - [3. アセットの作成](#3-アセットの作成)
     - [3.1. モデルの作成](#31-モデルの作成)
-  - [4. 参考資料](#4-参考資料)
+  - [4. 参考リンク](#4-参考リンク)
 
 
 ---
@@ -504,7 +504,7 @@ az ml model create --file my_model.yml
 ---
 
 
-## 4. 参考資料
+## 4. 参考リンク
 
 * [Azure Machine Learning CLI v2 | CLI と SDK v2 - Azure Machine Learning | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/machine-learning/concept-v2#azure-machine-learning-cli-v2)
 * [Azure Machine Learning (v2) のしくみ - Azure Machine Learning | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/machine-learning/concept-azure-machine-learning-v2?tabs=cli)

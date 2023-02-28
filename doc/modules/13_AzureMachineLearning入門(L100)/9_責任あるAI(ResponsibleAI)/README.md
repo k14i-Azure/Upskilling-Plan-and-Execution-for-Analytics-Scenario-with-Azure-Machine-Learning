@@ -38,7 +38,7 @@
         - [2.4.2.2. 反事実分析 (Counterfactual Analysis)](#2422-反事実分析-counterfactual-analysis)
     - [2.5. サポートされているシナリオと制限事項](#25-サポートされているシナリオと制限事項)
   - [3. ラーニング](#3-ラーニング)
-  - [4. 参考資料](#4-参考資料)
+  - [4. 参考リンク](#4-参考リンク)
 
 
 ---
@@ -412,7 +412,7 @@ N/A
 ---
 
 
-## 4. 参考資料
+## 4. 参考リンク
 
 * [Microsoft の責任ある AI の原則](https://www.microsoft.com/ja-jp/ai/responsible-ai)
 * [Microsoft の責任ある AI へのアプローチ](https://www.microsoft.com/ja-jp/ai/our-approach)

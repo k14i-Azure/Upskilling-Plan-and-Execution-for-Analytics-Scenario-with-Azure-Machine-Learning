@@ -29,7 +29,7 @@
     - [4.2. Python 開発環境の構築](#42-python-開発環境の構築)
       - [4.2.1. サポートされる Python のバージョン](#421-サポートされる-python-のバージョン)
     - [4.3. Visual Studio Code 拡張機能のセットアップ](#43-visual-studio-code-拡張機能のセットアップ)
-  - [5. 参考資料](#5-参考資料)
+  - [5. 参考リンク](#5-参考リンク)
 
 
 ---
@@ -266,7 +266,7 @@ https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-setup-vs-code
 
 ---
 
-## 5. 参考資料
+## 5. 参考リンク
 
 * [Azure 用語集 - Azure 辞書 | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/azure-glossary-cloud-terminology)
 * [クラウド コンピューティングの用語 | Microsoft Azure](https://azure.microsoft.com/ja-jp/resources/cloud-computing-dictionary/)

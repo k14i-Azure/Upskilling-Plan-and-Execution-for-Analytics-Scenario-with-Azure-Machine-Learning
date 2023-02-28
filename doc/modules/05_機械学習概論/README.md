@@ -11,7 +11,7 @@
       - [5.1.1. 再現率 (Recall)](#511-再現率-recall)
       - [5.1.2. 適合率 (Precision)](#512-適合率-precision)
       - [5.1.3. F値](#513-f値)
-    - [5.2. 参考文献](#52-参考文献)
+    - [5.2. 参考リンク](#52-参考リンク)
   - [6. 深層学習](#6-深層学習)
   - [7. 機械学習の適・不適](#7-機械学習の適不適)
     - [7.1. 機械学習に適するケース](#71-機械学習に適するケース)
@@ -137,7 +137,7 @@ $$
 
 ![再現率・適合率・F値](./assets/images/precision-and-recall-00002.png)
 
-### 5.2. 参考文献
+### 5.2. 参考リンク
 
 * [分類器の評価指標〜Accuracy, Precision, Recall, Specificity〜【機械学習入門20】](https://datawokagaku.com/classifier_metrics1/)
 * [F値とPrecisionとRecallのトレードオフを理解する(超重要!!)【機械学習入門21】](https://datawokagaku.com/f1score/)

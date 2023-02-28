@@ -34,7 +34,7 @@
   - [8. クイックスタート＆ガイド](#8-クイックスタートガイド)
   - [9. チュートリアル](#9-チュートリアル)
   - [10. サンプル](#10-サンプル)
-  - [11. 参考資料](#11-参考資料)
+  - [11. 参考リンク](#11-参考リンク)
 
 
 ---
@@ -433,7 +433,7 @@ returned_job.services["Studio"].endpoint
 ---
 
 
-## 11. 参考資料
+## 11. 参考リンク
 
 * [対話型開発時に Azure クラウド ストレージからデータにアクセスする - Azure Machine Learning | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-access-data-interactive)
 * [Azure/MachineLearningNotebooks: Python notebooks with ML and deep learning examples with Azure Machine Learning | Microsoft](https://github.com/Azure/MachineLearningNotebooks)
