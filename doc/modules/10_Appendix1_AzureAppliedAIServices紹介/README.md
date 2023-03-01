@@ -27,6 +27,8 @@
 
 ## [Azure From Recognizer](https://learn.microsoft.com/ja-jp/azure/applied-ai-services/what-are-applied-ai-services#azure-form-recognizer)
 
+![Cognitive Services : Form Recognizer API](./assets/images/Microsoft%20AIご紹介資料_V10_201911-00015.png)
+
 ### ドキュメント分析モデル
 
 - [読み取り OCR モデル](https://learn.microsoft.com/ja-jp/azure/applied-ai-services/form-recognizer/concept-read)
@@ -58,11 +60,19 @@
 
 ## [Azure Cognitive Search](https://learn.microsoft.com/ja-jp/azure/applied-ai-services/what-are-applied-ai-services#azure-cognitive-search)
 
-![](./assets/images/20211216_dllab_Ignite-2021-Update-AI_ML編_1280x720px-00014.png)
-![](./assets/images/20211216_dllab_Ignite-2021-Update-AI_ML編_1280x720px-00015.png)
-![](./assets/images/20211216_dllab_Ignite-2021-Update-AI_ML編_1280x720px-00016.png)
+![](./assets/images/Microsoft%20AIご紹介資料_V10_201911-00064.png)
+
+![](./assets/images/Microsoft%20AIご紹介資料_V10_201911-00065.png)
+
+![](./assets/images/Microsoft%20AIご紹介資料_V10_201911-00066.png)
+
+![](./assets/images/Microsoft%20AIご紹介資料_V10_201911-00067.png)
+
+![](./assets/images/Microsoft%20AIご紹介資料_V10_201911-00068.png)
+
+![](./assets/images/Microsoft%20AIご紹介資料_V10_201911-00069.png)
+
 ![](./assets/images/20211216_dllab_Ignite-2021-Update-AI_ML編_1280x720px-00017.png)
-![](./assets/images/20211216_dllab_Ignite-2021-Update-AI_ML編_1280x720px-00018.png)
 
 - [インデックス作成機能](https://learn.microsoft.com/ja-jp/azure/search/search-features-list#indexing-features)
 - [AI エンリッチメントとナレッジ マイニング](https://learn.microsoft.com/ja-jp/azure/search/search-features-list#ai-enrichment-and-knowledge-mining)
@@ -76,6 +86,8 @@
 
 
 ## [Azure Immersive Reader](https://learn.microsoft.com/ja-jp/azure/applied-ai-services/what-are-applied-ai-services#azure-immersive-reader)
+
+![Cognitive Services : Immersive Reader](./assets/images/Microsoft%20AIご紹介資料_V10_201911-00035.png)
 
 
 ---

@@ -15,6 +15,12 @@
   - [12. 画像処理](#12-画像処理)
   - [13. 道路の保全](#13-道路の保全)
   - [14. 個人情報保護](#14-個人情報保護)
+  - [15. 水産](#15-水産)
+  - [16. 遊園地](#16-遊園地)
+  - [17. ライドシェア](#17-ライドシェア)
+  - [18. 観光](#18-観光)
+  - [19. オープンキャンパス](#19-オープンキャンパス)
+  - [20. 電話応答](#20-電話応答)
 
 
 ---
@@ -22,15 +28,31 @@
 
 ## 1. 世の中のトレンド
 
-* 教師あり学習・教師なし学習は一段落し、__強化学習__ に力を入れる企業が増えている。
-* __転移学習__ により、データが少ない分野や課題であっても、既存のモデルを転用できるようになった。
-* __GAN__ (Generative Adversarial Network) によりデータを生成する精度が飛躍的に高まった。
+![気が付けば身近に溢れているAI](./assets/images/202301_AI技術とサービスの最前線-00011.png)
 
-![Drivers of ML success in industry](./assets/images/trend-drivers-of-ml-success-in-industry.png)
-[出典](http://ruder.io/transfer-learning/)
+![産業界での活用例 (鉄道)](./assets/images/202301_AI技術とサービスの最前線-00012.png)
 
-![GAN](./assets/images/trend-gan.png)
-[出典](https://skymind.ai/wiki/generative-adversarial-network-gan)
+![産業界での活用例 (ファイナンス)](./assets/images/202301_AI技術とサービスの最前線-00013.png)
+
+![AI提案型の業務スタイルへ1](./assets/images/202301_AI技術とサービスの最前線-00014.png)
+
+![AI提案型の業務スタイルへ2](./assets/images/202301_AI技術とサービスの最前線-00015.png)
+
+![AI提案型の業務スタイルへ3](./assets/images/202301_AI技術とサービスの最前線-00016.png)
+
+![AIにより現実となってきた価値](./assets/images/202301_AI技術とサービスの最前線-00017.png)
+
+![機械学習開発の一般的な流れ](./assets/images/202301_AI技術とサービスの最前線-00019.png)
+
+![従来の機械学習開発の難しさと進化](./assets/images/202301_AI技術とサービスの最前線-00020.png)
+
+![事前学習済みモデルの発展](./assets/images/202301_AI技術とサービスの最前線-00021.png)
+
+![APIとしてのAI機能の分離](./assets/images/202301_AI技術とサービスの最前線-00022.png)
+
+![ノーコード・ローコード開発の充実](./assets/images/202301_AI技術とサービスの最前線-00023.png)
+
+![AutoML の登場](./assets/images/202301_AI技術とサービスの最前線-00024.png)
 
 
 ---
@@ -181,6 +203,7 @@
 
 ![Bicubic vs. SRGAN](./assets/images/srgan.png)
 
+![GAN](./assets/images/trend-gan.png)
 
 ---
 
@@ -207,3 +230,52 @@
 出典:
 * http://www.atmarkit.co.jp/ait/articles/1503/24/news010_2.html
 * https://slidesplayer.net/slide/11494436/
+
+
+---
+
+
+## 15. 水産
+
+![](assets/images/Microsoft%20AIご紹介資料_V10_201911-00149.png)
+
+
+---
+
+
+## 16. 遊園地
+
+![](assets/images/Microsoft%20AIご紹介資料_V10_201911-00150.png)
+
+
+---
+
+
+## 17. ライドシェア
+
+![](assets/images/Microsoft%20AIご紹介資料_V10_201911-00151.png)
+
+
+---
+
+
+## 18. 観光
+
+![](assets/images/Microsoft%20AIご紹介資料_V10_201911-00152.png)
+
+
+---
+
+
+## 19. オープンキャンパス
+
+![](assets/images/Microsoft%20AIご紹介資料_V10_201911-00153.png)
+
+
+---
+
+
+## 20. 電話応答
+
+![](assets/images/Microsoft%20AIご紹介資料_V10_201911-00154.png)
+

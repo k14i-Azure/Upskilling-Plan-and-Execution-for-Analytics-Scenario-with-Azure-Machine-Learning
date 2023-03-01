@@ -188,6 +188,8 @@
 
 ### 5.1. [画像のラベル付け](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-create-image-labeling-projects)
 
+![Azure ML Data Labeling](assets/images/Microsoft%20AIご紹介資料_V10_201911-00113.png)
+
 > Azure Machine Learning のデータのラベル付けは、以下のように、データのラベル付けプロジェクトを作成、管理、監視するツールです。
 > 
 > * データ、ラベル、チーム メンバーを調整して、ラベル付けタスクを効率的に管理する。
@@ -514,6 +516,8 @@
 
 
 ## 7. [データ ドリフトの監視](https://learn.microsoft.com/ja-jp/azure/machine-learning/v1/how-to-monitor-datasets)
+
+![データドリフトへの対応](assets/images/202301_AI技術とサービスの最前線-00027.png)
 
 > Azure Machine Learning [データセット モニター](https://learn.microsoft.com/ja-jp/azure/machine-learning/v1/how-to-monitor-datasets#dataset-monitors) (プレビュー) を使用すると、次のことを実行できます。
 > * [データのドリフト](https://learn.microsoft.com/ja-jp/azure/machine-learning/v1/how-to-monitor-datasets#what-is-data-drift)を分析して、時間の経過と共にどのように変化するかを把握する。

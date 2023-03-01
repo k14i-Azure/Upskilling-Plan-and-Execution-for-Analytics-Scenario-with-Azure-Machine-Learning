@@ -173,6 +173,8 @@
 
 ![ハイパーパラメータチューニング "Hyperdrive"](./assets/images/Azure-Machine-Learning-service-概要-JPN-asof-20190111_1280x720px-00017.png)
 
+![Hyperparameters の探索手法](assets/images/Microsoft%20AIご紹介資料_V10_201911-00105.png)
+
 ![継続的なモデルのデプロイ & 運用管理をサポート](./assets/images/AzureML-Bootcamp-資料_1280x720px_00059.png)
 
 ![Azure Machine Learning Compute](./assets/images/Azure-Machine-Learning-service-%E6%A6%82%E8%A6%81-JPN-asof-20190111_1280x720px-00020.png)

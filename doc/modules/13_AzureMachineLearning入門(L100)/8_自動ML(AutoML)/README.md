@@ -268,7 +268,7 @@
 
 ##### 3.1.2.3. [Python 解釈可能性パッケージを使用した説明 (プレビュー)](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-machine-learning-interpretability-aml)
 
-![Model Interpretability SDK](./assets/images/データサイエンティストのためのAzure-Machine-Learning-サービスご紹介_full_1280x720px-00029.png)
+![Interpretability SDK](assets/images/Microsoft%20AIご紹介資料_V10_201911-00129.png)
 
 ### 3.2. [自動 ML でのモデル説明 (プレビュー)](https://learn.microsoft.com/ja-jp/azure/machine-learning/v1/how-to-machine-learning-interpretability-automl)
 

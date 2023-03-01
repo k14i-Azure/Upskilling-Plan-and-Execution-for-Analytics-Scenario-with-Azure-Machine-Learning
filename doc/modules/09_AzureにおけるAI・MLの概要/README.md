@@ -9,7 +9,9 @@
     - [1.5. その他](#15-その他)
       - [1.5.1. Azure Databricks (Databricks Machine Learning)](#151-azure-databricks-databricks-machine-learning)
       - [1.5.2. Azure Synapse Analytics (MLlib / SparkML / SynapseML)](#152-azure-synapse-analytics-mllib--sparkml--synapseml)
-      - [1.5.3. Power BI](#153-power-bi)
+      - [1.5.3. Azure SQL Database / Azure SQL Managed Instance](#153-azure-sql-database--azure-sql-managed-instance)
+      - [1.5.4. Power BI](#154-power-bi)
+      - [1.5.5. Windows](#155-windows)
   - [2. ラーニング](#2-ラーニング)
   - [3. 参考リンク](#3-参考リンク)
 
@@ -140,6 +142,10 @@
 
 #### 1.5.1. Azure Databricks (Databricks Machine Learning)
 
+![Prepare Data - Azure Databricks](assets/images/Microsoft%20AIご紹介資料_V10_201911-00072.png)
+
+![Azure Databricks 特徴](assets/images/Microsoft%20AIご紹介資料_V10_201911-00073.png)
+
 * [Azure Databricks とは](https://learn.microsoft.com/ja-jp/azure/databricks/introduction/)
 * [Databricks Machine Learning とは](https://learn.microsoft.com/ja-jp/azure/databricks/scenarios/what-is-azure-databricks-ml)
 
@@ -149,10 +155,20 @@
 * [チュートリアル:Apache Spark MLlib と Azure Synapse Analytics を使用して機械学習アプリを構築する](https://learn.microsoft.com/ja-jp/azure/synapse-analytics/spark/apache-spark-machine-learning-mllib-notebook)
 * [SynapseML とは](https://learn.microsoft.com/ja-jp/azure/synapse-analytics/machine-learning/synapse-machine-learning-library)
 
-#### 1.5.3. Power BI
+#### 1.5.3. Azure SQL Database / Azure SQL Managed Instance
+
+![Machine Learning Services in SQL Server](assets/images/Microsoft%20AIご紹介資料_V10_201911-00145.png)
+
+#### 1.5.4. Power BI
 
 * [Power BI とは](https://learn.microsoft.com/ja-jp/power-bi/fundamentals/power-bi-overview)
 * [チュートリアル:Power BI で機械学習モデルを構築する](https://learn.microsoft.com/ja-jp/power-bi/connect-data/service-tutorial-build-machine-learning-model)
+
+#### 1.5.5. Windows
+
+![Windows Machine Learning](assets/images/Microsoft%20AIご紹介資料_V10_201911-00142.png)
+
+![Windows Vision Skills](assets/images/Microsoft%20AIご紹介資料_V10_201911-00143.png)
 
 
 ---

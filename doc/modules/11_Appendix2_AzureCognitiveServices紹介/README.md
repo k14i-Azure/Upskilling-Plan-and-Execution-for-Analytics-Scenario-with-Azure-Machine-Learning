@@ -11,11 +11,13 @@
   - [Decision API (決定)](#decision-api-決定)
     - [Anomaly Detector API](#anomaly-detector-api)
     - [Azure Content Moderator API](#azure-content-moderator-api)
+    - [Personalizer API](#personalizer-api)
   - [Azure OpenAI Service](#azure-openai-service)
 
 
 ---
 
+![Microsoft Cognitive Services](./assets/images/Microsoft%20AIご紹介資料_V10_201911-00008.png)
 
 > * [Azure Cognitive Services](https://learn.microsoft.com/ja-jp/azure/cognitive-services/)
 >     - 視覚、音声、言語、意思決定のためのカスタマイズ可能なコグニティブ API の包括的なファミリ
@@ -23,6 +25,8 @@
 >         - 最初の AI サービスを自信を持って作成し、人間並みの視覚、音声、言語をコンピューターで実現しましょう。
 >         - クラウドからエッジまで、コンテナーを使用すればどこでもデプロイできます。
 >         - すぐに始められ、お客様独自の要件に合わせてソリューションをカスタマイズできます。
+
+![Cognitive Services 一覧](./assets/images/Microsoft%20AIご紹介資料_V10_201911-00009.png)
 
 
 ---
@@ -32,12 +36,17 @@
 
 ### [Computer Vision](https://learn.microsoft.com/ja-jp/azure/cognitive-services/computer-vision/)
 
+![Cognitive Services : Computer Vision API](./assets/images/Microsoft%20AIご紹介資料_V10_201911-00011.png)
+
 - [光学式文字認識 (OCR)](https://learn.microsoft.com/ja-jp/azure/cognitive-services/computer-vision/overview-ocr)
 - [画像分析](https://learn.microsoft.com/ja-jp/azure/cognitive-services/computer-vision/overview-image-analysis)
 - [Face](https://learn.microsoft.com/ja-jp/azure/cognitive-services/computer-vision/overview-identity)
+  - ![Cognitive Services : FACE API](./assets/images/Microsoft%20AIご紹介資料_V10_201911-00010.png)
 - [空間分析](https://learn.microsoft.com/ja-jp/azure/cognitive-services/computer-vision/intro-to-spatial-analysis-public-preview)
 
 ### [Custom Vision](https://learn.microsoft.com/ja-jp/azure/cognitive-services/custom-vision-service/)
+
+![Cognitive Services : Custom Vision API](./assets/images/Microsoft%20AIご紹介資料_V10_201911-00012.png)
 
 ![Cognitive Services - Custom Vision](./assets/images/Azure-Machine-Learning-service-概要資料-20190111_1280x720px-00041.png)
 
@@ -52,13 +61,19 @@
 
 ## [Speech API](https://learn.microsoft.com/ja-jp/azure/cognitive-services/what-are-cognitive-services#speech-apis) (音声)
 
+![Cognitive Services : Speech](./assets/images/Microsoft%20AIご紹介資料_V10_201911-00017.png)
+
+![Cognitive Services : Speech](./assets/images/Microsoft%20AIご紹介資料_V10_201911-00018.png)
+
 ### [Speech Service](https://learn.microsoft.com/ja-jp/azure/cognitive-services/speech-service/)
 
 - [音声テキスト変換](https://learn.microsoft.com/ja-jp/azure/cognitive-services/speech-service/index-speech-to-text)
+  - ![Cognitive Services : Conversation transcription](./assets/images/Microsoft%20AIご紹介資料_V10_201911-00022.png)
 - [テキスト読み上げ](https://learn.microsoft.com/ja-jp/azure/cognitive-services/speech-service/index-text-to-speech)
 - [音声翻訳](https://learn.microsoft.com/ja-jp/azure/cognitive-services/speech-service/speech-translation)
 - [言語識別](https://learn.microsoft.com/ja-jp/azure/cognitive-services/speech-service/language-identification?tabs=once&pivots=programming-language-python)
 - [話者認識](https://learn.microsoft.com/ja-jp/azure/cognitive-services/speech-service/speaker-recognition-overview)
+  - ![Cognitive Services : Speaker Recognition API](./assets/images/Microsoft%20AIご紹介資料_V10_201911-00021.png)
 - [発音評価](https://learn.microsoft.com/ja-jp/azure/cognitive-services/speech-service/how-to-pronunciation-assessment?pivots=programming-language-python)
 - [意図認識](https://learn.microsoft.com/ja-jp/azure/cognitive-services/speech-service/index-intent-recognition)
 - [キーワード認識](https://learn.microsoft.com/ja-jp/azure/cognitive-services/speech-service/keyword-recognition-overview)
@@ -78,6 +93,16 @@
 ![](./assets/images/20211216_dllab_Ignite-2021-Update-AI_ML編_1280x720px-00022.png)
 
 ![](./assets/images/20211216_dllab_Ignite-2021-Update-AI_ML編_1280x720px-00023.png)
+
+![Cognitive Services : Text Analytics API](./assets/images/Microsoft%20AIご紹介資料_V10_201911-00023.png)
+
+![Cognitive Services : Translator Text API](./assets/images/Microsoft%20AIご紹介資料_V10_201911-00025.png)
+
+![Cognitive Services : Custom Translator](./assets/images/Microsoft%20AIご紹介資料_V10_201911-00027.png)
+
+![Cognitive Services : LUIS](./assets/images/Microsoft%20AIご紹介資料_V10_201911-00029.png)
+
+![Cognitive Services : SnA Maker](./assets/images/Microsoft%20AIご紹介資料_V10_201911-00031.png)
 
 - [名前付きエンティティの認識 (NER)](https://learn.microsoft.com/ja-jp/azure/cognitive-services/language-service/named-entity-recognition/overview)
 - [個人を特定できる情報 (PII) と健康に関する情報 (PHI) の検出](https://learn.microsoft.com/ja-jp/azure/cognitive-services/language-service/personally-identifiable-information/overview)
@@ -100,16 +125,28 @@
 
 ### [Anomaly Detector API](https://learn.microsoft.com/ja-jp/azure/cognitive-services/anomaly-detector/)
 
+![Cognitive Services : Anomaly Detector Service](./assets/images/Microsoft%20AIご紹介資料_V10_201911-00037.png)
+
+![Cognitive Services : Anomaly Detector API](./assets/images/Microsoft%20AIご紹介資料_V10_201911-00038.png)
+
 - [一変量異常検出](https://learn.microsoft.com/ja-jp/azure/cognitive-services/anomaly-detector/overview#univariate-anomaly-detection)
 - [多変量異常検出](https://learn.microsoft.com/ja-jp/azure/cognitive-services/anomaly-detector/overview#multivariate-anomaly-detection)
 
 ### [Azure Content Moderator API](https://learn.microsoft.com/ja-jp/azure/cognitive-services/content-moderator/)
+
+![Cognitive Services : Content Moderator](./assets/images/Microsoft%20AIご紹介資料_V10_201911-00033.png)
 
 - [テキスト モデレーション](https://learn.microsoft.com/ja-jp/azure/cognitive-services/content-moderator/text-moderation-api)
 - [カスタム用語リスト](https://learn.microsoft.com/ja-jp/azure/cognitive-services/content-moderator/try-terms-list-api)
 - [画像モデレーション](https://learn.microsoft.com/ja-jp/azure/cognitive-services/content-moderator/image-moderation-api)
 - [カスタム画像リスト](https://learn.microsoft.com/ja-jp/azure/cognitive-services/content-moderator/try-image-list-api)
 - [ビデオ モデレーション](https://learn.microsoft.com/ja-jp/azure/cognitive-services/content-moderator/video-moderation-api)
+
+### [Personalizer API](https://learn.microsoft.com/ja-jp/azure/cognitive-services/personalizer/)
+
+![Cognitive Services : Personalizer API](./assets/images/Microsoft%20AIご紹介資料_V10_201911-00039.png)
+
+![Cognitive Services : Personalizer API](./assets/images/Microsoft%20AIご紹介資料_V10_201911-00040.png)
 
 
 ---
