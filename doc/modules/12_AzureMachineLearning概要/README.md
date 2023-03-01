@@ -1,39 +1,40 @@
-# Azure Machine Learning 概要
+# 12. Azure Machine Learning 概要
 
-- [Azure Machine Learning 概要](#azure-machine-learning-概要)
-  - [背景](#背景)
-    - [1. 機械学習のシステム](#1-機械学習のシステム)
-      - [参考リンク](#参考リンク)
-    - [2. 機械学習プロジェクトのプロセス](#2-機械学習プロジェクトのプロセス)
-      - [参考リンク](#参考リンク-1)
-  - [Azure Machine Learning とは](#azure-machine-learning-とは)
-  - [4 つの特徴](#4-つの特徴)
-    - [1. For all skill levels](#1-for-all-skill-levels)
-      - [自動機械学習 (AutoML)](#自動機械学習-automl)
-      - [デザイナー (ドラッグアンドドロップ ML)](#デザイナー-ドラッグアンドドロップ-ml)
-      - [Python SDK + ノートブック (Python 3.7+, R)](#python-sdk--ノートブック-python-37-r)
-      - [参考リンク](#参考リンク-2)
-    - [2. Industry leading MLOps](#2-industry-leading-mlops)
-      - [参考リンク](#参考リンク-3)
-    - [3. Open \& Interoperable](#3-open--interoperable)
-      - [参考リンク](#参考リンク-4)
-    - [4. Trusted](#4-trusted)
-      - [参考リンク](#参考リンク-5)
-  - [まとめ](#まとめ)
-  - [参考リンク](#参考リンク-6)
+- [12. Azure Machine Learning 概要](#12-azure-machine-learning-概要)
+  - [1. 背景](#1-背景)
+    - [1.1. 機械学習のシステム](#11-機械学習のシステム)
+      - [1.1.1. 参考リンク](#111-参考リンク)
+    - [1.2. 機械学習プロジェクトのプロセス](#12-機械学習プロジェクトのプロセス)
+      - [1.2.1. 参考リンク](#121-参考リンク)
+  - [2. Azure Machine Learning とは](#2-azure-machine-learning-とは)
+  - [3. 4 つの特徴](#3-4-つの特徴)
+    - [3.1. For all skill levels](#31-for-all-skill-levels)
+      - [3.1.1. 自動機械学習 (AutoML)](#311-自動機械学習-automl)
+      - [3.1.2. デザイナー (ドラッグアンドドロップ ML)](#312-デザイナー-ドラッグアンドドロップ-ml)
+      - [3.1.3. Python SDK + ノートブック (Python 3.7+, R)](#313-python-sdk--ノートブック-python-37-r)
+      - [3.1.4. 参考リンク](#314-参考リンク)
+    - [3.2. Industry leading MLOps](#32-industry-leading-mlops)
+      - [3.2.1. 参考リンク](#321-参考リンク)
+    - [3.3. Open \& Interoperable](#33-open--interoperable)
+      - [3.3.1. 参考リンク](#331-参考リンク)
+    - [3.4. Trusted](#34-trusted)
+      - [3.4.1. 参考リンク](#341-参考リンク)
+  - [4. まとめ](#4-まとめ)
+  - [5. 参考リンク](#5-参考リンク)
 
 
 ---
 
 
-## 背景
+## 1. 背景
 
 ```
 1. 機械学習のシステム
 2. 機械学習プロジェクトのプロセス
 ```
 
-### 1. 機械学習のシステム
+
+### 1.1. 機械学習のシステム
 
 * 本当に重要なのは、機械学習モデルを支えるシステム構築・運用管理。
     - これらは今日非常に複雑になっている。
@@ -70,7 +71,7 @@
 </details>
 
 
-#### 参考リンク
+#### 1.1.1. 参考リンク
 
 * [“Hidden Technical Debt in Machine Learning Systems,” Google NIPS 2015  
 ](https://proceedings.neurips.cc/paper/2015/file/86df7dcfd896fcaf2674f757a2463eba-Paper.pdf)
@@ -78,8 +79,7 @@
     - [データ活用における課題と対策](https://www.bcm.co.jp/site/2019/08/ntt-com/1908-ntt-com-01-05.pdf)
 
 
-
-### 2. 機械学習プロジェクトのプロセス
+### 1.2. 機械学習プロジェクトのプロセス
 
 * 機械学習のライフサイクルを高速かつ効率的に回していくことが、市場競争において重要になっている。
     - 既存のしくみに乗っかることで、効率的に実現することができる。
@@ -117,7 +117,7 @@
 </i>
 </details>
 
-#### 参考リンク
+#### 1.2.1. 参考リンク
 
 * [機械学習プロジェクトのワークフロー | Azure Machine Learning とは - Azure Machine Learning | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/machine-learning/overview-what-is-azure-machine-learning#machine-learning-project-workflow)
 
@@ -143,7 +143,7 @@
 </i>
 </details>
 
-## Azure Machine Learning とは
+## 2. Azure Machine Learning とは
 
 * 機械学習プロセスをエンドツーエンドでサポートするマネージドサービス
     - 必要なシステムモジュールをあらかじめビルトインしている
@@ -200,7 +200,7 @@ Azure Machine Learning は機械学習のプロセスをend-to-endでサポー�
 ---
 
 
-## 4 つの特徴
+## 3. 4 つの特徴
 
 ```
 1. For all skill levels
@@ -227,7 +227,8 @@ Azure Machine Learning の4つの特徴・差別化要素についてご紹介�
 </i>
 </details>
 
-### 1. For all skill levels
+
+### 3.1. For all skill levels
 
 * [自動機械学習 (AutoML)](https://learn.microsoft.com/ja-jp/azure/machine-learning/concept-automated-ml)
     - 機械学習の自動化による民主化・大規模 AI 開発の実現
@@ -238,17 +239,17 @@ Azure Machine Learning の4つの特徴・差別化要素についてご紹介�
 
 ![スキルレベルに応じた3つのインターフェース](./assets/images/AzureMachineLearningService2019May1.2_1280x720px-00008.png)
 
-#### 自動機械学習 (AutoML)
+#### 3.1.1. 自動機械学習 (AutoML)
 
 ![自動機械学習 (AutoML)](./assets/images/AzureMachineLearningService2019May1.2_1280x720px-00009.png)
 
 ![Automated ML - 出力画面](assets/images/Azure-Machine-Learning-service-概要-JPN-asof-20190111_1280x720px-00015.png)
 
-#### デザイナー (ドラッグアンドドロップ ML)
+#### 3.1.2. デザイナー (ドラッグアンドドロップ ML)
 
 ![デザイナー](./assets/images/AzureMachineLearningService2019May1.2_1280x720px-00011.png)
 
-#### Python SDK + ノートブック (Python 3.7+, R)
+#### 3.1.3. Python SDK + ノートブック (Python 3.7+, R)
 ![Python SDK](./assets/images/AzureMachineLearningService2019May1.2_1280x720px-00012.png)
 
 ![Python Library](./assets/images/Azure-Machine-Learning-service-%E6%A6%82%E8%A6%81-JPN-asof-20190111_1280x720px-00006.png)
@@ -268,7 +269,7 @@ For all skill leves に関してはまず自動機械学習 Automated Mchine Lea
 </i>
 </details>
 
-#### 参考リンク
+#### 3.1.4. 参考リンク
 
 * [Azure Machine Learning の対象ユーザー | Azure Machine Learning とは - Azure Machine Learning | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/machine-learning/overview-what-is-azure-machine-learning#who-is-azure-machine-learning-for)
 * [チームの全員の生産性 | Azure Machine Learning とは - Azure Machine Learning | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/machine-learning/overview-what-is-azure-machine-learning#productivity-for-everyone-on-the-team)
@@ -277,7 +278,7 @@ For all skill leves に関してはまず自動機械学習 Automated Mchine Lea
 * [特徴量化とアルゴリズムの選択の自動化 (AutoML) | Azure Machine Learning とは - Azure Machine Learning | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/machine-learning/overview-what-is-azure-machine-learning#automated-featurization-and-algorithm-selection-automl)
 
 
-### 2. Industry leading MLOps
+### 3.2. Industry leading MLOps
 
 エンドーツーエンドの機械学習ライフサイクルを実現
 
@@ -327,11 +328,12 @@ Azure DevOps や Github にはアジュールマシンラーニングと結合�
 </i>
 </details>
 
-#### 参考リンク
+#### 3.2.1. 参考リンク
 
 * [MLOps: 機械学習モデル管理 - Azure Machine Learning | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/machine-learning/concept-model-management-and-deployment)
 
-### 3. Open & Interoperable
+
+### 3.3. Open & Interoperable
 
 オープンテクノロジーの採用による生産性の向上
 
@@ -1332,12 +1334,13 @@ Azure Machine Learning は特定の技術にロックインされることなく
 </i>
 </details>
 
-#### 参考リンク
+#### 3.3.1. 参考リンク
 
 * [オープン性と相互運用性 | Azure Machine Learning とは - Azure Machine Learning | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/machine-learning/overview-what-is-azure-machine-learning#open-and-interoperable)
 * [オープンソースの機械学習 | Microsoft Azure](https://azure.microsoft.com/ja-jp/solutions/open-source/machine-learning/)
 
-### 4. Trusted
+
+### 3.4. Trusted
 
 モデルの透明性の向上とステークホルダーとの信頼構築
 
@@ -1366,7 +1369,7 @@ Azure Machine Learning は特定の技術にロックインされることなく
 </i>
 </details>
 
-#### 参考リンク
+#### 3.4.1. 参考リンク
 
 * [責任ある AI とは? - Azure Machine Learning | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/machine-learning/concept-responsible-ai)
 
@@ -1383,7 +1386,7 @@ Azure Machine Learning は特定の技術にロックインされることなく
 ---
 
 
-## まとめ
+## 4. まとめ
 
 * Azure ML は機械学習プラットフォームのマネージドサービス
     - 機械学習システムに必要なモジュールがビルトイン
@@ -1407,8 +1410,10 @@ Azure Machine Learning は、複雑な機械学習システムがあらかじめ
 </i>
 </details>
 
+
 ---
 
-## 参考リンク
+
+## 5. 参考リンク
 
 * [Machine Learng Practices and Tips - 機械学習プロジェクトを進めるためのガイドブック](https://azure.github.io/machine-learning-best-practices/#/)

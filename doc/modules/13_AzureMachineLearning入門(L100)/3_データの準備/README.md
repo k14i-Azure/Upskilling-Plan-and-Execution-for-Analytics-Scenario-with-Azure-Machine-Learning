@@ -46,8 +46,9 @@
     - [5.7. ラベル付けのアウトソーシング](#57-ラベル付けのアウトソーシング)
   - [6. データ資産 (データセット) のバージョン管理と追跡](#6-データ資産-データセット-のバージョン管理と追跡)
   - [7. データ ドリフトの監視](#7-データ-ドリフトの監視)
-  - [8. ラーニング](#8-ラーニング)
-  - [9. 参考リンク](#9-参考リンク)
+  - [8. データ準備の効率化](#8-データ準備の効率化)
+  - [9. ラーニング](#9-ラーニング)
+  - [10. 参考リンク](#10-参考リンク)
 
 
 ---
@@ -228,8 +229,8 @@
 
 - Azure Marketplace でベンダーのラベル付け会社を利用するかどうかを選択
 - 現在選択できるベンダー:
-  - iSoftStone Inc
-  - Quadrant Resource
+  - [iSoftStone Inc](https://www.isoftstoneinc.com/)
+  - [Quadrant Resource](https://www.quadrantresource.com/)
 
 ![従業員の追加 (ベンダーへのアウトソーシング)](./assets/images/AML-Image-Data-Labeling-00004.png)
 
@@ -317,8 +318,8 @@
 
 - Azure Marketplace でベンダーのラベル付け会社を利用するかどうかを選択
 - 現在選択できるベンダー:
-  - iSoftStone Inc
-  - Quadrant Resource
+  - [iSoftStone Inc](https://www.isoftstoneinc.com/)
+  - [Quadrant Resource](https://www.quadrantresource.com/)
 
 ![従業員の追加 (ベンダーへのアウトソーシング)](./assets/images/AML-Text-Data-Labeling-00003.png)
 
@@ -532,7 +533,25 @@
 ---
 
 
-## 8. ラーニング
+## 8. データ準備の効率化
+
+Azure の各種サービスを組み合わせることで、データの準備を効率化することができます。よく用いられるサービスは以下の通りです。
+
+| # | サービス | 主な用途 |
+| --- | --- | --- |
+| 1 | [Azure Event Hubs](https://azure.microsoft.com/ja-jp/products/event-hubs)<br />または<br />[Azure IoT Hub](https://azure.microsoft.com/ja-jp/products/iot-hub) | データのキューイング |
+| 2 | [Azure Stream Analytics](https://azure.microsoft.com/ja-jp/products/stream-analytics) | キューからのデータ取得と加工 |
+| 3 | [Azure Data Factory](https://azure.microsoft.com/ja-jp/products/data-factory)<br />または<br />[Azure Synapse Analytics](https://azure.microsoft.com/ja-jp/products/synapse-analytics/) Pipelines | [ETL](https://learn.microsoft.com/ja-jp/azure/architecture/data-guide/relational-data/etl#extract-transform-and-load-etl-process) または [ELT](https://learn.microsoft.com/ja-jp/azure/architecture/data-guide/relational-data/etl#extract-load-and-transform-elt) |
+| 4 | [Azure Cosmos DB](https://azure.microsoft.com/ja-jp/products/cosmos-db) | [NoSQL データベース](https://learn.microsoft.com/ja-jp/dotnet/architecture/cloud-native/relational-vs-nosql-data) |
+
+[![Azure Synapse を使用した分析のエンド ツー エンド](./assets/images/azure-analytics-end-to-end.png)](./assets/images/azure-analytics-end-to-end.png)
+
+引用元: [Azure Synapse を使用した分析のエンド ツー エンド - Azure Architecture Center | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/architecture/example-scenario/dataplate2e/data-platform-end-to-end?tabs=portal)
+
+---
+
+
+## 9. ラーニング
 
 | #   | モジュール | 所要時間 |
 | ---:| -------- | ------- |
@@ -572,7 +591,7 @@
 ---
 
 
-## 9. 参考リンク
+## 10. 参考リンク
 
 * [ストレージ アカウントの概要](https://learn.microsoft.com/ja-jp/azure/storage/common/storage-account-overview)
 * [ストレージ アカウントを作成する](https://learn.microsoft.com/ja-jp/azure/storage/common/storage-account-create?tabs=azure-portal)

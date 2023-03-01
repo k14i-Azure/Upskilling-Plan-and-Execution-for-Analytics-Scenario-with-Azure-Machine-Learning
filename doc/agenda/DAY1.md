@@ -6,4 +6,18 @@
 * データサイエンスの概要を理解し、何から始めればよいかがイメージできる。
 * 事例を参考にしつつ、AI およびデータサイエンスの取り組みに対する第一歩を進めることができる。
 
-![](./assets/images/day1-before-after.png)
+![day1-before-after](./assets/images/day1-before-after.png)
+
+
+## モジュール
+
+| No.  | タイトル |
+| ----:| ---- |
+| 1 | イントロダクション |
+| 2 | ディスカバリー |
+| 3 | [AI 概論](../modules/03_AI概論/README.md) |
+| 4 | [データサイエンス概論](../modules/04_データサイエンス概論/README.md) |
+| 5 | [機械学習概論](../modules/05_機械学習概論/README.md) |
+| 6 | [データエンジニアリング概論](../modules/06_データエンジニアリング概論/README.md) |
+| 7 | [AI/ML の事例](../modules/07_AI・MLの事例/README.md) |
+| 8 | [今日から始めるために](../modules/08_今日から始めるために/README.md) |

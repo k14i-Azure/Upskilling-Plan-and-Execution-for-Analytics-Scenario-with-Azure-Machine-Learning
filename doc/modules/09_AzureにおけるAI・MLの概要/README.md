@@ -1,8 +1,25 @@
-# Azure における AI/ML の概要
+# 9. Azure における AI/ML の概要
 
-## Azure における AI/ML
+- [9. Azure における AI/ML の概要](#9-azure-における-aiml-の概要)
+  - [1. Azure における AI/ML](#1-azure-における-aiml)
+    - [1.1. 概要](#11-概要)
+    - [1.2. Azure Applied AI Services](#12-azure-applied-ai-services)
+    - [1.3. Azure Cognitive Services](#13-azure-cognitive-services)
+    - [1.4. Azure Machine Learning](#14-azure-machine-learning)
+    - [1.5. その他](#15-その他)
+      - [1.5.1. Azure Databricks (Databricks Machine Learning)](#151-azure-databricks-databricks-machine-learning)
+      - [1.5.2. Azure Synapse Analytics (MLlib / SparkML / SynapseML)](#152-azure-synapse-analytics-mllib--sparkml--synapseml)
+      - [1.5.3. Power BI](#153-power-bi)
+  - [2. ラーニング](#2-ラーニング)
+  - [3. 参考リンク](#3-参考リンク)
 
-### 概要
+
+---
+
+
+## 1. Azure における AI/ML
+
+### 1.1. 概要
 
 ![Microsoft Portfolio for AI](./assets/images/20211216_dllab_Ignite_2021_Update_AI_M-Slide4.png)
 
@@ -32,7 +49,7 @@
     - [Azure Synapse Analytics](https://learn.microsoft.com/ja-jp/azure/synapse-analytics/) ([MLlib](https://learn.microsoft.com/ja-jp/azure/synapse-analytics/machine-learning/what-is-machine-learning#train-models-on-spark-pools-with-mllib) / [SparkML](https://learn.microsoft.com/ja-jp/azure/synapse-analytics/spark/apache-spark-machine-learning-training#apache-sparkml-and-mllib) / [SynapseML](https://learn.microsoft.com/ja-jp/azure/synapse-analytics/machine-learning/what-is-machine-learning#synapseml))
 
 
-### Azure Applied AI Services
+### 1.2. Azure Applied AI Services
 
 * [Azure From Recognizer](https://learn.microsoft.com/ja-jp/azure/applied-ai-services/what-are-applied-ai-services#azure-form-recognizer)
     - ドキュメント分析モデル
@@ -67,7 +84,7 @@
     - [オーディオとビデオのモデル (マルチチャンネル)](https://learn.microsoft.com/ja-jp/azure/azure-video-indexer/video-indexer-overview#audio-and-video-models-multi-channels)
 
 
-### Azure Cognitive Services
+### 1.3. Azure Cognitive Services
 
 * [Vision API](https://learn.microsoft.com/ja-jp/azure/cognitive-services/what-are-cognitive-services#vision-apis) (視覚)
     - [Computer Vision](https://learn.microsoft.com/ja-jp/azure/cognitive-services/computer-vision/)
@@ -115,26 +132,33 @@
 * [Azure OpenAI Service](https://learn.microsoft.com/ja-jp/azure/cognitive-services/openai/)
 
 
-### Azure Machine Learning
+### 1.4. Azure Machine Learning
 
 * [Azure Machine Learning とは](https://learn.microsoft.com/ja-jp/azure/machine-learning/overview-what-is-azure-machine-learning)
 
-### その他
+### 1.5. その他
 
-#### Azure Databricks (Databricks Machine Learning)
+#### 1.5.1. Azure Databricks (Databricks Machine Learning)
 
 * [Azure Databricks とは](https://learn.microsoft.com/ja-jp/azure/databricks/introduction/)
 * [Databricks Machine Learning とは](https://learn.microsoft.com/ja-jp/azure/databricks/scenarios/what-is-azure-databricks-ml)
 
-#### Azure Synapse Analytics (MLlib / SparkML / SynapseML)
+#### 1.5.2. Azure Synapse Analytics (MLlib / SparkML / SynapseML)
 
 * [Azure Synapse Analytics とは](https://learn.microsoft.com/ja-jp/azure/synapse-analytics/overview-what-is)
 * [チュートリアル:Apache Spark MLlib と Azure Synapse Analytics を使用して機械学習アプリを構築する](https://learn.microsoft.com/ja-jp/azure/synapse-analytics/spark/apache-spark-machine-learning-mllib-notebook)
 * [SynapseML とは](https://learn.microsoft.com/ja-jp/azure/synapse-analytics/machine-learning/synapse-machine-learning-library)
 
+#### 1.5.3. Power BI
+
+* [Power BI とは](https://learn.microsoft.com/ja-jp/power-bi/fundamentals/power-bi-overview)
+* [チュートリアル:Power BI で機械学習モデルを構築する](https://learn.microsoft.com/ja-jp/power-bi/connect-data/service-tutorial-build-machine-learning-model)
+
+
 ---
 
-## トレーニング
+
+## 2. ラーニング
 
 | # | ラーニング パス | 所要時間 |
 | --- | --- | --- |
@@ -147,9 +171,11 @@
 
 ※ 所要時間合計: 11時間29分
 
+
 ---
 
-## 参考
+
+## 3. 参考リンク
 
 * [データ サイエンティストのための機械学習ソリューション | Microsoft Azure](https://azure.microsoft.com/ja-jp/solutions/ai/data-scientist-resources/)
 * [Master the basics with the Azure AI Fundamentals certification - Microsoft Community Hub](https://techcommunity.microsoft.com/t5/microsoft-learn-blog/master-the-basics-with-the-azure-ai-fundamentals-certification/ba-p/1666578)

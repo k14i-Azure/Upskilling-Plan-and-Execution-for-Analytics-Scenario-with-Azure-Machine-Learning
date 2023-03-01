@@ -1,5 +1,7 @@
 # Upskilling Plan and Execution for Analytics Scenario with Azure Machine Learning
 
+![Upskilling Plan and Execution for Analytics Scenario with Azure Machine Learning](./assets/images/Upskilling-Plan-and-Execution-for-Analytics-Scenario-with-Azure-Machine-Learning.png)
+
 - [Upskilling Plan and Execution for Analytics Scenario with Azure Machine Learning](#upskilling-plan-and-execution-for-analytics-scenario-with-azure-machine-learning)
   - [ゴール](#ゴール)
   - [前提条件 (Prerequisites)](#前提条件-prerequisites)
@@ -73,10 +75,10 @@
 | 10 | Appendix 1: Azure Applied AI Services 紹介 | 座学 | 30分 |
 | 11 | Appendix 2: Azure Cognitive Services 紹介 | 座学 | 30分 |
 | 12 | Azure Machine Learning 概要 | 座学 | 150分 |
-| 13 | Azure Machine Learning 入門 (L100) | 座学 | 150分 |
+| 13 | Azure Machine Learning 入門 (L100) | 座学 | 180分 |
 | 14 | デザイナーを触ってみよう | ハンズオン | 60分 |
 |||||
-| 15 | Azure Machine Learning 実践 (L200) | 座学 | 150分 |
+| 15 | Azure Machine Learning 実践 (L200) | 座学 | 165分 |
 | 16 | コードを動かしてみよう | ハンズオン | 60分 |
 | 17 | 参照アーキテクチャ | 座学 | 30分 |
 | 18 | Appendix 3: データサイエンス・プロセス | 座学 | 30分 |
@@ -92,8 +94,8 @@
 | DAY  | 内容 | 所要時間合計 (うち実働時間合計:休憩時間合計) |
 | ---- | ---- | ---- |
 | 1 | モジュール No.1 - 8 | 7.5時間(450分) (330分:120分) |
-| 2 | モジュール No.9 - 13 | 7.5時間(450分) (300分:150分) |
-| 3 | モジュール No.14 - 19 | 7.5時間(450分) (315分:135分) |
+| 2 | モジュール No.9 - 13 | 7.5時間(450分) (330分:120分) |
+| 3 | モジュール No.14 - 19 | 7.5時間(450分) (330分:120分) |
 
 
 ---
@@ -102,6 +104,7 @@
 ## 免責
 
 * 進行によって、モジュールの内容が前後したり、一部の内容をスキップする可能性があります。
+* 録画等のオペレーションのため、空白の時間が発生する場合があります。
 * 本コンテンツの内容には一部最新ではない記述が含まれる可能性があります。 (例えば、プレビュー/GA のステータスや、各種バージョンなど。) 最新の情報を確認する際には [公式のドキュメント](https://learn.microsoft.com/ja-jp/docs/) を参照してください。
 * 本コンテンツで示すコマンド, コード, 設定ファイル等はサンプルです。動作の保証はしておりません。
 
@@ -113,6 +116,12 @@
 
 * 開催中は集中をお願いします。他の業務対応や関係のないスマホ操作等はご遠慮ください。
 * その他、限られた時間でゴールを達成できるよう、フォーカスすべき事項を意識してください。
+* 質問は原則チャット欄に書き込んでください。ワークショップの各 DAY 終了後に順次回答します。
+  * 質問の意図や背景が分かる端的な内容で記述いただけると大変助かります。例:
+    * × 機械学習のベストプラクティスは何ですか？
+    * △ 初学者が機械学習をはじめる場合のベストプラクティスは何ですか？
+    * ○ 初学者でプログラミングも未経験ですが、機械学習で回帰をはじめる場合のベストプラクティスは何ですか？
+* ワークショップの改善やご意見・ご要望のヒアリングのため、アンケートにご協力をお願いします。
 
 
 ---
@@ -121,5 +130,6 @@
 ## その他
 
 * Teams 会議のURLは別途ご案内します。
-* 会議は自動的に録画され、後から見直していただけます。
-* GitHub 上のドキュメントは無期限で共有します。それ以外の資料についてはワークショップ後に共有します。
+* 会議は録画され、後から見直していただけます。
+* 会議への入退室は自由です。その際の挨拶やメッセージ等は不要です。
+* GitHub 上のドキュメントは無期限で共有します。それ以外の資料がある場合はワークショップ後に共有します。
