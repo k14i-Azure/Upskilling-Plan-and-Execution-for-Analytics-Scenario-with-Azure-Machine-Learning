@@ -346,7 +346,7 @@ Fairlearn オープンソース パッケージには、 **削減** および **
 
 ##### 2.3.3.2. データの強化 (Data Enhancements)
 
-N/A
+トレーニング用のデータ資産 (データセット) を改善し、問題を解消します。
 
 
 ### 2.4. [ビジネス上の意思決定 のための 責任ある AI ダッシュボードのコンポーネント](https://learn.microsoft.com/ja-jp/azure/machine-learning/concept-responsible-ai-dashboard#responsible-decision-making) ([Business decision making](https://learn.microsoft.com/en-us/azure/machine-learning/concept-responsible-ai-dashboard#responsible-decision-making))
