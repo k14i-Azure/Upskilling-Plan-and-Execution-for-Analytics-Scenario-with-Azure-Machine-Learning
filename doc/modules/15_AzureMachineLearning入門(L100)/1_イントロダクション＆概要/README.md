@@ -297,6 +297,7 @@ https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-setup-vs-code
 
 ---
 
+
 ## 5. 参考リンク
 
 * [Azure 用語集 - Azure 辞書 | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/azure-glossary-cloud-terminology)

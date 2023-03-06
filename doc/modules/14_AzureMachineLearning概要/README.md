@@ -3,7 +3,6 @@
 - [12. Azure Machine Learning 概要](#12-azure-machine-learning-概要)
   - [1. 背景](#1-背景)
     - [1.1. 機械学習のシステム](#11-機械学習のシステム)
-      - [1.1.1. 参考リンク](#111-参考リンク)
     - [1.2. 機械学習プロジェクトのプロセス](#12-機械学習プロジェクトのプロセス)
       - [1.2.1. 参考リンク](#121-参考リンク)
   - [2. Azure Machine Learning とは](#2-azure-machine-learning-とは)
@@ -29,8 +28,9 @@
 ## 1. 背景
 
 ```
-1. 機械学習のシステム
-2. 機械学習プロジェクトのプロセス
+背景
+├─ 1. 機械学習のシステム
+└─ 2. 機械学習プロジェクトのプロセス
 ```
 
 
@@ -40,6 +40,11 @@
     - これらは今日非常に複雑になっている。
 
 ![今日複雑になるシステム](./assets/images/mlinsider_step_by_step_mlops_v1.01_1280x720px-00008.png)
+
+* 参考: [“Hidden Technical Debt in Machine Learning Systems,” Google NIPS 2015  
+](https://proceedings.neurips.cc/paper/2015/file/86df7dcfd896fcaf2674f757a2463eba-Paper.pdf)
+    - [Hidden technical debt in machine learning systems（日本語資料）](https://www.slideshare.net/Gushi/hidden-technical-debt-in-machine-learning-systems)
+    - [データ活用における課題と対策](https://www.bcm.co.jp/site/2019/08/ntt-com/1908-ntt-com-01-05.pdf)
 
 ![ストレージ&DB](./assets/images/AzureML-Bootcamp-資料_1280x720px_00037.png)
 
@@ -69,14 +74,6 @@
 といった理由から西学習のモデルだけではなく、その周辺のシステムもしっかり考えていく必要が今後出てきます
 </i>
 </details>
-
-
-#### 1.1.1. 参考リンク
-
-* [“Hidden Technical Debt in Machine Learning Systems,” Google NIPS 2015  
-](https://proceedings.neurips.cc/paper/2015/file/86df7dcfd896fcaf2674f757a2463eba-Paper.pdf)
-    - [Hidden technical debt in machine learning systems（日本語資料）](https://www.slideshare.net/Gushi/hidden-technical-debt-in-machine-learning-systems)
-    - [データ活用における課題と対策](https://www.bcm.co.jp/site/2019/08/ntt-com/1908-ntt-com-01-05.pdf)
 
 
 ### 1.2. 機械学習プロジェクトのプロセス
@@ -169,11 +166,11 @@
 
 ![機械学習をより扱いやすく - ハイパーパラメータ探索](./assets/images/Azure-Machine-Learning-%E3%81%A8-Cognitive-Search-%E6%A6%82%E8%A6%81_1280x720px-00012.png)
 
+![Hyperparameters の探索手法](assets/images/Microsoft%20AIご紹介資料_V10_201911-00105.png)
+
 ![ハイパーパラメータチューニング "Hyperdrive"](./assets/images/AzureMachineLearningService2019May1.2_1280x720px-00024.png)
 
 ![ハイパーパラメータチューニング "Hyperdrive"](./assets/images/Azure-Machine-Learning-service-概要-JPN-asof-20190111_1280x720px-00017.png)
-
-![Hyperparameters の探索手法](assets/images/Microsoft%20AIご紹介資料_V10_201911-00105.png)
 
 ![継続的なモデルのデプロイ & 運用管理をサポート](./assets/images/AzureML-Bootcamp-資料_1280x720px_00059.png)
 
