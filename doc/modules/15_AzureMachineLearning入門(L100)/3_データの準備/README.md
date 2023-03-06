@@ -113,6 +113,8 @@
 
 _👋このチャプターではハンズオンを行います。不明点等ある場合は質問してください。(マイクをオンにし、画面共有をしてください。)_
 
+_データはサンプルデータ [DeFungi](./assets/sample-data/defungi/DeFungi_a_1.zip) を利用してください。DeFungi はダウンロード後に zip ファイルを解凍してください。_
+
 ### 3.1. 手順(例)
 
 Step 1 (Figure 3.1-1)
@@ -155,6 +157,8 @@ Step 9 (Figure 3.1-9)
 補足: たとえば、 **データのラベル付け** をする際に、データ資産が作成されている必要があります。 (データのラベル付けプロジェクトを作成する中でデータ資産を作成することもできます。) この場合、Azure ML v2 のデータ資産には対応しておらず、Azure ML v1 のデータ資産 (データセット) のみに対応していることに留意してください。
 
 _👋このチャプターではハンズオンを行います。不明点等ある場合は質問してください。(マイクをオンにし、画面共有をしてください。)_
+
+_データは Azure Blob Storage にアップロードした [DeFungi](./assets/sample-data/defungi/README.md) を使ってください。_
 
 ### 4.1. 手順(例)
 
@@ -234,6 +238,10 @@ Step 18 (Figure 4.1-18)
 > このタスクを補助するために、支援付き機械学習データ ラベル付け、つまり人間参加型 (Human in the loop) のラベル付けを使用します。
 > 
 > 分類、物体検出 (境界ボックス)、インスタンスのセグメント化 (ポリゴン) を行うためのラベルを設定します。
+
+_👋このセクションではハンズオンを行います。不明点等ある場合は質問してください。(マイクをオンにし、画面共有をしてください。)_
+
+_データは Azure Blob Storage にアップロードし データ資産として登録した [DeFungi](./assets/sample-data/defungi/README.md) を使ってください。_
 
 #### 5.1.1. [画像のラベル付けプロジェクトの作成](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-create-image-labeling-projects#create-an-image-labeling-project)ステップ
 
@@ -452,6 +460,10 @@ Figure 5.2.1.8-4
 
 基本的に [画像のラベル付けプロジェクト](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-create-image-labeling-projects#run-and-monitor-the-project) と [テキストのラベル付けプロジェクト](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-create-text-labeling-projects#run-and-monitor-the-project) とで共通です。
 
+_👋このセクションではハンズオンを行います。不明点等ある場合は質問してください。(マイクをオンにし、画面共有をしてください。)_
+
+_データは Azure Blob Storage にアップロードし、データ資産として登録し、ラベル付けプロジェクトを作成した [DeFungi](./assets/sample-data/defungi/README.md) を使ってください。_
+
 #### 5.3.1. ダッシュボードでの進行状況の表示
 
 [画像のラベル付けプロジェクト](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-create-image-labeling-projects#dashboard)
@@ -518,6 +530,10 @@ Figure 5.3.2-5
 * [画像分類タスク](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-label-data#image-tasks)
 * [テキスト分類タスク](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-label-data#label-text)
 
+_👋このセクションではハンズオンを行います。不明点等ある場合は質問してください。(マイクをオンにし、画面共有をしてください。)_
+
+_データは Azure Blob Storage にアップロードし、データ資産として登録し、ラベル付けプロジェクトを作成した [DeFungi](./assets/sample-data/defungi/README.md) を使ってください。_
+
 
 ### 5.5. [ラベルの追加](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-create-image-labeling-projects#add-new-labels-to-a-project)
 
@@ -541,6 +557,10 @@ Figure 5.6.1-1
 > データセットの詳細ページには、Python からラベルにアクセスするためのサンプル コードも表示されます。
 
 > ラベル付きデータを Azure Machine Learning データセットにエクスポートした後、[AutoML を使って、ラベル付きデータでトレーニングされた Computer Vision モデルを作成できます](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-auto-train-image-models?tabs=cli#training-and-validation-data)。
+
+_👋このセクションではハンズオンを行います。不明点等ある場合は質問してください。(マイクをオンにし、画面共有をしてください。)_
+
+_データは Azure Blob Storage にアップロードし、データ資産として登録し、ラベル付けプロジェクトを作成した [DeFungi](./assets/sample-data/defungi/README.md) を使ってください。_
 
 #### 5.6.2. [テキストラベルのエクスポート](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-create-text-labeling-projects#export-the-labels)
 
