@@ -113,7 +113,7 @@
 #### 3.1.1. データの入力と出力
 
 | #   | コンポーネント   | Component    | 概要 |
-| --- | -------------- | ------------ | --- |
+| ---:| -------------- | ------------ | --- |
 | 1 | [データのインポート](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/import-data) | Import Data | 既存のクラウド データ サービスのデータを機械学習パイプラインに読み込みます。次のソースから読み込んだデータがサポートされます。<li>HTTP を使用する URL<li>データストア) を使用する Azure クラウド ストレージ (Azure BLOB コンテナー, Azure ファイル共有, Azure Data Lake, Azure Data Lake Gen2, Azure SQL データベース, Azure PostgreSQL) |
 | 2 | [データのエクスポート](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/export-data) | Export Data | パイプラインからの結果、中間データ、および作業データをクラウド ストレージの宛先に保存します。このコンポーネントは、次のクラウド データ サービスにデータをエクスポートする作業を支援します。<li>Azure BLOB コンテナー<li>Azure ファイル共有<li>Azure Data Lake Storage Gen1<li>Azure Data Lake Storage Gen2<li>Azure SQL データベース |
 | 3 | [データの手動入力](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/enter-data-manually) | Enter Data Manually | 値を入力して小さなデータセットを作成します。データセットには、複数の列を含めることができます。次のような用途に使用できます。<li>テスト用に少数の値のセットを生成する。<li>ラベルの簡単なリストを作成する。<li>データセットに挿入する列名のリストを入力する。 |
@@ -121,7 +121,7 @@
 #### 3.1.2. データの変換
 
 | #   | コンポーネント   | Component    | 概要 |
-| --- | -------------- | ------------ | --- |
+| ---:| -------------- | ------------ | --- |
 | 1 | [データセット内の列の選択](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/select-columns-in-dataset) | Select Columns in Dataset | データベースのビューやプロジェクションのように、列のサブセットが作成されます。このコンポーネントは、ダウンストリーム演算で利用できる列を制限する必要があるときに、あるいは不要な列を削除し、データセットのサイズを減らす場合に役立ちます。 |
 | 2 | [列変換の選択](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/select-columns-transform) | Select Columns Transform | 一連の列を作成して保存します。 次に、Apply Transformation (変換の適用) コンポーネントを使用してそれらの選択を新しいデータに適用します。特定の列を必要とするスコアリングなどのタスクに役立ちます。 |
 | 3 | [算術演算の適用](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/apply-math-operation) | Apply Math Operation | 入力データセットの数値列に適用される計算を作成します。算術演算には、数学関数、三角関数、丸め関数、およびガンマ関数や誤差関数など、データ サイエンスで使用される特殊な関数があります。演算を定義してパイプラインを実行すると、データセットに値が追加されます。 |
@@ -145,14 +145,14 @@
 #### 3.1.3. 特徴選択
 
 | #   | コンポーネント   | Component    | スコア計算 | 特徴量と目標値の間の関連付け測定 | メトリック |
-| --- | -------------- | ------------ | --- | --- | --- |
+| ---:| -------------- | ------------ | --- | --- | --- |
 | 1 | [フィルターに基づく特徴選択](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/filter-based-feature-selection) | Filter Based Feature Selection | モデル作成前 | 行う | <li>ピアソンの相関<li>カイ二乗 |
 | 2 | [順列の特徴量の重要度](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/permutation-feature-importance) | Permutation Feature Importance | モデル作成後 | 行われない | 回帰: <li>Precision (適合率)<li>Recall (再現率)<li>Mean Absolute Error (平均絶対誤差)<li>Root Mean Squared Error (二乗平均平方根誤差)<li>Relative Absolute Error (相対絶対誤差)<li>Relative Squared Error (相対二乗誤差)<li>Coefficient of Determination (決定係数)<br>分類: <li>Accuracy (正確度/正解率)<li>Precision (適合率)<li>Recall (再現率)
 
 #### 3.1.4. 統計関数
 
 | #   | コンポーネント   | Component    | 概要 |
-| --- | -------------- | ------------ | --- |
+| ---:| -------------- | ------------ | --- |
 | 1 | [データの集計](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/summarize-data) | Summarize Data | 各列の重要なスコアを計算し、入力として提供された各変数 (データ列) の要約統計の行を返します。 |
 
 ### 3.2. [機械学習のアルゴリズム](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/component-reference#machine-learning-algorithms)
@@ -168,7 +168,7 @@
 #### 3.2.1. 回帰
 
 | #   | コンポーネント   | Component    | 概要 |
-| --- | -------------- | ------------ | --- |
+| ---:| -------------- | ------------ | --- |
 | 1 | [ポワソン回帰](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/poisson-regression) | Poisson Regression | 特殊な種類の回帰分析で、一般的にはカウントをモデル化するのに使用されます。 |
 | 2 | [線形回帰](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/linear-regression) | Linear Regression | シンプルなモデルが必要なときに適した選択です。 |
 | 3 | [ニューラル ネットワーク回帰](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/neural-network-regression) | Neural Network Regression | 従来型の回帰モデルでは解に適合できない問題に適しています。 |
@@ -182,7 +182,7 @@
 ##### 3.2.2.1. 2クラス分類
 
 | #   | コンポーネント   | Component    | 概要 |
-| --- | -------------- | ------------ | --- |
+| ---:| -------------- | ------------ | --- |
 | 1 | [2 クラス ロジスティック回帰](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/two-class-logistic-regression) | Two-Class Logistic Regression | ロジスティック回帰は、統計学において、ある結果が起こる確率を予測する手段としてよく知られている手法で、特に分類タスクで広く使われています。 |
 | 2 | [2 クラス サポート ベクター マシン](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/two-class-support-vector-machine) | Two Class Support Vector Machine | サポート ベクター マシンは、機械学習アルゴリズムの中でも最も初期のものであり、情報検索からテキストや画像の分類まで、さまざまな用途で SVM モデルは使用されてきました。 |
 | 3 | [2 クラス平均化パーセプトロン](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/two-class-averaged-perceptron) | Two-Class Averaged Perceptron | 単純なパーセプトロン モデルは線形分離可能なパターンを学習するのに適しています。<br/>高速であり、ケースを順次処理するため、継続的なトレーニングで使用できます。 |
@@ -193,7 +193,7 @@
 ##### 3.2.2.2. 他クラス分類
 
 | #   | コンポーネント   | Component    | 概要 |
-| --- | -------------- | ------------ | --- |
+| ---:| -------------- | ------------ | --- |
 | 1 | [多クラス ロジスティック回帰](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/multiclass-logistic-regression) | Multiclass Logistic Regression | 複数の値を予測するのに使用できるロジスティック回帰モデルを作成します。 |
 | 2 | [多クラス ニューラル ネットワーク](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/multiclass-neural-network) | Multiclass Neural Network | この種のニューラル ネットワークは、数字または文字の認識、ドキュメントの分類、パターン認識などの複雑なコンピューター ビジョン タスクで使用できます。 |
 | 3 | [One vs.One Multiclass](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/one-vs-one-multiclass) | One vs. One Multiclass | このコンポーネントでは sklearn の [OneVsOneClassifier](https://scikit-learn.org/stable/modules/generated/sklearn.multiclass.OneVsOneClassifier.html) が使用されます。 |
@@ -204,7 +204,7 @@
 #### 3.2.3. クラスタリング
 
 | #   | コンポーネント   | Component    | 概要 |
-| --- | -------------- | ------------ | --- |
+| ---:| -------------- | ------------ | --- |
 | 1 | [K-Means クラスタリング](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/k-means-clustering) | K-Means Clustering | K-Means は、最も単純であり、よく知られている "教師なし" 学習アルゴリズムの 1 つです。 以下のようなさまざまな機械学習タスクにこのアルゴリズムを使用できます。<li>異常データの検出。<li>テキスト ドキュメントのクラスタリング。<li>他の分類法または回帰法を使用する前のデータセットの分析。 |
 
 
@@ -224,7 +224,7 @@
 #### 3.3.1. モデル トレーニング
 
 | #   | コンポーネント   | Component    | 概要 |
-| --- | -------------- | ------------ | --- |
+| ---:| -------------- | ------------ | --- |
 | 1 | [モデルのトレーニング](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/train-model) | Train Model | 分類または回帰モデルをトレーニングします。トレーニングは、モデルを定義してそのパラメーターを設定した後に行います。トレーニングには、タグ付けされたデータが必要です。既存のモデルを新しいデータで再トレーニングすることもできます。<br/>ML モデルを説明するための解釈可能性パッケージの使用がサポートされています。 |
 | 2 | [クラスタリング モデルのトレーニング](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/train-clustering-model) | Train Clustering Model | K-Means Clustering (K-Means クラスタリング) コンポーネントを使用して既に構成済みのトレーニングされていないクラスタリング モデルを取得し、ラベル付きまたはラベルなしデータセットを使用してそのモデルをトレーニングします。 このコンポーネントは、予測に使用できるトレーニング済みモデルと、トレーニング データの各ケースに対するクラスター割り当てセットの両方を作成します。 |
 | 3 | [PyTorch モデルのトレーニング](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/train-pytorch-model) | Train Pytorch Model | DenseNet などの Pytorch モデルをトレーニングします。単一ノードと分散の両方のトレーニングをサポートしています。 |
@@ -233,7 +233,7 @@
 #### 3.3.2. モデルのスコアリングと評価
 
 | #   | コンポーネント   | Component    | 概要 |
-| --- | -------------- | ------------ | --- |
+| ---:| -------------- | ------------ | --- |
 | 1 | [変換の適用](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/apply-transformation) | Apply Transformation | 事前に計算された変換に基づいて入力データセットを変更します。 このコンポーネントは、推論パイプラインで変換を更新する必要がある場合に必要になります。 |
 | 2 | [クラスターへのデータの割り当て](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/assign-data-to-clusters) | Assign Data to Clusters | K-Means クラスタリング アルゴリズムでトレーニングされたクラスタリング モデルを介して予測を生成します。新しい各データ ポイントの推定の割り当てを含むデータセットを返します。 |
 | 3 | [モデルのクロス検証](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/cross-validate-model) | Cross Validate Model | データセットの変動性と、そのデータによりトレーニングされたモデルの信頼性の両方を評価するために機械学習でよく使用される重要な手法です。 ||
@@ -244,20 +244,20 @@
 #### 3.3.3. Python 言語
 
 | #   | コンポーネント   | Component    | 概要 |
-| --- | -------------- | ------------ | --- |
+| ---:| -------------- | ------------ | --- |
 | 1 | [Python スクリプトの実行](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/execute-python-script) | Execute Python Script | Python コードを実行します。Python を使用すると、既存のコンポーネントではサポートされない次のようなタスクを実行できます。<li>`matplotlib` を使用してデータを可視化する。<li>Python ライブラリを使用してワークスペース内のデータセットとモデルを列挙する。<li>[データのインポート](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/import-data) コンポーネントではサポートされていないソースからデータを読み取り、読み込み、操作する。<li>独自のディープ ラーニング コードを実行する。<br/>Python の現行バージョンは次のとおりです。<br/>Python 3.6 の Anaconda 4.5 以上のディストリビューション |
 | 2 | [Python モデルの作成](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/create-python-model) | Create Python Model | Python スクリプトから未トレーニングのモデルを作成します。Azure Machine Learning デザイナー環境の Python パッケージに含まれるいずれかの学習器を、モデル作成のベースにできます。<br/>モデルを作成した後は、Azure Machine Learning の他の学習器と同じように、モデルのトレーニングを使用してデータセットでモデルをトレーニングできます。 |
 
 #### 3.3.4. R スクリプトの実行
 
 | #   | コンポーネント   | Component    | 概要 |
-| --- | -------------- | ------------ | --- |
+| ---:| -------------- | ------------ | --- |
 | 1 | [R 言語](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/execute-r-script) | Execute R Script | R を使用すると、既存のコンポーネントではサポートされていない次のようなタスクを実行できます。<li>カスタム データ変換を作成する<li>独自のメトリックを使用して予測を評価する<li>デザイナーでスタンドアロン コンポーネントとして実装されていないアルゴリズムを使用してモデルをビルドする<br/>R の CRAN (包括的な R アーカイブ ネットワーク) ディストリビューションが使用されます。現在使用されているバージョンは CRAN 3.5.1 です。 |
 
 #### 3.3.5. Text Analytics
 
 | #   | コンポーネント   | Component    | 概要 |
-| --- | -------------- | ------------ | --- |
+| ---:| -------------- | ------------ | --- |
 | 1 | [テキストの前処理](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/preprocess-text) | Preprocess Text | 英語テキストをクリーンして簡素化します。 次の一般的なテキスト処理操作がサポートされています。<li>ストップワードの削除<li>正規表現を使用して特定の対象文字列を検索して置換する<li>レンマ化 (複数の関連する単語を 1 つの正規形式に変換する)<li>大文字と小文字の正規化<li>数字、特殊文字、および繰り返し文字のシーケンス (たとえば、"aaaa") など、特定のクラスの文字の削除<li>電子メールと URL の識別と削除 |
 | 2 | [テキストからの N Gram 特徴抽出](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/extract-n-gram-features-from-text) | Extract N Gram Features from Text | 非構造化テキスト データの "特徴を抽出" します。<br/>ボキャブラリには、N-gram 辞書と、分析の一部として生成される用語の頻度スコアが含まれています。 |
 | 3 | [Latent Dirichlet Allocation](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/latent-dirichlet-allocation) | Latent Dirichlet Allocation | Latent Dirichlet Allocation (LDA, 潜在的ディリクレ配分法) は、類似したテキストを検索するために自然言語処理でよく使用されます。 もう 1 つの一般的な用語は "トピック モデリング" です。<br/>アルゴリズムによって、トピックのグループを識別するために使用される確率モデルが生成されます。 確率モデルを使用して、既存のトレーニング ケースまたはモデルに入力として提供する新しいケースを分類することができます。 |
@@ -270,7 +270,7 @@
 #### 3.3.6. Computer Vision
 
 | #   | コンポーネント   | Component    | 概要 |
-| --- | -------------- | ------------ | --- |
+| ---:| -------------- | ------------ | --- |
 | 1 | [イメージ変換の初期化](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/init-image-transformation) | Init Image Transformation | イメージ変換を初期化し、イメージを変換する方法を指定します。 |
 | 2 | [イメージ ディレクトリへの変換](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/convert-to-image-directory) | Convert to Image Directory | 画像データセットを Image Directory データ型に変換します。<br/>これらの拡張子を持つイメージ (小文字) はサポートされています: .jpg、.jpeg、.png、ppm、.bmp、. pgm、.tif、tiff、. webp。 また、1 つのフォルダーに複数の種類のイメージを含めることもできます。 各カテゴリ フォルダーに同じ数のイメージを含める必要はありません。拡張子が.zip、. tar、. gz、および bz2 のフォルダーまたは圧縮ファイルを使用できます。 圧縮ファイルは、パフォーマンスを高めるため推奨されます。 |
 | 3 | [イメージ変換の適用](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/apply-image-transformation) | Apply Image Transformation | 以前に指定したイメージ変換に基づいて入力イメージ ディレクトリを変更します。 |
@@ -282,7 +282,7 @@
 #### 3.3.7. レコメンデーション
 
 | #   | コンポーネント   | Component    | 概要 |
-| --- | -------------- | ------------ | --- |
+| ---:| -------------- | ------------ | --- |
 | 1 | [SVD レコメンダーのトレーニング](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/train-svd-recommender) | Train SVD Recommender | 単一値分解 (SVD) アルゴリズムに基づいてレコメンデーション モデルをトレーニングできます。<br/>ユーザー、項目、評価を表す 3 つの要素からなるデータセットを読み取ります。 これにより、トレーニング済みの SVD レコメンダーが返されます。<br/>SVD レコメンダーは、ユーザーと項目の識別子、およびユーザーが項目に対して指定した評価マトリックスを使用します。 つまり、これは "協調レコメンダー" です。 |
 | 2 | [SVD レコメンダーのスコア付け](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/score-svd-recommender) | Score SVD Recommender | 単一値分解 (SVD) アルゴリズムに基づくトレーニング済みのレコメンデーション モデルを使用して、予測を作成できます。<br/>次の 2 種類の予測を生成できます。<li>特定のユーザーと項目の評価を予測する<li>ユーザーに項目を推奨する |
 | 3 | [ワイドかつディープなレコメンダーのトレーニング](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/train-wide-and-deep-recommender) | Train Wide and Deep Recommender | Google によって提案されているワイド & ディープ ラーニング (Wide & Deep Learning) に基づいています。<br/>ワイドかつディープなレコメンダーは、協調フィルタリングとコンテンツベースのアプローチを使用して、これらのアプローチを組み合わせています。 したがって、ハイブリッド レコメンダーと考えることができます。 |
@@ -292,7 +292,7 @@
 #### 3.3.8. 異常検出
 
 | #   | コンポーネント   | Component    | 概要 |
-| --- | -------------- | ------------ | --- |
+| ---:| -------------- | ------------ | --- |
 | 1 | [PCA ベースの異常検出](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/pca-based-anomaly-detection) | PCA-Based Anomaly Detection | 有効なトランザクションなど、1 つのクラスからトレーニング データを簡単に取得できるが、対象となる異常の十分なサンプルを取得するのが困難なシナリオでモデルを構築するのに役立ちます。 |
 | 2 | [異常検出モデルのトレーニング](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/train-anomaly-detection-model) | Train Anomaly Detection Model | 異常検出モデル用のパラメーター セットとラベル付けされていないデータセットを入力として受け取ります。 トレーニング済みの異常検出モデルがトレーニング データのラベル セットと共に返されます。 |
 
@@ -305,7 +305,7 @@
 #### 3.4.1. [Web サービスの入出力](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/web-service-input-output)
 
 | #   | コンポーネント   | Component    |
-| --- | -------------- | ------------ |
+| ---:| -------------- | ------------ |
 | 1 | Web サービスの入力 | Web Service Input |
 | 2 | Web サービスの出力 | Web Service Output |
 
@@ -330,14 +330,14 @@
 #### 4.1.1. 回帰
 
 | #   | サンプル タイトル | Sample title |
-| --- | -------------- | ------------ |
+| ---:| -------------- | ------------ |
 | 1 | 回帰 - 自動車価格の予測 (基本) | Regression - Automobile Price Prediction (Basic) |
 | 2 | 回帰 - 自動車価格の予測 (詳細) | Regression - Automobile Price Prediction (Advanced) |
 
 #### 4.1.2. 分類
 
 | #   | サンプル タイトル | Sample title |
-| --- | -------------- | ------------ |
+| ---:| -------------- | ------------ |
 | 1 | 特徴の選択による二項分類 - 収入の予測 | Binary Classification with Feature Selection - Income Prediction |
 | 2 | カスタム Python スクリプトを使用した二項分類 - 信用リスクの予測 | Binary Classification with custom Python script - Credit Risk Prediction |
 | 3 | 二項分類 - 顧客関係の予測 | Binary Classification - Customer Relationship Prediction |
@@ -347,20 +347,20 @@
 #### 4.1.3. Computer Vision
 
 | #   | サンプル タイトル | Sample title |
-| --- | -------------- | ------------ |
+| ---:| -------------- | ------------ |
 | 1 | DenseNet を使用した画像の分類 | Image Classification using DenseNet |
 
 #### 4.1.4. レコメンダー
 
 | #   | サンプル タイトル | Sample title |
-| --- | -------------- | ------------ |
+| ---:| -------------- | ------------ |
 | 1 | ワイド & ディープ ベースの推奨事項 - レストラン評価の予測 | Wide & Deep based Recommendation - Restaurant Rating Prediction |
 | 2 | レコメンデーション - 映画の評価ツイート | Recommendation - Movie Rating Tweets |
 
 #### 4.1.5. ユーティリティ
 
 | #   | サンプル タイトル | Sample title |
-| --- | -------------- | ------------ |
+| ---:| -------------- | ------------ |
 | 1 | Vowpal Wabbit モデルを使用した二項分類 - 成人の収入予測 | Binary Classification using Vowpal Wabbit Model - Adult Income Prediction |
 | 2 | カスタム R スクリプトの使用 - フライトの遅延予測 | Use custom R script - Flight Delay Prediction |
 | 3 | 二項分類のクロス検証 - 成人の収入予測 | Cross Validation for Binary Classification - Adult Income Prediction |
@@ -373,7 +373,7 @@
     └─ 2. サンプル データセット
 
 | #   | データセットの名前 | Dataset name |
-| --- | --------------- | ------------ |
+| ---:| --------------- | ------------ |
 | 1 | 米国国勢調査局提供の、成人収入に関する二項分類データセット | Adult Census Income Binary Classification dataset |
 | 2 | 自動車価格データ (生データ) | Automobile price data (Raw) |
 | 3 | CRM 強い欲求ラベルの共有 | CRM Appetency Labels Shared |
@@ -463,7 +463,7 @@
 ## 8. ラーニング
 
 | #   | モジュール | 所要時間 |
-| --- | -------- | ------- |
+| ---:| -------- | ------- |
 | 1 | [Azure Machine Learning デザイナーを使用して回帰モデルを作成する](https://learn.microsoft.com/ja-jp/training/paths/create-no-code-predictive-models-azure-machine-learning/) | 1時間20分 |
 | 2 | [Azure Machine Learning デザイナーを使用して分類モデルを作成する](https://learn.microsoft.com/ja-jp/training/modules/create-classification-model-azure-machine-learning-designer/?ns-enrollment-type=learningpath&ns-enrollment-id=learn.wwl.create-no-code-predictive-models-with-azure-machine-learning) | 1時間27分 |
 | 3 | [Azure Machine Learning デザイナーを使用してクラスタリング モデルを作成する](https://learn.microsoft.com/ja-jp/training/modules/create-clustering-model-azure-machine-learning-designer/?ns-enrollment-type=learningpath&ns-enrollment-id=learn.wwl.create-no-code-predictive-models-with-azure-machine-learning) | 49分 |
