@@ -12,9 +12,9 @@
     - [1.6. アンサンブル モデル](#16-アンサンブル-モデル)
     - [1.7. AutoML と ONNX](#17-automl-と-onnx)
     - [1.8. ハンズオン](#18-ハンズオン)
-      - [チュートリアル](#チュートリアル)
+      - [教材](#教材)
       - [参考URL](#参考url)
-    - [1.9. L200 に向けた次のステップ - コードファースト](#19-l200-に向けた次のステップ---コードファースト)
+    - [1.9. (参考) L200 に向けた次のステップ - コードファースト](#19-参考-l200-に向けた次のステップ---コードファースト)
       - [1.9.1. チュートリアル](#191-チュートリアル)
       - [1.9.2. ガイド](#192-ガイド)
       - [1.9.3. サンプル](#193-サンプル)
@@ -119,20 +119,22 @@
 
 ### 1.8. ハンズオン
 
-#### チュートリアル
+#### 教材
 
-[チュートリアル: コードなし分類モデルを AutoML でトレーニングする - Azure Machine Learning | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/machine-learning/tutorial-first-experiment-automated-ml)
+* [チュートリアル: コードなし分類モデルを AutoML でトレーニングする - Azure Machine Learning | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/machine-learning/tutorial-first-experiment-automated-ml)
+* [Azure Machine Learning で自動機械学習を使用する - Training | Microsoft Learn](https://learn.microsoft.com/ja-jp/training/modules/use-automated-machine-learning/)
+* [Azure Machine Learning service で機械学習モデルの選択を自動化する - Training | Microsoft Learn](https://learn.microsoft.com/ja-jp/training/modules/automate-model-selection-with-azure-automl/)
 
 #### 参考URL
 
-[スタジオ UI を使用して自動 ML を設定する - Azure Machine Learning | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-use-automated-ml-for-ml-models)
+* [スタジオ UI を使用して自動 ML を設定する - Azure Machine Learning | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-use-automated-ml-for-ml-models)
 
 
-### 1.9. L200 に向けた次のステップ - コードファースト
+### 1.9. (参考) L200 に向けた次のステップ - コードファースト
 
 #### 1.9.1. チュートリアル
 
-[チュートリアル: AutoML - オブジェクト検出モデルのトレーニング - Azure Machine Learning | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/machine-learning/tutorial-auto-train-image-models?tabs=cli)
+* [チュートリアル: AutoML - オブジェクト検出モデルのトレーニング - Azure Machine Learning | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/machine-learning/tutorial-auto-train-image-models?tabs=cli)
 
 #### 1.9.2. ガイド
 

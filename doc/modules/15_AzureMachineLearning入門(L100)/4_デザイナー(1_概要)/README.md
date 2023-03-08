@@ -404,6 +404,8 @@ https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/com
     ├─ 1. サンプル パイプライン
     └─ 2. サンプル データセット
 
+事前構築済みコンポーネントを使用してパイプラインを作成する場合、任意の組み込みサンプル (サンプル パイプライン) をベースにして作成を開始することが可能です。
+
 ### 5.1. [サンプル パイプライン](https://learn.microsoft.com/ja-jp/azure/machine-learning/samples-designer#use-sample-pipelines)
 
     組み込みサンプル
@@ -459,6 +461,8 @@ https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/com
     組み込みサンプル
     └─ 2. サンプル データセット
 
+コンポーネントからサンプル データセットを呼び出すことが可能です。
+
 | #   | データセットの名前 | Dataset name |
 | ---:| --------------- | ------------ |
 | 1 | 米国国勢調査局提供の、成人収入に関する二項分類データセット | Adult Census Income Binary Classification dataset |
@@ -472,10 +476,11 @@ https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/com
 | 9 | IMDB 映画のタイトル | IMDB Movie Titles |
 | 10 | 映画の評価 | Movie Ratings |
 | 11 | 天候データセット | Weather Dataset |
-| 12 | Wikipedia SP 500 データセット | Wikipedia SP 500 Dataset |
-| 13 | レストラン特徴データ | Restaurant Feature Data |
-| 14 | レストランの評価 | Restaurant Ratings |
-| 15| レストラン顧客データ | Restaurant Customer Data |
+| 12 | - | Animal Images Dataset |
+| 13 | Wikipedia SP 500 データセット | Wikipedia SP 500 Dataset |
+| 14 | レストラン特徴データ | Restaurant Feature Data |
+| 15 | レストランの評価 | Restaurant Ratings |
+| 16| レストラン顧客データ | Restaurant Customer Data |
 
 
 ---
