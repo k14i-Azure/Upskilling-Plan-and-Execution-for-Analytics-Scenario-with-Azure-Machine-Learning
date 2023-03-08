@@ -159,6 +159,8 @@
 
 ![Azure Machine Learning Studio 実装アルゴリズム](./assets/images/Azure-Machine-Learning-service-概要資料-20190111_1280x720px-00039.png)
 
+[![Machine Learning Algorithm Cheat Sheet](./assets/images/machine-learning-algorithm-cheat-sheet.png)](./assets/images/machine-learning-algorithm-cheat-sheet.png)
+
     (事前構築済み)コンポーネント
     └─ 2. 機械学習のアルゴリズム
         ├─ 1. 回帰
@@ -167,10 +169,12 @@
 
 #### 3.2.1. 回帰
 
+![Azure Machine Learning 機械学習アルゴリズム チート シート](./assets/images/machine-learning-algorithm-cheat-sheet-1920px-regression.png)
+
 | #   | コンポーネント   | Component    | 概要 |
 | ---:| -------------- | ------------ | --- |
-| 1 | [ポワソン回帰](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/poisson-regression) | Poisson Regression | 特殊な種類の回帰分析で、一般的にはカウントをモデル化するのに使用されます。 |
-| 2 | [線形回帰](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/linear-regression) | Linear Regression | シンプルなモデルが必要なときに適した選択です。 |
+| 1 | [線形回帰](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/linear-regression) | Linear Regression | シンプルなモデルが必要なときに適した選択です。 |
+| 2 | [ポワソン回帰](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/poisson-regression) | Poisson Regression | 特殊な種類の回帰分析で、一般的にはカウントをモデル化するのに使用されます。 |
 | 3 | [ニューラル ネットワーク回帰](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/neural-network-regression) | Neural Network Regression | 従来型の回帰モデルでは解に適合できない問題に適しています。 |
 | 4 | [デシジョン フォレスト回帰](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/decision-forest-regression) | Decision Forest Regression | ノンパラメトリックなモデルです。デシジョン ツリーには、次の利点があります。<br/><li>トレーニング時と予測時における計算とメモリ使用量の両方の点で効率に優れている。<li>非線形の決定境界を表すことができる。<li>統合された特徴選択と分類が行われ、ノイズの多い特徴が存在する状況での回復性がある。 |
 | 5 | [高速フォレスト分位点回帰](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/fast-forest-quantile-regression) | Fast Forest Quantile Regression | ノンパラメトリック分布の予測に使用できるという利点があります。<br/>1 つの平均予測値を取得するのではなく、予測された値の分布をより詳細に把握する場合に便利です。 |
@@ -180,6 +184,8 @@
 #### 3.2.2. 分類
 
 ##### 3.2.2.1. 2クラス分類
+
+![Azure Machine Learning 機械学習アルゴリズム チート シート](./assets/images/machine-learning-algorithm-cheat-sheet-1920px-two-class-classification.png)
 
 | #   | コンポーネント   | Component    | 概要 |
 | ---:| -------------- | ------------ | --- |
@@ -192,6 +198,8 @@
 
 ##### 3.2.2.2. 他クラス分類
 
+![Azure Machine Learning 機械学習アルゴリズム チート シート](./assets/images/machine-learning-algorithm-cheat-sheet-1920px-multi-class-classification.png)
+
 | #   | コンポーネント   | Component    | 概要 |
 | ---:| -------------- | ------------ | --- |
 | 1 | [多クラス ロジスティック回帰](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/multiclass-logistic-regression) | Multiclass Logistic Regression | 複数の値を予測するのに使用できるロジスティック回帰モデルを作成します。 |
@@ -202,6 +210,8 @@
 | 6 | [多クラスの増幅デシジョン ツリー](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/multiclass-boosted-decision-tree) | Multiclass Boosted Decision Tree | ブースト デシジョン ツリー アルゴリズムに基づく機械学習モデルを作成します。 |
 
 #### 3.2.3. クラスタリング
+
+![Azure Machine Learning 機械学習アルゴリズム チート シート](./assets/images/machine-learning-algorithm-cheat-sheet-1920px-clustering.png)
 
 | #   | コンポーネント   | Component    | 概要 |
 | ---:| -------------- | ------------ | --- |
@@ -256,6 +266,8 @@
 
 #### 3.3.5. Text Analytics
 
+![Azure Machine Learning 機械学習アルゴリズム チート シート](./assets/images/machine-learning-algorithm-cheat-sheet-1920px-text-analytics.png)
+
 | #   | コンポーネント   | Component    | 概要 |
 | ---:| -------------- | ------------ | --- |
 | 1 | [テキストの前処理](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/preprocess-text) | Preprocess Text | 英語テキストをクリーンして簡素化します。 次の一般的なテキスト処理操作がサポートされています。<li>ストップワードの削除<li>正規表現を使用して特定の対象文字列を検索して置換する<li>レンマ化 (複数の関連する単語を 1 つの正規形式に変換する)<li>大文字と小文字の正規化<li>数字、特殊文字、および繰り返し文字のシーケンス (たとえば、"aaaa") など、特定のクラスの文字の削除<li>電子メールと URL の識別と削除 |
@@ -269,6 +281,8 @@
 
 #### 3.3.6. Computer Vision
 
+![Azure Machine Learning 機械学習アルゴリズム チート シート](./assets/images/machine-learning-algorithm-cheat-sheet-1920px-computer-vision.png)
+
 | #   | コンポーネント   | Component    | 概要 |
 | ---:| -------------- | ------------ | --- |
 | 1 | [イメージ変換の初期化](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/init-image-transformation) | Init Image Transformation | イメージ変換を初期化し、イメージを変換する方法を指定します。 |
@@ -281,6 +295,8 @@
 
 #### 3.3.7. レコメンデーション
 
+![Azure Machine Learning 機械学習アルゴリズム チート シート](./assets/images/machine-learning-algorithm-cheat-sheet-1920px-recommendation.png)
+
 | #   | コンポーネント   | Component    | 概要 |
 | ---:| -------------- | ------------ | --- |
 | 1 | [SVD レコメンダーのトレーニング](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/train-svd-recommender) | Train SVD Recommender | 単一値分解 (SVD) アルゴリズムに基づいてレコメンデーション モデルをトレーニングできます。<br/>ユーザー、項目、評価を表す 3 つの要素からなるデータセットを読み取ります。 これにより、トレーニング済みの SVD レコメンダーが返されます。<br/>SVD レコメンダーは、ユーザーと項目の識別子、およびユーザーが項目に対して指定した評価マトリックスを使用します。 つまり、これは "協調レコメンダー" です。 |
@@ -290,6 +306,8 @@
 | 5 | [レコメンダーの評価](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/evaluate-recommender) | Evaluate Recommender | さまざまな種類のレコメンデーションを評価できます。<br/>[平均の正規化減損累積利得 (NDCG)](https://ja.wikipedia.org/wiki/DCG#nDCG%EF%BC%88%E6%AD%A3%E8%A6%8F%E5%8C%96%E6%B8%9B%E6%90%8D%E7%B4%AF%E7%A9%8D%E5%88%A9%E5%BE%97%EF%BC%89) を計算し、それを出力データセットに返します。 |
 
 #### 3.3.8. 異常検出
+
+![Azure Machine Learning 機械学習アルゴリズム チート シート](./assets/images/machine-learning-algorithm-cheat-sheet-1920px-anomaly-detection.png)
 
 | #   | コンポーネント   | Component    | 概要 |
 | ---:| -------------- | ------------ | --- |
