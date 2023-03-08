@@ -1,6 +1,6 @@
-# 14. デザイナーを触ってみよう
+# 4. デザイナー(ハンズオン)
 
-- [14. デザイナーを触ってみよう](#14-デザイナーを触ってみよう)
+- [4. デザイナー(ハンズオン)](#4-デザイナーハンズオン)
   - [1. 事前準備](#1-事前準備)
   - [2. 組み込みサンプルを動かしてみよう](#2-組み込みサンプルを動かしてみよう)
     - [2.1. 組み込みサンプル (Azure Machine Learning Studio \> デザイナー 表示順)](#21-組み込みサンプル-azure-machine-learning-studio--デザイナー-表示順)
@@ -9,7 +9,8 @@
     - [3.1. 回帰モデルのトレーニング](#31-回帰モデルのトレーニング)
     - [3.2. モデルのデプロイ](#32-モデルのデプロイ)
       - [3.2.1. 制限事項](#321-制限事項)
-  - [4. 参考リンク](#4-参考リンク)
+  - [4. 無料のオンライン トレーニングをやってみよう](#4-無料のオンライン-トレーニングをやってみよう)
+  - [5. 参考リンク](#5-参考リンク)
 
 
 ---
@@ -103,6 +104,20 @@
 ---
 
 
-## 4. 参考リンク
+## 4. 無料のオンライン トレーニングをやってみよう
+
+注意: 各モジュールにおける「演習」では、 **管理者アクセス権が与えられている Azure サブスクリプション** が必要です。[無料アカウント](https://azure.microsoft.com/ja-jp/free/)も使用可能です。
+
+| #   | モジュール | 所要時間 |
+| ---:| -------- | ------- |
+| 1 | [Azure Machine Learning デザイナーを使用して回帰モデルを作成する](https://learn.microsoft.com/ja-jp/training/modules/create-regression-model-azure-machine-learning-designer/) | 1時間20分 |
+| 2 | [Azure Machine Learning デザイナーを使用して分類モデルを作成する](https://learn.microsoft.com/ja-jp/training/modules/create-classification-model-azure-machine-learning-designer/) | 1時間27分 |
+| 3 | [Azure Machine Learning デザイナーを使用してクラスタリング モデルを作成する](https://learn.microsoft.com/ja-jp/training/modules/create-clustering-model-azure-machine-learning-designer/) | 49分 |
+
+
+---
+
+
+## 5. 参考リンク
 
 * [Azure Machine Learning デザイナーのアルゴリズムとコンポーネントのリファレンス](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/component-reference)
