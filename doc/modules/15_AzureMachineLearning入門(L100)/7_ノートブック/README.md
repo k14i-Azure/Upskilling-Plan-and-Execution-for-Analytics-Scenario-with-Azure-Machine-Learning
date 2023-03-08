@@ -31,10 +31,11 @@
       - [5.6.2. ジョブからのデータ出力](#562-ジョブからのデータ出力)
   - [6. コンピューティング インスタンスをリモート ノートブック サーバーとして構成する](#6-コンピューティング-インスタンスをリモート-ノートブック-サーバーとして構成する)
   - [7. モデルのトレーニング](#7-モデルのトレーニング)
-  - [8. クイックスタート＆ガイド](#8-クイックスタートガイド)
-  - [9. チュートリアル](#9-チュートリアル)
-  - [10. サンプル](#10-サンプル)
-  - [11. 参考リンク](#11-参考リンク)
+  - [8. ハンズオン](#8-ハンズオン)
+  - [9. クイックスタート＆ガイド](#9-クイックスタートガイド)
+  - [10. チュートリアル](#10-チュートリアル)
+  - [11. サンプル](#11-サンプル)
+  - [12. 参考リンク](#12-参考リンク)
 
 
 ---
@@ -404,7 +405,15 @@ returned_job.services["Studio"].endpoint
 ---
 
 
-## 8. クイックスタート＆ガイド
+## 8. ハンズオン
+
+サンプル `azureml-getting-started` を実行してみましょう。
+
+
+---
+
+
+## 9. クイックスタート＆ガイド
 
 * [クイック スタート: ノートブックを実行する - Azure Machine Learning | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/machine-learning/quickstart-run-notebooks)
 * [ワークスペースで Jupyter Notebook を実行する - Azure Machine Learning | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-run-jupyter-notebooks)
@@ -413,7 +422,7 @@ returned_job.services["Studio"].endpoint
 ---
 
 
-## 9. チュートリアル
+## 10. チュートリアル
 
 * [チュートリアル: Python スクリプトを使ってみる (v1) - Azure Machine Learning | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/machine-learning/v1/tutorial-1st-experiment-hello-world)
 * [チュートリアル: Jupyter Notebook でサンプルをトレーニングしてデプロイする - Azure Machine Learning | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/machine-learning/v1/tutorial-train-deploy-notebook)
@@ -425,7 +434,7 @@ returned_job.services["Studio"].endpoint
 ---
 
 
-## 10. サンプル
+## 11. サンプル
 
 * [さまざまなコンピューティング ターゲット上でのトレーニング](https://github.com/Azure/MachineLearningNotebooks/blob/master/how-to-use-azureml/training)
 * [ML フレームワークを使用したトレーニング](https://github.com/Azure/MachineLearningNotebooks/blob/master/how-to-use-azureml/ml-frameworks)
@@ -434,7 +443,7 @@ returned_job.services["Studio"].endpoint
 ---
 
 
-## 11. 参考リンク
+## 12. 参考リンク
 
 * [対話型開発時に Azure クラウド ストレージからデータにアクセスする - Azure Machine Learning | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-access-data-interactive)
 * [Azure/MachineLearningNotebooks: Python notebooks with ML and deep learning examples with Azure Machine Learning | Microsoft](https://github.com/Azure/MachineLearningNotebooks)

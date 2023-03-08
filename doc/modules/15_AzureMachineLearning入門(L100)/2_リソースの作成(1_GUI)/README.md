@@ -90,6 +90,14 @@ Step 17 (Figure 1.1-17)
 
 #### 1.2.1. [コンピューティング インスタンス](https://learn.microsoft.com/ja-jp/azure/machine-learning/concept-compute-instance)
 
+> Azure Machine Learning コンピューティング インスタンスは、データ サイエンティスト向けのマネージド クラウドベース ワークステーションです。
+
+> コンピューティング インスタンスを使うと、Azure Machine Learning の開発を簡単に開始できます。
+
+> コンピューティング インスタンスは、機械学習のためにクラウド内で完全に構成され管理される自分の開発環境として使用します。 また、開発やテストのためのトレーニングや推論のコンピューティング ターゲットとして使用することもできます。
+
+> コンピューティング インスタンスの Jupyter 機能を動作させるには、Web ソケット通信が無効になっていないことを確認してください。 お使いのネットワークで、*. instances.azureml.net と *. instances.azureml.ms への WebSocket 接続が許可されていることを確認してください。
+
 ##### 1.2.1.1. [コンピューティング インスタンス](https://learn.microsoft.com/ja-jp/azure/machine-learning/concept-compute-instance)の作成
 
 Step 1 (Figure 1.2.1.1-1)
@@ -100,6 +108,8 @@ Step 2 (Figure 1.2.1.1-2)
 
 Step 3 (Figure 1.2.1.1-3)
 ![コンピューティングインスタンスの作成03](./assets/images/AML-Computing-Instance-Creation-via-Azure-Portal-00003.png)
+
+注意: コンピューティング名は Azure リージョン内でユニークである必要があります。
 
 Step 4 (Figure 1.2.1.1-4)
 ![コンピューティングインスタンスの作成04](./assets/images/AML-Computing-Instance-Creation-via-Azure-Portal-00004.png)
@@ -114,6 +124,10 @@ Step 7 (Figure 1.2.1.1-7)
 ![コンピューティングインスタンスの作成07](./assets/images/AML-Computing-Instance-Creation-via-Azure-Portal-00007.png)
 
 ##### 1.2.1.2. [コンピューティング インスタンス](https://learn.microsoft.com/ja-jp/azure/machine-learning/concept-compute-instance)のスケジュール設定
+
+コンピューティング インスタンスは、スケジュールを指定してスタートアップとシャットダウンを自動実行することができます。
+スケジュール設定はインスタンス作成時または作成後のいずれのタイミングでも実行可能です。
+以下はインスタンス作成後にスケジュール設定をする例です。
 
 Step 0 (Figure 1.2.1.2-0)
 ![コンピューティング インスタンスのスケジュール設定00](./assets/images/AML-Workspace-Home-Select-Compute.png)
