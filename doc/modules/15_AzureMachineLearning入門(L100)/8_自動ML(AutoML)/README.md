@@ -11,11 +11,14 @@
     - [1.5. 特徴エンジニアリング](#15-特徴エンジニアリング)
     - [1.6. アンサンブル モデル](#16-アンサンブル-モデル)
     - [1.7. AutoML と ONNX](#17-automl-と-onnx)
-    - [1.8. L200 に向けた次のステップ](#18-l200-に向けた次のステップ)
-      - [1.8.1. ガイド](#181-ガイド)
-      - [1.8.2. チュートリアル](#182-チュートリアル)
-      - [1.8.3. サンプル](#183-サンプル)
-      - [1.8.4. Python SDK](#184-python-sdk)
+    - [1.8. ハンズオン](#18-ハンズオン)
+      - [チュートリアル](#チュートリアル)
+      - [参考URL](#参考url)
+    - [1.9. L200 に向けた次のステップ - コードファースト](#19-l200-に向けた次のステップ---コードファースト)
+      - [1.9.1. チュートリアル](#191-チュートリアル)
+      - [1.9.2. ガイド](#192-ガイド)
+      - [1.9.3. サンプル](#193-サンプル)
+      - [1.9.4. Python SDK](#194-python-sdk)
   - [2. モデルの評価](#2-モデルの評価)
     - [2.1. 回帰メトリック](#21-回帰メトリック)
     - [2.2. 分類メトリック](#22-分類メトリック)
@@ -113,29 +116,35 @@
 > 
 > ONNX 形式に変換する方法については、[この Jupyter ノートブックの例](https://github.com/Azure/azureml-examples/tree/main/v1/python-sdk/tutorials/automl-with-azureml/classification-bank-marketing-all-features)を参照してください。 [ONNX でサポートされているアルゴリズム](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-configure-auto-train#supported-algorithms)についてご確認ください。
 
-### 1.8. L200 に向けた次のステップ
 
-#### 1.8.1. ガイド
+### 1.8. ハンズオン
 
-* ノーコード/ローコード
-    - [スタジオ UI を使用して自動 ML を設定する - Azure Machine Learning | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-use-automated-ml-for-ml-models)
-* コードファースト
-    - [Python で AutoML を設定する (v2) - Azure Machine Learning | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-configure-auto-train)
-    - [Computer Vision 用に AutoML を設定する - Azure Machine Learning | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-auto-train-image-models?tabs=cli)
-    - [自動 ML モデルのトレーニング コードを表示する方法 - Azure Machine Learning AutoML | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-generate-automl-training-code)
+#### チュートリアル
 
-#### 1.8.2. チュートリアル
+[チュートリアル: コードなし分類モデルを AutoML でトレーニングする - Azure Machine Learning | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/machine-learning/tutorial-first-experiment-automated-ml)
 
-* ノーコード/ローコード
-    - [チュートリアル: コードなし分類モデルを AutoML でトレーニングする - Azure Machine Learning | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/machine-learning/tutorial-first-experiment-automated-ml)
-* コードファースト
-    - [チュートリアル: AutoML - オブジェクト検出モデルのトレーニング - Azure Machine Learning | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/machine-learning/tutorial-auto-train-image-models?tabs=cli)
+#### 参考URL
 
-#### 1.8.3. サンプル
+[スタジオ UI を使用して自動 ML を設定する - Azure Machine Learning | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-use-automated-ml-for-ml-models)
+
+
+### 1.9. L200 に向けた次のステップ - コードファースト
+
+#### 1.9.1. チュートリアル
+
+[チュートリアル: AutoML - オブジェクト検出モデルのトレーニング - Azure Machine Learning | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/machine-learning/tutorial-auto-train-image-models?tabs=cli)
+
+#### 1.9.2. ガイド
+
+- [Python で AutoML を設定する (v2) - Azure Machine Learning | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-configure-auto-train)
+- [Computer Vision 用に AutoML を設定する - Azure Machine Learning | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-auto-train-image-models?tabs=cli)
+- [自動 ML モデルのトレーニング コードを表示する方法 - Azure Machine Learning AutoML | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-generate-automl-training-code)
+
+#### 1.9.3. サンプル
 
 [azureml-examples/sdk/python/jobs/automl-standalone-jobs at main · Azure/azureml-examples](https://github.com/Azure/azureml-examples/tree/main/sdk/python/jobs/automl-standalone-jobs)
 
-#### 1.8.4. Python SDK
+#### 1.9.4. Python SDK
 
 [azure.ai.ml.automl package | Microsoft Learn](https://learn.microsoft.com/ja-jp/python/api/azure-ai-ml/azure.ai.ml.automl?view=azure-python)
 

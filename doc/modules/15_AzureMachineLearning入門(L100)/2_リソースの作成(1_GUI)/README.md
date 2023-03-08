@@ -6,7 +6,12 @@
   - [1. リソースの作成 (ハンズオン)](#1-リソースの作成-ハンズオン)
     - [1.1. ワークスペースの作成](#11-ワークスペースの作成)
     - [1.2. コンピューティングの作成](#12-コンピューティングの作成)
-      - [1.2.1. コンピューティング インスタンスの作成](#121-コンピューティング-インスタンスの作成)
+      - [1.2.1. コンピューティング インスタンス](#121-コンピューティング-インスタンス)
+        - [1.2.1.1. コンピューティング インスタンスの作成](#1211-コンピューティング-インスタンスの作成)
+        - [1.2.1.2. コンピューティング インスタンスのスケジュール設定](#1212-コンピューティング-インスタンスのスケジュール設定)
+        - [1.2.1.3. コンピューティング インスタンスのスケジュール変更](#1213-コンピューティング-インスタンスのスケジュール変更)
+        - [1.2.1.4. コンピューティング インスタンスのスケジュール削除](#1214-コンピューティング-インスタンスのスケジュール削除)
+        - [1.2.1.5. コンピューティング インスタンスの停止](#1215-コンピューティング-インスタンスの停止)
     - [1.3. データストアの作成](#13-データストアの作成)
       - [1.3.1. Blob ストレージ (コンテナー) の作成](#131-blob-ストレージ-コンテナー-の作成)
       - [1.3.2. データストアの作成](#132-データストアの作成)
@@ -83,28 +88,92 @@ Step 17 (Figure 1.1-17)
 
 ### 1.2. [コンピューティング](https://learn.microsoft.com/ja-jp/azure/machine-learning/azure-machine-learning-glossary#compute)の作成
 
-#### 1.2.1. [コンピューティング インスタンス](https://learn.microsoft.com/ja-jp/azure/machine-learning/concept-compute-instance)の作成
+#### 1.2.1. [コンピューティング インスタンス](https://learn.microsoft.com/ja-jp/azure/machine-learning/concept-compute-instance)
 
-Step 1 (Figure 1.2.1-1)
+##### 1.2.1.1. [コンピューティング インスタンス](https://learn.microsoft.com/ja-jp/azure/machine-learning/concept-compute-instance)の作成
+
+Step 1 (Figure 1.2.1.1-1)
 ![コンピューティングインスタンスの作成01](./assets/images/AML-Computing-Instance-Creation-via-Azure-Portal-00001.png)
 
-Step 2 (Figure 1.2.1-2)
+Step 2 (Figure 1.2.1.1-2)
 ![コンピューティングインスタンスの作成02](./assets/images/AML-Computing-Instance-Creation-via-Azure-Portal-00002.png)
 
-Step 3 (Figure 1.2.1-3)
+Step 3 (Figure 1.2.1.1-3)
 ![コンピューティングインスタンスの作成03](./assets/images/AML-Computing-Instance-Creation-via-Azure-Portal-00003.png)
 
-Step 4 (Figure 1.2.1-4)
+Step 4 (Figure 1.2.1.1-4)
 ![コンピューティングインスタンスの作成04](./assets/images/AML-Computing-Instance-Creation-via-Azure-Portal-00004.png)
 
-Step 5 (Figure 1.2.1-5)
+Step 5 (Figure 1.2.1.1-5)
 ![コンピューティングインスタンスの作成05](./assets/images/AML-Computing-Instance-Creation-via-Azure-Portal-00005.png)
 
-Step 6 (Figure 1.2.1-6)
+Step 6 (Figure 1.2.1.1-6)
 ![コンピューティングインスタンスの作成06](./assets/images/AML-Computing-Instance-Creation-via-Azure-Portal-00006.png)
 
-Step 7 (Figure 1.2.1-7)
+Step 7 (Figure 1.2.1.1-7)
 ![コンピューティングインスタンスの作成07](./assets/images/AML-Computing-Instance-Creation-via-Azure-Portal-00007.png)
+
+##### 1.2.1.2. [コンピューティング インスタンス](https://learn.microsoft.com/ja-jp/azure/machine-learning/concept-compute-instance)のスケジュール設定
+
+Step 0 (Figure 1.2.1.2-0)
+![コンピューティング インスタンスのスケジュール設定00](./assets/images/AML-Workspace-Home-Select-Compute.png)
+
+Step 1 (Figure 1.2.1.2-1)
+![コンピューティング インスタンスのスケジュール設定01](./assets/images/AML-Computing-Instance-Create-Schedule-00001.png)
+
+Step 2 (Figure 1.2.1.2-2)
+![コンピューティング インスタンスのスケジュール設定02](./assets/images/AML-Computing-Instance-Create-Schedule-00002.png)
+
+Step 3 (Figure 1.2.1.2-3)
+![コンピューティング インスタンスのスケジュール設定03](./assets/images/AML-Computing-Instance-Create-Schedule-00003.png)
+
+Step 4 (Figure 1.2.1.2-4)
+![コンピューティング インスタンスのスケジュール設定04](./assets/images/AML-Computing-Instance-Create-Schedule-00004.png)
+
+Step 5 (Figure 1.2.1.2-5)
+![コンピューティング インスタンスのスケジュール設定05](./assets/images/AML-Computing-Instance-Create-Schedule-00005.png)
+
+Step 6 (Figure 1.2.1.2-6)
+![コンピューティング インスタンスのスケジュール設定06](./assets/images/AML-Computing-Instance-Create-Schedule-00006.png)
+
+Step 7 (Figure 1.2.1.2-7)
+![コンピューティング インスタンスのスケジュール設定07](./assets/images/AML-Computing-Instance-Create-Schedule-00007.png)
+
+##### 1.2.1.3. [コンピューティング インスタンス](https://learn.microsoft.com/ja-jp/azure/machine-learning/concept-compute-instance)のスケジュール変更
+
+Step 1 (Figure 1.2.1.3-1)
+![コンピューティング インスタンスのスケジュール変更01](./assets/images/AML-Computing-Instance-Update-Schedule-00001.png)
+
+Step 2 (Figure 1.2.1.3-2)
+![コンピューティング インスタンスのスケジュール変更02](./assets/images/AML-Computing-Instance-Update-Schedule-00002.png)
+
+Step 3 (Figure 1.2.1.3-3)
+![コンピューティング インスタンスのスケジュール変更03](./assets/images/AML-Computing-Instance-Update-Schedule-00003.png)
+
+Step 4 (Figure 1.2.1.3-4)
+![コンピューティング インスタンスのスケジュール変更04](./assets/images/AML-Computing-Instance-Update-Schedule-00004.png)
+
+##### 1.2.1.4. [コンピューティング インスタンス](https://learn.microsoft.com/ja-jp/azure/machine-learning/concept-compute-instance)のスケジュール削除
+
+Step 1 (Figure 1.2.1.4-1)
+![コンピューティング インスタンスのスケジュール削除01](./assets/images/AML-Computing-Instance-Delete-Schedule-00001.png)
+
+Step 2 (Figure 1.2.1.4-2)
+![コンピューティング インスタンスのスケジュール削除02](./assets/images/AML-Computing-Instance-Delete-Schedule-00002.png)
+
+Step 3 (Figure 1.2.1.4-3)
+![コンピューティング インスタンスのスケジュール削除03](./assets/images/AML-Computing-Instance-Delete-Schedule-00003.png)
+
+##### 1.2.1.5. [コンピューティング インスタンス](https://learn.microsoft.com/ja-jp/azure/machine-learning/concept-compute-instance)の停止
+
+Step 1 (Figure 1.2.1.5-1)
+![コンピューティング インスタンスの停止01](./assets/images/AML-Computing-Instance-Stop-00001.png)
+
+Step 2 (Figure 1.2.1.5-2)
+![コンピューティング インスタンスの停止02](./assets/images/AML-Computing-Instance-Stop-00002.png)
+
+Step 3 (Figure 1.2.1.5-3)
+![コンピューティング インスタンスの停止03](./assets/images/AML-Computing-Instance-Stop-00003.png)
 
 ### 1.3. [データストア](https://learn.microsoft.com/ja-jp/azure/machine-learning/azure-machine-learning-glossary#datastore)の作成
 

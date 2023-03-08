@@ -391,7 +391,7 @@ returned_job.services["Studio"].endpoint
 
 ## 6. [コンピューティング インスタンスをリモート ノートブック サーバーとして構成する](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-set-up-vs-code-remote?tabs=studio#configure-compute-instance-as-remote-notebook-server)
 
-省略
+省略 (リンク先を参照してください。)
 
 ---
 

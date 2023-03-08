@@ -28,20 +28,23 @@
       - [3.3.6. Computer Vision](#336-computer-vision)
       - [3.3.7. レコメンデーション](#337-レコメンデーション)
       - [3.3.8. 異常検出](#338-異常検出)
-    - [3.4. AutoML アルゴリズム](#34-automl-アルゴリズム)
     - [3.5. Web サービス コンポーネント](#35-web-サービス-コンポーネント)
       - [3.5.1. Web サービスの入出力](#351-web-サービスの入出力)
-  - [4. 組み込みサンプル](#4-組み込みサンプル)
-    - [4.1. サンプル パイプライン](#41-サンプル-パイプライン)
-      - [4.1.1. 回帰](#411-回帰)
-      - [4.1.2. 分類](#412-分類)
-      - [4.1.3. Computer Vision](#413-computer-vision)
-      - [4.1.4. レコメンダー](#414-レコメンダー)
-      - [4.1.5. ユーティリティ](#415-ユーティリティ)
-    - [4.2. サンプル データセット](#42-サンプル-データセット)
-  - [5. コンピューティング リソース](#5-コンピューティング-リソース)
-  - [6. アルゴリズムの選択](#6-アルゴリズムの選択)
-  - [7. 参考リンク](#7-参考リンク)
+  - [4. カスタム コンポーネント](#4-カスタム-コンポーネント)
+    - [4.1. カスタム コンポーネントとは](#41-カスタム-コンポーネントとは)
+    - [4.2. AutoML アルゴリズム](#42-automl-アルゴリズム)
+    - [4.3. 責任ある AI コンポーネント](#43-責任ある-ai-コンポーネント)
+  - [5. 組み込みサンプル](#5-組み込みサンプル)
+    - [5.1. サンプル パイプライン](#51-サンプル-パイプライン)
+      - [5.1.1. 回帰](#511-回帰)
+      - [5.1.2. 分類](#512-分類)
+      - [5.1.3. Computer Vision](#513-computer-vision)
+      - [5.1.4. レコメンダー](#514-レコメンダー)
+      - [5.1.5. ユーティリティ](#515-ユーティリティ)
+    - [5.2. サンプル データセット](#52-サンプル-データセット)
+  - [6. コンピューティング リソース](#6-コンピューティング-リソース)
+  - [7. アルゴリズムの選択](#7-アルゴリズムの選択)
+  - [8. 参考リンク](#8-参考リンク)
 
 ---
 
@@ -312,26 +315,6 @@
 | 1 | [PCA ベースの異常検出](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/pca-based-anomaly-detection) | PCA-Based Anomaly Detection | 有効なトランザクションなど、1 つのクラスからトレーニング データを簡単に取得できるが、対象となる異常の十分なサンプルを取得するのが困難なシナリオでモデルを構築するのに役立ちます。 |
 | 2 | [異常検出モデルのトレーニング](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/train-anomaly-detection-model) | Train Anomaly Detection Model | 異常検出モデル用のパラメーター セットとラベル付けされていないデータセットを入力として受け取ります。 トレーニング済みの異常検出モデルがトレーニング データのラベル セットと共に返されます。 |
 
-
-### 3.4. [AutoML アルゴリズム](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference-v2/component-reference-v2#automl-algorithms)
-
-    (事前構築済み)コンポーネント
-    └─ 4. AutoML アルゴリズム
-
-| #   | コンポーネント   | Component    | 概要 | トレーニング用データセットの要否 | 検証/テスト用データセットの要否 | その他データセットの要件 |
-| ---:| -------------- | ------------ | --- | --- | --- | --- |
-| 1 | [AutoML 分類](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference-v2/classification) | AutoML Classification | 表形式データに分類モデルを作成します。 | 必要 | 省略可能 | - |
-| 2 | [AutoML 回帰](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference-v2/regression) | AutoML Regression | AutoML 回帰に基づく機械学習モデルを作成します。 | 必要 | 省略可能 | - |
-| 3 | [AutoML 予測](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference-v2/forecasting) | AutoML Forecasting | AutoML 予測に基づく機械学習モデルを作成します。 | 必要 | 省略可能 | すべての行の値を持つラベル列を含む "ラベル付けされたデータセット" |
-| 4 | [画像の分類](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference-v2/image-classification) | Image Classification | AutoML 画像分類に基づく機械学習モデルを作成します。 | 必要 | 省略可能 | すべての行の値を持つラベル列を含む "ラベル付けされたデータセット" |
-| 5 | [画像分類のマルチラベル](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference-v2/image-classification-multilabel) | Image Classification Multilabel | AutoML 画像分類複数ラベルに基づく機械学習モデルを作成します。特定の画像が持ついくつかの特性を判断する必要がある場合に使用を検討します。 | 必要 | 省略可能 | すべての行の値を持つラベル列を含む "ラベル付けされたデータセット" |
-| 6 | [画像の物体検出](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference-v2/image-object-detection) | Image Object Detection | 画像内のエンティティを見つけて分類します。 | 必要 | 省略可能 | すべての行の値を持つラベル列を含む "ラベル付けされたデータセット" |
-| 7 | [画像インスタンスのセグメント化](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference-v2/image-instance-segmentation) | Image Instance Segmentation | AutoML 画像インスタンスのセグメント化モデルに基づく機械学習モデルを作成します。 | 必要 | 省略可能 | すべての行の値を持つラベル列を含む "ラベル付けされたデータセット" |
-| 8 | [AutoML マルチラベルテキスト分類](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference-v2/text-classification-multilabel) | AutoML Multilabel Text Classification | AutoML テキスト複数ラベル分類に基づく機械学習モデルを作成します。各例に複数のラベルを割り当てる可能性があるユース ケースに適しています。すべての例が 1 つの最も可能性の高いクラスでラベル付けされる単一ラベル マルチクラス テキスト分類とは対照的です。 | 必要 | 必要 | <li>すべての行について値を持つラベル列を含む "ラベル付きデータセット"<li>`mltable` 形式 |
-| 9 | [AutoML テキスト分類](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference-v2/text-classification) | AutoML Text Classification | AutoML 分類に基づく機械学習モデルを作成します。テキストを定義済みのグループに分類またはカテゴリ化できます。 | 必要 | 必要 | <li>各テキストを定義済みのグループにカテゴリ化する、関連するタグを持つラベル付きのテキスト セット<li>すべての行について値を持つラベル列を含む "ラベル付きデータセット"<li>`mltable` 形式 |
-| 10 | [AutoML テキスト Ner](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference-v2/text-ner) | AutoML Text Ner | AutoML テキスト NER に基づく機械学習モデルを作成します。固有表現認識 (NER) は、Azure Cognitive Service for Language で提供されている機能の 1 つです。 NER 機能は、非構造化テキスト内のエンティティを識別および分類できます。 | 必要 | 必要 | <li>すべての行について値を持つラベル列を含む "ラベル付きデータセット"<li>`mltable` 形式 |
-
-
 ### 3.5. Web サービス コンポーネント
 
     (事前構築済み)コンポーネント
@@ -347,13 +330,81 @@
 
 ---
 
-## 4. 組み込みサンプル
+
+## 4. カスタム コンポーネント
+
+    カスタムコンポーネント
+    ├─ 1. カスタム コンポーネントとは
+    ├─ 2. AutoML アルゴリズム
+    └─ 3. 責任ある AI コンポーネント
+
+### 4.1. カスタム コンポーネントとは
+
+    カスタム コンポーネント
+    └─ 1. カスタム コンポーネントとは
+
+https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/component-reference
+
+> デザイナーは、従来の事前構築済みコンポーネントとカスタム コンポーネントの 2 種類のコンポーネントをサポートします。 これら 2 種類のコンポーネントには互換性がありません。
+> 
+> 従来の事前構築済みコンポーネントは、主にデータ処理や従来の機械学習タスク (回帰や分類など) に事前構築済みのコンポーネントを提供します。 この種類のコンポーネントは引き続きサポートされますが、新しいコンポーネントは追加されません。
+> 
+> カスタム コンポーネントを使用すると、独自のコードをコンポーネントとして提供できます。 ワークスペース間での共有と、Studio、CLI、SDK インターフェイス間でのシームレスな作成ができるようになります。
+
+事前構築済みコンポーネントではデータとコンポーネントを組み合わせるのに対し、カスタム コンポーネントではこれらに加えて任意の機械学習モデルを指定することができます。
+また、利用可能なコンポーネントも事前構築済みコンポーネントとは異なり、初期状態では AutoML アルゴリズムと責任ある AI 関連のコンポーネントのみです。
+作成したカスタム コンポーネントをワークスペース間で共有することで、利用可能なコンポーネントを増やしていくことができます。
+
+カスタム コンポーネントを利用するためには、パイプラインを新規作成する際に、カスタム コンポーネントを使用してパイプラインを作成するオプションを選択する必要があります。
+
+![カスタム コンポーネントを使用したパイプライン作成01](assets/images/AML-Designer-New-Pipeline-with-Custom-Components-00001.png)
+
+![カスタム コンポーネントを使用したパイプライン作成02](assets/images/AML-Designer-New-Pipeline-with-Custom-Components-00002.png)
+
+
+### 4.2. [AutoML アルゴリズム](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference-v2/component-reference-v2#automl-algorithms)
+
+    カスタム コンポーネント
+    └─ 2. AutoML アルゴリズム
+
+| #   | コンポーネント   | Component    | 概要 | トレーニング用データセットの要否 | 検証/テスト用データセットの要否 | その他データセットの要件 |
+| ---:| -------------- | ------------ | --- | --- | --- | --- |
+| 1 | [AutoML 分類](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference-v2/classification) | AutoML Classification | 表形式データに分類モデルを作成します。 | 必要 | 省略可能 | - |
+| 2 | [AutoML 回帰](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference-v2/regression) | AutoML Regression | AutoML 回帰に基づく機械学習モデルを作成します。 | 必要 | 省略可能 | - |
+| 3 | [AutoML 予測](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference-v2/forecasting) | AutoML Forecasting | AutoML 予測に基づく機械学習モデルを作成します。 | 必要 | 省略可能 | すべての行の値を持つラベル列を含む "ラベル付けされたデータセット" |
+| 4 | [画像の分類](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference-v2/image-classification) | Image Classification | AutoML 画像分類に基づく機械学習モデルを作成します。 | 必要 | 省略可能 | すべての行の値を持つラベル列を含む "ラベル付けされたデータセット" |
+| 5 | [画像分類のマルチラベル](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference-v2/image-classification-multilabel) | Image Classification Multilabel | AutoML 画像分類複数ラベルに基づく機械学習モデルを作成します。特定の画像が持ついくつかの特性を判断する必要がある場合に使用を検討します。 | 必要 | 省略可能 | すべての行の値を持つラベル列を含む "ラベル付けされたデータセット" |
+| 6 | [画像の物体検出](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference-v2/image-object-detection) | Image Object Detection | 画像内のエンティティを見つけて分類します。 | 必要 | 省略可能 | すべての行の値を持つラベル列を含む "ラベル付けされたデータセット" |
+| 7 | [画像インスタンスのセグメント化](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference-v2/image-instance-segmentation) | Image Instance Segmentation | AutoML 画像インスタンスのセグメント化モデルに基づく機械学習モデルを作成します。 | 必要 | 省略可能 | すべての行の値を持つラベル列を含む "ラベル付けされたデータセット" |
+| 8 | [AutoML マルチラベルテキスト分類](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference-v2/text-classification-multilabel) | AutoML Multilabel Text Classification | AutoML テキスト複数ラベル分類に基づく機械学習モデルを作成します。各例に複数のラベルを割り当てる可能性があるユース ケースに適しています。すべての例が 1 つの最も可能性の高いクラスでラベル付けされる単一ラベル マルチクラス テキスト分類とは対照的です。 | 必要 | 必要 | <li>すべての行について値を持つラベル列を含む "ラベル付きデータセット"<li>`mltable` 形式 |
+| 9 | [AutoML テキスト分類](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference-v2/text-classification) | AutoML Text Classification | AutoML 分類に基づく機械学習モデルを作成します。テキストを定義済みのグループに分類またはカテゴリ化できます。 | 必要 | 必要 | <li>各テキストを定義済みのグループにカテゴリ化する、関連するタグを持つラベル付きのテキスト セット<li>すべての行について値を持つラベル列を含む "ラベル付きデータセット"<li>`mltable` 形式 |
+| 10 | [AutoML テキスト Ner](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference-v2/text-ner) | AutoML Text Ner | AutoML テキスト NER に基づく機械学習モデルを作成します。固有表現認識 (NER) は、Azure Cognitive Service for Language で提供されている機能の 1 つです。 NER 機能は、非構造化テキスト内のエンティティを識別および分類できます。 | 必要 | 必要 | <li>すべての行について値を持つラベル列を含む "ラベル付きデータセット"<li>`mltable` 形式 |
+
+### 4.3. 責任ある AI コンポーネント
+
+    カスタム コンポーネント
+    └─ 3. 責任ある AI コンポーネント
+
+| # | Component |
+| ---:| --- |
+| 1 | RAI Insights Dashboard Constructor |
+| 2 | Add Counterfactuals to RAI Insights Dashboard |
+| 3 | Gather RAI Insights Dashboard |
+| 4 | Generate rai insight score card (Public preview) |
+| 5 | Add Error Analysis to RAI Insights Dashboard |
+| 6 | Add Explanation to RAI Insights Dashboard |
+| 7 | Add Causal to RAI Insights Dashboard |
+
+
+---
+
+## 5. 組み込みサンプル
 
     組み込みサンプル
     ├─ 1. サンプル パイプライン
     └─ 2. サンプル データセット
 
-### 4.1. [サンプル パイプライン](https://learn.microsoft.com/ja-jp/azure/machine-learning/samples-designer#use-sample-pipelines)
+### 5.1. [サンプル パイプライン](https://learn.microsoft.com/ja-jp/azure/machine-learning/samples-designer#use-sample-pipelines)
 
     組み込みサンプル
     └─ 1. サンプル パイプライン
@@ -363,14 +414,14 @@
         ├─ 4. レコメンダー
         └─ 5. ユーティリティ
 
-#### 4.1.1. 回帰
+#### 5.1.1. 回帰
 
 | #   | サンプル タイトル | Sample title |
 | ---:| -------------- | ------------ |
 | 1 | 回帰 - 自動車価格の予測 (基本) | Regression - Automobile Price Prediction (Basic) |
 | 2 | 回帰 - 自動車価格の予測 (詳細) | Regression - Automobile Price Prediction (Advanced) |
 
-#### 4.1.2. 分類
+#### 5.1.2. 分類
 
 | #   | サンプル タイトル | Sample title |
 | ---:| -------------- | ------------ |
@@ -380,20 +431,20 @@
 | 4 | テキスト分類 - Wikipedia SP 500 データセット | Text Classification - Wikipedia SP 500 Dataset |
 | 5 | 多クラス分類 - 文字認識 | Multiclass Classification - Letter Recognition |
 
-#### 4.1.3. Computer Vision
+#### 5.1.3. Computer Vision
 
 | #   | サンプル タイトル | Sample title |
 | ---:| -------------- | ------------ |
 | 1 | DenseNet を使用した画像の分類 | Image Classification using DenseNet |
 
-#### 4.1.4. レコメンダー
+#### 5.1.4. レコメンダー
 
 | #   | サンプル タイトル | Sample title |
 | ---:| -------------- | ------------ |
 | 1 | ワイド & ディープ ベースの推奨事項 - レストラン評価の予測 | Wide & Deep based Recommendation - Restaurant Rating Prediction |
 | 2 | レコメンデーション - 映画の評価ツイート | Recommendation - Movie Rating Tweets |
 
-#### 4.1.5. ユーティリティ
+#### 5.1.5. ユーティリティ
 
 | #   | サンプル タイトル | Sample title |
 | ---:| -------------- | ------------ |
@@ -403,7 +454,7 @@
 | 4 | 順列の特徴量の重要度 | Permutation Feature Importance |
 | 5 | 二項分類のパラメーターの調整 - 成人の収入予測 | Tune Parameters for Binary Classification - Adult Income Prediction |
 
-### 4.2. [サンプル データセット](https://learn.microsoft.com/ja-jp/azure/machine-learning/samples-designer#datasets)
+### 5.2. [サンプル データセット](https://learn.microsoft.com/ja-jp/azure/machine-learning/samples-designer#datasets)
 
     組み込みサンプル
     └─ 2. サンプル データセット
@@ -430,7 +481,7 @@
 ---
 
 
-## 5. [コンピューティング リソース](https://learn.microsoft.com/ja-jp/azure/machine-learning/concept-designer#compute)
+## 6. [コンピューティング リソース](https://learn.microsoft.com/ja-jp/azure/machine-learning/concept-designer#compute)
 
 > 自分のワークスペースからコンピューティング リソースを使用して、パイプラインを実行し、デプロイ済みのモデルをオンライン エンドポイントまたはパイプライン エンドポイント (バッチ推論用) としてホストします。
 
@@ -438,7 +489,7 @@
 ---
 
 
-## 6. [アルゴリズムの選択](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-select-algorithms)
+## 7. [アルゴリズムの選択](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-select-algorithms)
 
 > よくある質問は、「どの機械学習アルゴリズムを使用すればよいか」ということです。 選択するアルゴリズムは、主として、データ サイエンス シナリオの次の 2 つの異なる側面によって決まります。
 > 
@@ -454,7 +505,7 @@
 ---
 
 
-## 7. 参考リンク
+## 8. 参考リンク
 
 * [Azure Machine Learning デザイナーとは - Azure Machine Learning | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/machine-learning/concept-designer)
 * [アルゴリズムおよびコンポーネント リファレンス - Azure Machine Learning | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/component-reference#machine-learning-algorithms)
