@@ -17,7 +17,7 @@
       - [3.2.1. 回帰](#321-回帰)
       - [3.2.2. 分類](#322-分類)
         - [3.2.2.1. 2クラス分類](#3221-2クラス分類)
-        - [3.2.2.2. 他クラス分類](#3222-他クラス分類)
+        - [3.2.2.2. 多クラス分類](#3222-多クラス分類)
       - [3.2.3. クラスタリング](#323-クラスタリング)
     - [3.3. モデルを構築および評価するためのコンポーネント](#33-モデルを構築および評価するためのコンポーネント)
       - [3.3.1. モデル トレーニング](#331-モデル-トレーニング)
@@ -28,8 +28,9 @@
       - [3.3.6. Computer Vision](#336-computer-vision)
       - [3.3.7. レコメンデーション](#337-レコメンデーション)
       - [3.3.8. 異常検出](#338-異常検出)
-    - [3.4. Web サービス コンポーネント](#34-web-サービス-コンポーネント)
-      - [3.4.1. Web サービスの入出力](#341-web-サービスの入出力)
+    - [3.4. AutoML アルゴリズム](#34-automl-アルゴリズム)
+    - [3.5. Web サービス コンポーネント](#35-web-サービス-コンポーネント)
+      - [3.5.1. Web サービスの入出力](#351-web-サービスの入出力)
   - [4. 組み込みサンプル](#4-組み込みサンプル)
     - [4.1. サンプル パイプライン](#41-サンプル-パイプライン)
       - [4.1.1. 回帰](#411-回帰)
@@ -99,7 +100,8 @@
     ├─ 1. データ準備コンポーネント
     ├─ 2. 機械学習のアルゴリズム
     ├─ 3. モデルを構築および評価するためのコンポーネント
-    └─ 4. Web サービス コンポーネント
+    ├─ 4. AutoML アルゴリズム
+    └─ 5. Web サービス コンポーネント
 
 ### 3.1. [データ準備コンポーネント](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/component-reference#data-preparation-components)
 
@@ -173,11 +175,11 @@
 
 | #   | コンポーネント   | Component    | 概要 |
 | ---:| -------------- | ------------ | --- |
-| 1 | [線形回帰](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/linear-regression) | Linear Regression | シンプルなモデルが必要なときに適した選択です。 |
+| 1 | [高速フォレスト分位点回帰](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/fast-forest-quantile-regression) | Fast Forest Quantile Regression | ノンパラメトリック分布の予測に使用できるという利点があります。<br/>1 つの平均予測値を取得するのではなく、予測された値の分布をより詳細に把握する場合に便利です。 |
 | 2 | [ポワソン回帰](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/poisson-regression) | Poisson Regression | 特殊な種類の回帰分析で、一般的にはカウントをモデル化するのに使用されます。 |
-| 3 | [ニューラル ネットワーク回帰](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/neural-network-regression) | Neural Network Regression | 従来型の回帰モデルでは解に適合できない問題に適しています。 |
+| 3 | [線形回帰](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/linear-regression) | Linear Regression | シンプルなモデルが必要なときに適した選択です。 |
 | 4 | [デシジョン フォレスト回帰](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/decision-forest-regression) | Decision Forest Regression | ノンパラメトリックなモデルです。デシジョン ツリーには、次の利点があります。<br/><li>トレーニング時と予測時における計算とメモリ使用量の両方の点で効率に優れている。<li>非線形の決定境界を表すことができる。<li>統合された特徴選択と分類が行われ、ノイズの多い特徴が存在する状況での回復性がある。 |
-| 5 | [高速フォレスト分位点回帰](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/fast-forest-quantile-regression) | Fast Forest Quantile Regression | ノンパラメトリック分布の予測に使用できるという利点があります。<br/>1 つの平均予測値を取得するのではなく、予測された値の分布をより詳細に把握する場合に便利です。 |
+| 5 | [ニューラル ネットワーク回帰](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/neural-network-regression) | Neural Network Regression | 従来型の回帰モデルでは解に適合できない問題に適しています。 |
 | 6 | [ブースト デシジョン ツリー回帰](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/boosted-decision-tree-regression) | Boosted Decision Tree Regression | 適用範囲が狭いという小さなリスクがありますが、精度を上げる傾向があります。 |
 
 
@@ -189,14 +191,15 @@
 
 | #   | コンポーネント   | Component    | 概要 |
 | ---:| -------------- | ------------ | --- |
-| 1 | [2 クラス ロジスティック回帰](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/two-class-logistic-regression) | Two-Class Logistic Regression | ロジスティック回帰は、統計学において、ある結果が起こる確率を予測する手段としてよく知られている手法で、特に分類タスクで広く使われています。 |
-| 2 | [2 クラス サポート ベクター マシン](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/two-class-support-vector-machine) | Two Class Support Vector Machine | サポート ベクター マシンは、機械学習アルゴリズムの中でも最も初期のものであり、情報検索からテキストや画像の分類まで、さまざまな用途で SVM モデルは使用されてきました。 |
-| 3 | [2 クラス平均化パーセプトロン](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/two-class-averaged-perceptron) | Two-Class Averaged Perceptron | 単純なパーセプトロン モデルは線形分離可能なパターンを学習するのに適しています。<br/>高速であり、ケースを順次処理するため、継続的なトレーニングで使用できます。 |
-| 4 | [2 クラス ニューラル ネットワーク](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/two-class-neural-network) | Two-Class Neural Network | 2 つの値だけを持つターゲットを予測するのに使用できるニューラル ネットワーク モデルを作成します。 |
-| 5 | [2 クラス デシジョン フォレスト](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/two-class-decision-forest) | Two-Class Decision Forest | デシジョン フォレストは、高速な教師ありアンサンブル モデルです。<br/>一般に、デシジョン ツリーには、分類タスクに関して多くの利点があります。<li>非線形の決定境界を捕捉できる。<li>計算とメモリ使用量の効率的なため、大量のデータをトレーニングして予測できる。<li>トレーニング プロセスと分類プロセスに特徴選択が統合されている。<li>ツリーは、ノイズの多いデータや多数の特徴に対応できる。<li>ノンパラメトリック モデルであるため、さまざまな分布のデータを扱うことができる。<br/>ただし単純なデシジョン ツリーではデータのオーバーフィットが生じることがあり、ツリー アンサンブルに比べ汎化性能が低くなります。 |
-| 6 | [2 クラス ブースト デシジョン ツリー](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/two-class-boosted-decision-tree) | Two-Class Boosted Decision Tree | 一般に、ブースト デシジョン ツリーは、適切に構成されていれば、多様な機械学習タスクで最良のパフォーマンスが一番簡単に得られる手法です。 ただしメモリの使用量が最も多い学習器の 1 つでもあり、現在の実装では、すべてのデータがメモリに保持されます。 そのため、いくつかの線形学習器で処理できる大規模なデータセットが、ブースト デシジョン ツリー モデルでは処理できない可能性があります。<br/>このコンポーネントは、LightGBM アルゴリズムに基づいています。単一のデシジョン ツリーと比べ、カバレッジと正確性が優れています。 |
+| 1 | [2 クラス サポート ベクター マシン](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/two-class-support-vector-machine) | Two Class Support Vector Machine | サポート ベクター マシンは、機械学習アルゴリズムの中でも最も初期のものであり、情報検索からテキストや画像の分類まで、さまざまな用途で SVM モデルは使用されてきました。 |
+| 2 | [2 クラス平均化パーセプトロン](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/two-class-averaged-perceptron) | Two-Class Averaged Perceptron | 単純なパーセプトロン モデルは線形分離可能なパターンを学習するのに適しています。<br/>高速であり、ケースを順次処理するため、継続的なトレーニングで使用できます。 |
+| 3 | [2 クラス デシジョン フォレスト](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/two-class-decision-forest) | Two-Class Decision Forest | デシジョン フォレストは、高速な教師ありアンサンブル モデルです。<br/>一般に、デシジョン ツリーには、分類タスクに関して多くの利点があります。<li>非線形の決定境界を捕捉できる。<li>計算とメモリ使用量の効率的なため、大量のデータをトレーニングして予測できる。<li>トレーニング プロセスと分類プロセスに特徴選択が統合されている。<li>ツリーは、ノイズの多いデータや多数の特徴に対応できる。<li>ノンパラメトリック モデルであるため、さまざまな分布のデータを扱うことができる。<br/>ただし単純なデシジョン ツリーではデータのオーバーフィットが生じることがあり、ツリー アンサンブルに比べ汎化性能が低くなります。 |
+| 4 | [2 クラス ロジスティック回帰](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/two-class-logistic-regression) | Two-Class Logistic Regression | ロジスティック回帰は、統計学において、ある結果が起こる確率を予測する手段としてよく知られている手法で、特に分類タスクで広く使われています。 |
+| 5 | [2 クラス ブースト デシジョン ツリー](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/two-class-boosted-decision-tree) | Two-Class Boosted Decision Tree | 一般に、ブースト デシジョン ツリーは、適切に構成されていれば、多様な機械学習タスクで最良のパフォーマンスが一番簡単に得られる手法です。 ただしメモリの使用量が最も多い学習器の 1 つでもあり、現在の実装では、すべてのデータがメモリに保持されます。 そのため、いくつかの線形学習器で処理できる大規模なデータセットが、ブースト デシジョン ツリー モデルでは処理できない可能性があります。<br/>このコンポーネントは、LightGBM アルゴリズムに基づいています。単一のデシジョン ツリーと比べ、カバレッジと正確性が優れています。 |
+| 6 | [2 クラス ニューラル ネットワーク](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/two-class-neural-network) | Two-Class Neural Network | 2 つの値だけを持つターゲットを予測するのに使用できるニューラル ネットワーク モデルを作成します。 |
 
-##### 3.2.2.2. 他クラス分類
+
+##### 3.2.2.2. 多クラス分類
 
 ![Azure Machine Learning 機械学習アルゴリズム チート シート](./assets/images/machine-learning-algorithm-cheat-sheet-1920px-multi-class-classification.png)
 
@@ -204,9 +207,9 @@
 | ---:| -------------- | ------------ | --- |
 | 1 | [多クラス ロジスティック回帰](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/multiclass-logistic-regression) | Multiclass Logistic Regression | 複数の値を予測するのに使用できるロジスティック回帰モデルを作成します。 |
 | 2 | [多クラス ニューラル ネットワーク](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/multiclass-neural-network) | Multiclass Neural Network | この種のニューラル ネットワークは、数字または文字の認識、ドキュメントの分類、パターン認識などの複雑なコンピューター ビジョン タスクで使用できます。 |
-| 3 | [One vs.One Multiclass](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/one-vs-one-multiclass) | One vs. One Multiclass | このコンポーネントでは sklearn の [OneVsOneClassifier](https://scikit-learn.org/stable/modules/generated/sklearn.multiclass.OneVsOneClassifier.html) が使用されます。 |
+| 3 | [多クラス デシジョン フォレスト](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/multiclass-decision-forest) | Multiclass Decision Forest | デシジョン ツリーは、一般的にノンパラメトリック モデルであるため、さまざまな分布のデータをサポートします。<br/>デシジョン ツリーには、次のような多くの利点があります。<li>非線形の決定境界を表すことができる。<li>トレーニング時と予測時における計算とメモリ使用量の点で効率に優れている。<li>統合された特徴選択と分類が行われる。<li>ノイズの多い特徴が存在する状況での回復性がある。<br/>一般に、アンサンブル モデルは、単一のデシジョン ツリーと比べ、カバレッジと正確性が優れています。 |
 | 4 | [1 対全多クラス](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/one-vs-all-multiclass) | One vs. All Multiclass | このコンポーネントでは sklearn の [OneVsRestClassifier](https://scikit-learn.org/stable/modules/generated/sklearn.multiclass.OneVsRestClassifier.html) が使用されます。 |
-| 5 | [多クラス デシジョン フォレスト](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/multiclass-decision-forest) | Multiclass Decision Forest | デシジョン ツリーは、一般的にノンパラメトリック モデルであるため、さまざまな分布のデータをサポートします。<br/>デシジョン ツリーには、次のような多くの利点があります。<li>非線形の決定境界を表すことができる。<li>トレーニング時と予測時における計算とメモリ使用量の点で効率に優れている。<li>統合された特徴選択と分類が行われる。<li>ノイズの多い特徴が存在する状況での回復性がある。<br/>一般に、アンサンブル モデルは、単一のデシジョン ツリーと比べ、カバレッジと正確性が優れています。 |
+| 5 | [One vs.One Multiclass](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/one-vs-one-multiclass) | One vs. One Multiclass | このコンポーネントでは sklearn の [OneVsOneClassifier](https://scikit-learn.org/stable/modules/generated/sklearn.multiclass.OneVsOneClassifier.html) が使用されます。 |
 | 6 | [多クラスの増幅デシジョン ツリー](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/multiclass-boosted-decision-tree) | Multiclass Boosted Decision Tree | ブースト デシジョン ツリー アルゴリズムに基づく機械学習モデルを作成します。 |
 
 #### 3.2.3. クラスタリング
@@ -270,11 +273,11 @@
 
 | #   | コンポーネント   | Component    | 概要 |
 | ---:| -------------- | ------------ | --- |
-| 1 | [テキストの前処理](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/preprocess-text) | Preprocess Text | 英語テキストをクリーンして簡素化します。 次の一般的なテキスト処理操作がサポートされています。<li>ストップワードの削除<li>正規表現を使用して特定の対象文字列を検索して置換する<li>レンマ化 (複数の関連する単語を 1 つの正規形式に変換する)<li>大文字と小文字の正規化<li>数字、特殊文字、および繰り返し文字のシーケンス (たとえば、"aaaa") など、特定のクラスの文字の削除<li>電子メールと URL の識別と削除 |
+| 1 | [Latent Dirichlet Allocation](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/latent-dirichlet-allocation) | Latent Dirichlet Allocation | Latent Dirichlet Allocation (LDA, 潜在的ディリクレ配分法) は、類似したテキストを検索するために自然言語処理でよく使用されます。 もう 1 つの一般的な用語は "トピック モデリング" です。<br/>アルゴリズムによって、トピックのグループを識別するために使用される確率モデルが生成されます。 確率モデルを使用して、既存のトレーニング ケースまたはモデルに入力として提供する新しいケースを分類することができます。 |
 | 2 | [テキストからの N Gram 特徴抽出](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/extract-n-gram-features-from-text) | Extract N Gram Features from Text | 非構造化テキスト データの "特徴を抽出" します。<br/>ボキャブラリには、N-gram 辞書と、分析の一部として生成される用語の頻度スコアが含まれています。 |
-| 3 | [Latent Dirichlet Allocation](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/latent-dirichlet-allocation) | Latent Dirichlet Allocation | Latent Dirichlet Allocation (LDA, 潜在的ディリクレ配分法) は、類似したテキストを検索するために自然言語処理でよく使用されます。 もう 1 つの一般的な用語は "トピック モデリング" です。<br/>アルゴリズムによって、トピックのグループを識別するために使用される確率モデルが生成されます。 確率モデルを使用して、既存のトレーニング ケースまたはモデルに入力として提供する新しいケースを分類することができます。 |
-| 4 | [単語からベクトルへの変換](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/convert-word-to-vector) | Convert Word to Vector | 言語モデルを使用して、ワードをベクター空間にマップします。<br/>ワードの埋め込みは、テキスト分類やセンチメント分析などの NLP ダウンストリーム タスクの初期入力として使用できます。<br/>さまざまな単語埋め込みテクノロジの中で、広く使用されている 3 つの方法が実装されています。 Word2Vec と FastText の 2 つはオンライン トレーニング モデルです。 もう 1 つは事前トレーニング済みのモデルの glove-wiki-gigaword-100 です。 |
-| 5 | [特徴ハッシュ](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/feature-hashing) | Feature Hashing | 可変長の英語テキスト ドキュメントを等長の数値特徴ベクトルとして表して、次元削減を実現できます。 |
+| 3 | [特徴ハッシュ](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/feature-hashing) | Feature Hashing | 可変長の英語テキスト ドキュメントを等長の数値特徴ベクトルとして表して、次元削減を実現できます。 |
+| 4 | [テキストの前処理](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/preprocess-text) | Preprocess Text | 英語テキストをクリーンして簡素化します。 次の一般的なテキスト処理操作がサポートされています。<li>ストップワードの削除<li>正規表現を使用して特定の対象文字列を検索して置換する<li>レンマ化 (複数の関連する単語を 1 つの正規形式に変換する)<li>大文字と小文字の正規化<li>数字、特殊文字、および繰り返し文字のシーケンス (たとえば、"aaaa") など、特定のクラスの文字の削除<li>電子メールと URL の識別と削除 |
+| 5 | [単語からベクトルへの変換](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/convert-word-to-vector) | Convert Word to Vector | 言語モデルを使用して、ワードをベクター空間にマップします。<br/>ワードの埋め込みは、テキスト分類やセンチメント分析などの NLP ダウンストリーム タスクの初期入力として使用できます。<br/>さまざまな単語埋め込みテクノロジの中で、広く使用されている 3 つの方法が実装されています。 Word2Vec と FastText の 2 つはオンライン トレーニング モデルです。 もう 1 つは事前トレーニング済みのモデルの glove-wiki-gigaword-100 です。 |
 | 6 | [Train Vowpal Wabbit Model (Vowpal Wabbit モデルのトレーニング)](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/train-vowpal-wabbit-model) | Train Vowpal Wabbit Model | Vowpal Wabbit を使用して機械学習モデルを作成します。 |
 | 7 | [Score Vowpal Wabbit Model (Vowpal Wabbit モデルのスコアリング)](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/score-vowpal-wabbit-model) | Score Vowpal Wabbit Model | 既存のトレーニングされた Vowpal Wabbit モデルを使用して入力データ セットのスコアを生成します。 |
 
@@ -285,12 +288,12 @@
 
 | #   | コンポーネント   | Component    | 概要 |
 | ---:| -------------- | ------------ | --- |
-| 1 | [イメージ変換の初期化](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/init-image-transformation) | Init Image Transformation | イメージ変換を初期化し、イメージを変換する方法を指定します。 |
-| 2 | [イメージ ディレクトリへの変換](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/convert-to-image-directory) | Convert to Image Directory | 画像データセットを Image Directory データ型に変換します。<br/>これらの拡張子を持つイメージ (小文字) はサポートされています: .jpg、.jpeg、.png、ppm、.bmp、. pgm、.tif、tiff、. webp。 また、1 つのフォルダーに複数の種類のイメージを含めることもできます。 各カテゴリ フォルダーに同じ数のイメージを含める必要はありません。拡張子が.zip、. tar、. gz、および bz2 のフォルダーまたは圧縮ファイルを使用できます。 圧縮ファイルは、パフォーマンスを高めるため推奨されます。 |
-| 3 | [イメージ変換の適用](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/apply-image-transformation) | Apply Image Transformation | 以前に指定したイメージ変換に基づいて入力イメージ ディレクトリを変更します。 |
-| 4 | [イメージ ディレクトリの分割](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/split-image-directory) | Split Image Directory | 画像データをトレーニング セットとテスト セットに分割する必要がある場合に特に便利です。 |
-| 5 | [ResNet](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/resnet) | ResNet | この分類アルゴリズムは、教師あり学習手法であり、ラベル付きデータセットが必要です。ResNet の詳細については、[こちらの資料](https://pytorch.org/vision/stable/models.html#torchvision.models.resnext101_32x8d)を参照してください。 |
-| 6 | [DenseNet](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/densenet) | DenseNet | この分類アルゴリズムは、教師あり学習手法であり、ラベル付きデータセットが必要となります。DenseNet の詳細については、「[Densely Connected Convolutional Networks](https://arxiv.org/abs/1608.06993)」 (高密度に接続された畳み込みネットワーク) という研究論文を参照してください。 |
+| 1 | [ResNet](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/resnet) | ResNet | この分類アルゴリズムは、教師あり学習手法であり、ラベル付きデータセットが必要です。ResNet の詳細については、[こちらの資料](https://pytorch.org/vision/stable/models.html#torchvision.models.resnext101_32x8d)を参照してください。 |
+| 2 | [DenseNet](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/densenet) | DenseNet | この分類アルゴリズムは、教師あり学習手法であり、ラベル付きデータセットが必要となります。DenseNet の詳細については、「[Densely Connected Convolutional Networks](https://arxiv.org/abs/1608.06993)」 (高密度に接続された畳み込みネットワーク) という研究論文を参照してください。 |
+| 3 | [イメージ変換の初期化](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/init-image-transformation) | Init Image Transformation | イメージ変換を初期化し、イメージを変換する方法を指定します。 |
+| 4 | [イメージ ディレクトリへの変換](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/convert-to-image-directory) | Convert to Image Directory | 画像データセットを Image Directory データ型に変換します。<br/>これらの拡張子を持つイメージ (小文字) はサポートされています: .jpg、.jpeg、.png、ppm、.bmp、. pgm、.tif、tiff、. webp。 また、1 つのフォルダーに複数の種類のイメージを含めることもできます。 各カテゴリ フォルダーに同じ数のイメージを含める必要はありません。拡張子が.zip、. tar、. gz、および bz2 のフォルダーまたは圧縮ファイルを使用できます。 圧縮ファイルは、パフォーマンスを高めるため推奨されます。 |
+| 5 | [イメージ変換の適用](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/apply-image-transformation) | Apply Image Transformation | 以前に指定したイメージ変換に基づいて入力イメージ ディレクトリを変更します。 |
+| 6 | [イメージ ディレクトリの分割](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/split-image-directory) | Split Image Directory | 画像データをトレーニング セットとテスト セットに分割する必要がある場合に特に便利です。 |
 
 
 #### 3.3.7. レコメンデーション
@@ -299,10 +302,10 @@
 
 | #   | コンポーネント   | Component    | 概要 |
 | ---:| -------------- | ------------ | --- |
-| 1 | [SVD レコメンダーのトレーニング](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/train-svd-recommender) | Train SVD Recommender | 単一値分解 (SVD) アルゴリズムに基づいてレコメンデーション モデルをトレーニングできます。<br/>ユーザー、項目、評価を表す 3 つの要素からなるデータセットを読み取ります。 これにより、トレーニング済みの SVD レコメンダーが返されます。<br/>SVD レコメンダーは、ユーザーと項目の識別子、およびユーザーが項目に対して指定した評価マトリックスを使用します。 つまり、これは "協調レコメンダー" です。 |
-| 2 | [SVD レコメンダーのスコア付け](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/score-svd-recommender) | Score SVD Recommender | 単一値分解 (SVD) アルゴリズムに基づくトレーニング済みのレコメンデーション モデルを使用して、予測を作成できます。<br/>次の 2 種類の予測を生成できます。<li>特定のユーザーと項目の評価を予測する<li>ユーザーに項目を推奨する |
-| 3 | [ワイドかつディープなレコメンダーのトレーニング](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/train-wide-and-deep-recommender) | Train Wide and Deep Recommender | Google によって提案されているワイド & ディープ ラーニング (Wide & Deep Learning) に基づいています。<br/>ワイドかつディープなレコメンダーは、協調フィルタリングとコンテンツベースのアプローチを使用して、これらのアプローチを組み合わせています。 したがって、ハイブリッド レコメンダーと考えることができます。 |
-| 4 | [ワイドかつディープなレコメンダーのスコア付け](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/score-wide-and-deep-recommender) | Score Wide and Deep Recommender | Google によるワイド & ディープ ラーニングに基づいて、トレーニングされた推奨モデルを基礎とした予測を作成する方法について説明します。<br/>ワイドかつディープなレコメンダーでは、次の 2 種類の予測を生成できます。<li>特定のユーザーと項目の評価を予測する<li>特定のユーザーに項目を推奨する |
+| 1 | [ワイドかつディープなレコメンダーのトレーニング](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/train-wide-and-deep-recommender) | Train Wide and Deep Recommender | Google によって提案されているワイド & ディープ ラーニング (Wide & Deep Learning) に基づいています。<br/>ワイドかつディープなレコメンダーは、協調フィルタリングとコンテンツベースのアプローチを使用して、これらのアプローチを組み合わせています。 したがって、ハイブリッド レコメンダーと考えることができます。 |
+| 2 | [ワイドかつディープなレコメンダーのスコア付け](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/score-wide-and-deep-recommender) | Score Wide and Deep Recommender | Google によるワイド & ディープ ラーニングに基づいて、トレーニングされた推奨モデルを基礎とした予測を作成する方法について説明します。<br/>ワイドかつディープなレコメンダーでは、次の 2 種類の予測を生成できます。<li>特定のユーザーと項目の評価を予測する<li>特定のユーザーに項目を推奨する |
+| 3 | [SVD レコメンダーのトレーニング](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/train-svd-recommender) | Train SVD Recommender | 単一値分解 (SVD) アルゴリズムに基づいてレコメンデーション モデルをトレーニングできます。<br/>ユーザー、項目、評価を表す 3 つの要素からなるデータセットを読み取ります。 これにより、トレーニング済みの SVD レコメンダーが返されます。<br/>SVD レコメンダーは、ユーザーと項目の識別子、およびユーザーが項目に対して指定した評価マトリックスを使用します。 つまり、これは "協調レコメンダー" です。 |
+| 4 | [SVD レコメンダーのスコア付け](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/score-svd-recommender) | Score SVD Recommender | 単一値分解 (SVD) アルゴリズムに基づくトレーニング済みのレコメンデーション モデルを使用して、予測を作成できます。<br/>次の 2 種類の予測を生成できます。<li>特定のユーザーと項目の評価を予測する<li>ユーザーに項目を推奨する |
 | 5 | [レコメンダーの評価](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/evaluate-recommender) | Evaluate Recommender | さまざまな種類のレコメンデーションを評価できます。<br/>[平均の正規化減損累積利得 (NDCG)](https://ja.wikipedia.org/wiki/DCG#nDCG%EF%BC%88%E6%AD%A3%E8%A6%8F%E5%8C%96%E6%B8%9B%E6%90%8D%E7%B4%AF%E7%A9%8D%E5%88%A9%E5%BE%97%EF%BC%89) を計算し、それを出力データセットに返します。 |
 
 #### 3.3.8. 異常検出
@@ -314,13 +317,33 @@
 | 1 | [PCA ベースの異常検出](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/pca-based-anomaly-detection) | PCA-Based Anomaly Detection | 有効なトランザクションなど、1 つのクラスからトレーニング データを簡単に取得できるが、対象となる異常の十分なサンプルを取得するのが困難なシナリオでモデルを構築するのに役立ちます。 |
 | 2 | [異常検出モデルのトレーニング](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/train-anomaly-detection-model) | Train Anomaly Detection Model | 異常検出モデル用のパラメーター セットとラベル付けされていないデータセットを入力として受け取ります。 トレーニング済みの異常検出モデルがトレーニング データのラベル セットと共に返されます。 |
 
-### 3.4. Web サービス コンポーネント
+
+### 3.4. [AutoML アルゴリズム](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference-v2/component-reference-v2#automl-algorithms)
 
     (事前構築済み)コンポーネント
-    └─ 4. Web サービス コンポーネント
+    └─ 4. AutoML アルゴリズム
+
+| #   | コンポーネント   | Component    | 概要 | トレーニング用データセットの要否 | 検証/テスト用データセットの要否 | その他データセットの要件 |
+| ---:| -------------- | ------------ | --- | --- | --- | --- |
+| 1 | [AutoML 分類](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference-v2/classification) | AutoML Classification | 表形式データに分類モデルを作成します。 | 必要 | 省略可能 | - |
+| 2 | [AutoML 回帰](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference-v2/regression) | AutoML Regression | AutoML 回帰に基づく機械学習モデルを作成します。 | 必要 | 省略可能 | - |
+| 3 | [AutoML 予測](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference-v2/forecasting) | AutoML Forecasting | AutoML 予測に基づく機械学習モデルを作成します。 | 必要 | 省略可能 | すべての行の値を持つラベル列を含む "ラベル付けされたデータセット" |
+| 4 | [画像の分類](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference-v2/image-classification) | Image Classification | AutoML 画像分類に基づく機械学習モデルを作成します。 | 必要 | 省略可能 | すべての行の値を持つラベル列を含む "ラベル付けされたデータセット" |
+| 5 | [画像分類のマルチラベル](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference-v2/image-classification-multilabel) | Image Classification Multilabel | AutoML 画像分類複数ラベルに基づく機械学習モデルを作成します。特定の画像が持ついくつかの特性を判断する必要がある場合に使用を検討します。 | 必要 | 省略可能 | すべての行の値を持つラベル列を含む "ラベル付けされたデータセット" |
+| 6 | [画像の物体検出](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference-v2/image-object-detection) | Image Object Detection | 画像内のエンティティを見つけて分類します。 | 必要 | 省略可能 | すべての行の値を持つラベル列を含む "ラベル付けされたデータセット" |
+| 7 | [画像インスタンスのセグメント化](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference-v2/image-instance-segmentation) | Image Instance Segmentation | AutoML 画像インスタンスのセグメント化モデルに基づく機械学習モデルを作成します。 | 必要 | 省略可能 | すべての行の値を持つラベル列を含む "ラベル付けされたデータセット" |
+| 8 | [AutoML マルチラベルテキスト分類](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference-v2/text-classification-multilabel) | AutoML Multilabel Text Classification | AutoML テキスト複数ラベル分類に基づく機械学習モデルを作成します。各例に複数のラベルを割り当てる可能性があるユース ケースに適しています。すべての例が 1 つの最も可能性の高いクラスでラベル付けされる単一ラベル マルチクラス テキスト分類とは対照的です。 | 必要 | 必要 | <li>すべての行について値を持つラベル列を含む "ラベル付きデータセット"<li>`mltable` 形式 |
+| 9 | [AutoML テキスト分類](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference-v2/text-classification) | AutoML Text Classification | AutoML 分類に基づく機械学習モデルを作成します。テキストを定義済みのグループに分類またはカテゴリ化できます。 | 必要 | 必要 | <li>各テキストを定義済みのグループにカテゴリ化する、関連するタグを持つラベル付きのテキスト セット<li>すべての行について値を持つラベル列を含む "ラベル付きデータセット"<li>`mltable` 形式 |
+| 10 | [AutoML テキスト Ner](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference-v2/text-ner) | AutoML Text Ner | AutoML テキスト NER に基づく機械学習モデルを作成します。固有表現認識 (NER) は、Azure Cognitive Service for Language で提供されている機能の 1 つです。 NER 機能は、非構造化テキスト内のエンティティを識別および分類できます。 | 必要 | 必要 | <li>すべての行について値を持つラベル列を含む "ラベル付きデータセット"<li>`mltable` 形式 |
+
+
+### 3.5. Web サービス コンポーネント
+
+    (事前構築済み)コンポーネント
+    └─ 5. Web サービス コンポーネント
         └─ 1. Web サービスの入出力
 
-#### 3.4.1. [Web サービスの入出力](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/web-service-input-output)
+#### 3.5.1. [Web サービスの入出力](https://learn.microsoft.com/ja-jp/azure/machine-learning/component-reference/web-service-input-output)
 
 | #   | コンポーネント   | Component    |
 | ---:| -------------- | ------------ |
