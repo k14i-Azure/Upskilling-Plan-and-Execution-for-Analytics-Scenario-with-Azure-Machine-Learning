@@ -1,0 +1,12 @@
+###### Azure Machine Learning 実践 (L200)
+
+# 3. ノートブックを使った機械学習モデルの作成と推論 (ガイド付き)
+
+| # | タイトル | タスク | CPU/GPU | サンプルデータ | ガイド |
+| ---:| --- | --- | --- | --- | --- |
+| 1 | Getting Started: training an image classification model | 分類 | CPU | [default_of_credit_card_clients.csv](https://azuremlexamples.blob.core.windows.net/datasets/credit_card/default%20of%20credit%20card%20clients.csv) | Notebooks > Samples > SDK v2 > tutorials > azureml-getting-started > [azureml-getting-started-studio.ipynb](https://github.com/Azure/azureml-examples/blob/main/tutorials/azureml-getting-started/azureml-getting-started-studio.ipynb) |
+| 2 | AzureML in a Day | 分類 | CPU | [default_of_credit_card_clients.xls](https://archive.ics.uci.edu/ml/machine-learning-databases/00350/default%20of%20credit%20card%20clients.xls) | Notebooks > Samples > SDK v2 > tutorials > azureml-in-a-day > [azureml-in-a-day.ipynb](https://github.com/Azure/azureml-examples/blob/main/tutorials/azureml-in-a-day/azureml-in-a-day.ipynb) |
+| 3 | Distributed PyTorch Image Classification | 分類 | CPU | [ImageNetDogs](http://vision.stanford.edu/aditya86/ImageNetDogs/images.tar) | Notebooks > Samples > SDK v2 > tutorials > e2e-distributed-pytorch-image > [e2e-object-classification-distributed-pytorch.ipynb](https://github.com/Azure/azureml-examples/blob/main/tutorials/e2e-distributed-pytorch-image/e2e-object-classification-distributed-pytorch.ipynb) |
+| 4 | Tutorial: Create production ML pipelines with Python SDK v2 (preview) in a Jupyter notebook | 分類 | CPU | [default_of_credit_card_clients.xls](https://archive.ics.uci.edu/ml/machine-learning-databases/00350/default%20of%20credit%20card%20clients.xls) | Notebooks > Samples > SDK v2 > tutorials > e2e-ds-experience > [e2e-ml-workflow.ipynb](https://github.com/Azure/azureml-examples/blob/main/tutorials/e2e-ds-experience/e2e-ml-workflow.ipynb) |
+| 5 | 自動機械学習 AutoML による与信管理モデル | 分類 | CPU | [hmeq.csv](./assets/data/hmeq.csv) from [Kaggle](https://www.kaggle.com/datasets/ajay1735/hmeq-data) | https://github.com/konabuta/azureml-workshop-2021/blob/main/day1/hmeq-automl.ipynb |
+| 6 | LightGBM Model Train - Experiment Logging | 回帰 | CPU | [sklearn.datasets.load_boston](https://scikit-learn.org/0.15/modules/generated/sklearn.datasets.load_boston.html) | https://github.com/konabuta/azureml-workshop-2021/blob/main/day2/lgb-train-azureml-experiment.ipynb |
