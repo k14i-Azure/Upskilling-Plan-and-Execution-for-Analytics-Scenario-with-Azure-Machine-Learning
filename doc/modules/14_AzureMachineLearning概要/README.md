@@ -1,6 +1,6 @@
-# 12. Azure Machine Learning 概要
+# Azure Machine Learning 概要
 
-- [12. Azure Machine Learning 概要](#12-azure-machine-learning-概要)
+- [Azure Machine Learning 概要](#azure-machine-learning-概要)
   - [1. 背景](#1-背景)
     - [1.1. 機械学習のシステム](#11-機械学習のシステム)
     - [1.2. 機械学習プロジェクトのプロセス](#12-機械学習プロジェクトのプロセス)
