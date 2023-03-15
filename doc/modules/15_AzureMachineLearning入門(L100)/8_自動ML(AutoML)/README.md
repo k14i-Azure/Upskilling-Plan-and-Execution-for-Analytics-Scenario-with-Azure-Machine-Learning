@@ -8,7 +8,7 @@
     - [1.2. しくみ](#12-しくみ)
     - [1.3. AutoML を使用する場合](#13-automl-を使用する場合)
     - [1.4. トレーニング、検証、テストのデータ](#14-トレーニング検証テストのデータ)
-    - [1.5. 特徴エンジニアリング](#15-特徴エンジニアリング)
+    - [1.5. 特徴量エンジニアリング](#15-特徴量エンジニアリング)
     - [1.6. アンサンブル モデル](#16-アンサンブル-モデル)
     - [1.7. AutoML と ONNX](#17-automl-と-onnx)
     - [1.8. ハンズオン](#18-ハンズオン)
@@ -91,9 +91,9 @@
 > 
 > このような偏りが最終的な推奨モデルに適用されないように、自動 ML では **テスト データ** を利用し、自動 ML から実験の最後に推奨される最終モデルが評価されます。 自動 ML 実験の構成でテスト データを与えるとき、実験の最後に既定でこの推奨モデルがテストされます (プレビュー)。
 
-### 1.5. [特徴エンジニアリング](https://learn.microsoft.com/ja-jp/azure/machine-learning/concept-automated-ml#feature-engineering)
+### 1.5. [特徴量エンジニアリング](https://learn.microsoft.com/ja-jp/azure/machine-learning/concept-automated-ml#feature-engineering)
 
-> 特徴エンジニアリングは、データに関するドメインの知識を活用して、ML アルゴリズムの学習を支援する機能を作成するプロセスです。 Azure Machine Learning では、特徴エンジニアリングを容易にするために、**スケーリング** と **正規化** の手法が適用されます。 これらの手法と特徴エンジニアリングは、まとめて **特徴量化** と呼ばれています。
+> 特徴量エンジニアリングは、データに関するドメインの知識を活用して、ML アルゴリズムの学習を支援する機能を作成するプロセスです。 Azure Machine Learning では、特徴量エンジニアリングを容易にするために、**スケーリング** と **正規化** の手法が適用されます。 これらの手法と特徴量エンジニアリングは、まとめて **特徴量化** と呼ばれています。
 > 
 > 自動機械学習の実験において、特徴量化は自動的に適用されますが、データに基づいてカスタマイズすることもできます。 [特徴量化の内容](https://learn.microsoft.com/ja-jp/azure/machine-learning/how-to-configure-auto-features#featurization)と、[AutoML がいかにしてモデルのオーバーフィットと不均衡データを回避するか](https://learn.microsoft.com/ja-jp/azure/machine-learning/concept-manage-ml-pitfalls)について学習してください。
 
